@@ -45,5 +45,9 @@
   },
   "gift-tag-custom": {
     "component": "GiftTag"
+  },
+  "custom-cancel-button": {
+    "component": "CustomCancelButton",
+    "render": "client"
   }
 }
