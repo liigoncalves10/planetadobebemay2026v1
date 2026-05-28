@@ -1,0 +1,75 @@
+{
+  "store.custom#about": {
+    "blocks": [
+      "responsive-layout.desktop#about",
+      "responsive-layout.tablet#about",
+      "responsive-layout.phone#about"
+    ]
+  },
+
+  "responsive-layout.desktop#about": {
+    "children": ["flex-layout.row#about-us-desktop"]
+  },
+
+  "responsive-layout.tablet#about": {
+    "children": [
+      "flex-layout.row#about-us-menu-mobile",
+      "flex-layout.row#about-us-mobile"
+    ]
+  },
+
+  "responsive-layout.phone#about": {
+    "children": [
+      "flex-layout.row#about-us-menu-mobile",
+      "flex-layout.row#about-us-mobile"
+    ]
+  },
+
+  "flex-layout.row#about-us-desktop": {
+    "children": [
+      "flex-layout.col#institutional-sidebar-desktop",
+      "flex-layout.col#content-about-us"
+    ],
+    "props": {
+      "blockClass": "institutionalContainer"
+    }
+  },
+
+  "flex-layout.row#about-us-menu-mobile": {
+    "children": ["flex-layout.col#institutional-sidebar-mobile"],
+    "props": {
+      "blockClass": "institutionalContainer"
+    }
+  },
+
+  "flex-layout.row#about-us-mobile": {
+    "children": ["flex-layout.col#content-about-us-mobile"],
+    "props": {
+      "blockClass": "institutionalContainer"
+    }
+  },
+
+  "flex-layout.col#content-about-us-mobile": {
+    "children": ["rich-text#about-us"],
+    "props": {
+      "blockClass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.col#content-about-us": {
+    "children": ["rich-text#about-us"],
+    "props": {
+      "blockClass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#about-us": {
+    "title": "Conteúdo Institucional",
+    "props": {
+      "text": "### **Sobre o Planeta do Bebê** \n **Quem Somos?**\nEmpresa 100% dedicada ao Comércio Eletrônico.\nCom amplo know-how na categoria de artigos para Bebês e Crianças. Trabalhamos com a linha completa de brinquedos e acessórios, produtos para amamentação (mammy care), alimentação, diversão, roupas e acessórios, bem-estar, segurança e lazer.\nDesde a  linha de puericultura leve até a mais pesada como carrinhos e cadeiras de auto..\nParceria com as melhores marcas do mercado neste segmento, juntando preço e qualidade em um clique, sem precisar sair de casa e ainda contar com agilidade de receber sua compra no menor prazo possível.<br><br>\n\n**Nossa Missão!**\nSer **excelência** no comércio eletrônico da categoria baby!\nA melhor opção na compra online de artigos para bebês e crianças até os 14 anos. Maior variedade, mantendo preço e qualidade em um só canal. Além de oferecer um serviço exclusivo e bem próximo aos clientes. Desde roupas de moda básica ao fashion, enxoval para bebê, acessórios, itens de segurança, higiene, até linhas mais especializadas como Cadeiras de Carro, Carrinhos de Passeio, Cangurus e muito mais.<br><br>\n\n**Prioridades!**\n**Atendimento**! O cliente é a nossa prioridade!\nTodos os canais de atendimento são acessíveis para os clientes e a equipe de SAC está treinada para prestar o melhor atendimento aos nossos clientes.\nMuito além de seguir as regras estipuladas pelo mercado eletrônico, a empresa trata cada caso com prioridade e respeito que o cliente do pós-venda merece.",
+      "blockClass": "contentInstitutional"
+    }
+  }
+}

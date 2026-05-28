@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+.simulateShipping {
+  border: none;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 404px;
+}
+
+.simulateShipping :global(.vtex-input__label) {
+  color: #f6f6f7;
+  margin-bottom: 16px;
+  margin-top: 12px;
+  position: relative;
+}
+
+.simulateShipping :global(.vtex-input__label)::after {
+  color: #696969;
+  content: 'Frete e prazo de entrega:';
+  font-size: 14px;
+  font-weight: 500;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.simulateShipping :global(.vtex-button) {
+  background: #f6f6f7;
+  border: none;
+  border-radius: 24px;
+  color: #c55fa0;
+  font-weight: 500;
+  height: 48px;
+  margin: 0;
+  margin-bottom: 8px;
+  margin-top: 12px;
+  padding: 0;
+  transition: 0.15s ease-in-out;
+}
+
+.simulateShipping :global(.vtex-button):hover {
+  background: #c55fa0;
+  color: #f6f6f7;
+  transition: 0.15s ease-in-out;
+}
+
+.simulateShipping :global(.vtex-address-form__postalCode) {
+  padding: 0;
+}
+
+.simulateShipping :global(.vtex-input-prefix__group) {
+  border: 1px solid #e9e9eb;
+  border-radius: 24px;
+  color: #c55fa0;
+  font-weight: 500;
+  height: 48px;
+  margin: 0;
+  padding: 0;
+}
+
+.simulateShipping :global(.vtex-button) :global(.vtex-button__label) {
+  margin: 0;
+  padding: 0 !important;
+}
+
+.sellerHead {
+  background: transparent;
+  margin: 0;
+  margin-bottom: 4px;
+  margin-top: 14px;
+  padding: 6px 6px 6px 18px;
+}
+
+.sellerHead:hover {
+  background: transparent !important;
+}
+
+.sellerList {
+  margin: 0;
+}
+
+.sellerHeadText {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 0;
+  text-align: left;
+}
+
+.sellerRow {
+  border: 1px solid #e9e9e9;
+  border-radius: 48px;
+  gap: 10px;
+  padding: 6px 6px 6px 18px;
+}
+
+.sellerName,
+.sellerPrice,
+.sellerShipping,
+.sellerPriceShipping,
+.sellerBuyContainer {
+  color: #696969;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 0;
+  text-align: left;
+}
+
+.sellerPrice,
+.sellerPriceShipping {
+  color: #c55fa0;
+}
+
+.sellerBuyContainer :global(.vtex-button) {
+  background: #2ab1b7;
+  border: none;
+  border-radius: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.sellerBuyContainer :global(.vtex-button__label) {
+  color: #4949490;
+  font-size: 1px;
+  padding: 0 20px !important;
+  position: relative;
+}
+
+.sellerBuyContainer :global(.vtex-button__label)::after {
+  color: #f6f6f7;
+  content: 'COMPRAR';
+  font-size: 11px;
+  font-weight: 800;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Fredoka', sans-serif;
+}
+
+.sellerPriceShippingText,
+.sellerShippingText {
+  background: transparent !important;
+}
+
+@media screen and (width <= 1026px) {
+  .sellerMasterContainer {
+    padding: 0 11px;
+  }
+
+  .simulateShipping {
+    width: 100%;
+  }
+
+  .sellerRow {
+    border-radius: 24px;
+    flex-flow: row wrap;
+    gap: 16px 4px;
+    padding: 12px 18px;
+  }
+
+  .sellerBuyContainer {
+    width: 100%;
+  }
+
+  .sellerName {
+    background-color: transparent;
+    font-weight: 800;
+  }
+
+  .sellerName,
+  .sellerPrice,
+  .sellerShipping,
+  .sellerPriceShipping {
+    width: 24%;
+  }
+
+  .sellerHead {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sellerHeadCell {
+    width: 25%;
+  }
+
+  .sellerHeadCell:last-child {
+    display: none;
+  }
+}
+
+@media screen and (width <= 320px) {
+  .sellerHead {
+    display: none;
+  }
+
+  .sellerRow {
+    flex-direction: column;
+    gap: 4px;
+    padding: 12px 18px;
+  }
+}
+
+.sellerList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

@@ -1,0 +1,44 @@
+.deleteIcon,
+.removeButton {
+  color: #b1b3b3;
+}
+
+.productBrandName {
+  display: none;
+
+}
+
+.productName {
+  color: #585858;
+  font-size: 10px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.quantity :global(.vtex-dropdown__container) {
+  background: #fff;
+  border: 1px solid #eee;
+  color: #696969;
+  font-size: 12px;
+  font-weight: normal;
+  height: 36px;
+  line-height: 16px;
+  text-align: center;
+  width: 79px;
+}
+
+.quantity :global(.vtex-dropdown__arrow) {
+  color: #c55fa0 !important;
+}
+
+.currencyContainer {
+  color: #a0a0a0;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.productPrice {
+  color: #c55fa0;
+  font-size: 16px;
+  font-weight: 500;
+}

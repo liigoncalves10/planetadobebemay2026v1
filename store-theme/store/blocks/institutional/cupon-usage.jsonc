@@ -1,0 +1,75 @@
+{
+  "store.custom#cupon-usage": {
+    "blocks": [
+      "responsive-layout.desktop#cupon-usage",
+      "responsive-layout.tablet#cupon-usage",
+      "responsive-layout.phone#cupon-usage"
+    ]
+  },
+
+  "responsive-layout.desktop#cupon-usage": {
+    "children": ["flex-layout.row#cupon-usage-desktop"]
+  },
+
+  "responsive-layout.tablet#cupon-usage": {
+    "children": [
+      "flex-layout.row#cupon-usage-menu-mobile",
+      "flex-layout.row#cupon-usage-mobile"
+    ]
+  },
+
+  "responsive-layout.phone#cupon-usage": {
+    "children": [
+      "flex-layout.row#cupon-usage-menu-mobile",
+      "flex-layout.row#cupon-usage-mobile"
+    ]
+  },
+
+  "flex-layout.row#cupon-usage-desktop": {
+    "children": [
+      "flex-layout.col#institutional-sidebar-desktop",
+      "flex-layout.col#content-cupon-usage"
+    ],
+    "props": {
+      "blockClass": "institutionalContainer"
+    }
+  },
+
+  "flex-layout.row#cupon-usage-menu-mobile": {
+    "children": ["flex-layout.col#institutional-sidebar-mobile"],
+    "props": {
+      "blockClass": "institutionalContainer"
+    }
+  },
+
+  "flex-layout.row#cupon-usage-mobile": {
+    "children": ["flex-layout.col#content-cupon-usage-mobile"],
+    "props": {
+      "blockClass": "institutionalContainer"
+    }
+  },
+
+  "flex-layout.col#content-cupon-usage-mobile": {
+    "children": ["rich-text#cupon-usage"],
+    "props": {
+      "blockClass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.col#content-cupon-usage": {
+    "children": ["rich-text#cupon-usage"],
+    "props": {
+      "blockClass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#cupon-usage": {
+    "title": "Conteúdo Institucional",
+    "props": {
+      "text": "### **Regras gerais para o uso de CUPOM:**\n**Regras gerais para o uso de CUPOM:**\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Apenas um cupom poderá ser utilizado por pedido. O benefício não é cumulativo com outro Cupom ou Vale-Presente.\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;O código do cupom deve ser copiado sem alterações, inclusive troca de letras maiúsculas por minúsculas, e vice-versa.\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;O benefício do cupom é válido para compras aprovadas com qualquer forma de pagamento. ATENÇÃO: A compra só se torna efetiva quando os pedidos são faturados, isto é, após o pagamento do boleto bancário e/ou a aprovação da administradora do cartão.\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;O desconto do cupom será concedido apenas uma vez, atrelado ao login de cadastro do cliente no Planeta do Bebê (o mesmo utilizado para efetuar a compra).\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Caso a compra já tenha sido finalizada, não será possível utilizar o mesmo cupom de desconto novamente.\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;O cupom é válido apenas para produtos **vendidos e entregues** pelo Planeta do Bebê.\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Em caso de cancelamento da compra devido a arrependimento, troca ou devolução, o valor a ser restituído será o mesmo do pagamento efetuado, já incluído o desconto.<br>\n**Como utilizar nosso CUPOM:**\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Após selecionar o(s) produto(s), o cliente clica em “Adicionar Cupom de Desconto” inserir o cupom e clicar em “Adicionar”. Depois finalizar a compra.\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Na tela de identificação, o cliente deve fazer o login (caso já seja cliente), ou preencher o cadastro (caso seja sua primeira compra).\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;O desconto será aplicado na tela do resumo do pedido e será válido para qualquer forma de pagamento.\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;O cliente deve escolher a forma de pagamento e a forma de entrega para finalizar o pedido.\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;O valor do desconto é válido apenas para os produtos vendidos e entregues pelo Planeta do Bebê. O desconto será concedido sobre o valor do produto, **excluindo-se o valor do frete**.\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;O benefício destina-se unicamente aos clientes, não podendo ser objeto de comercialização por terceiros. Também não se aplica aos produtos de parceiros de Marketplace.<br>\n**Das disposições finais:**\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;A participação na promoção implica a aceitação total e irrestrita pelo cliente de todos os itens deste Regulamento, seus termos e condições.\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;O presente Regulamento poderá ser alterado e/ou a Promoção suspensa e/ou cancelada por motivo de força maior ou qualquer outro fator ou motivo imprevisto, que esteja fora do controle das promotoras e que comprometa a Promoção.\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Em caso de dúvidas entre em contato com nossa Central de Atendimento pelo endereço: <sac@planetadobebe.com.br>. O atendimento é realizado de segunda a sexta-feira das 09h às 18h.",
+      "blockClass": "contentInstitutional"
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "store.custom#shipping": {
+    "blocks": [
+      "responsive-layout.desktop#shipping",
+      "responsive-layout.tablet#shipping",
+      "responsive-layout.phone#shipping"
+    ]
+  },
+
+  "responsive-layout.desktop#shipping": {
+    "children": ["flex-layout.row#discount-coupon-desktop"]
+  },
+
+  "responsive-layout.tablet#shipping": {
+    "children": [
+      "flex-layout.row#discount-coupon-menu-mobile",
+      "flex-layout.row#discount-coupon-mobile"
+    ]
+  },
+
+  "responsive-layout.phone#shipping": {
+    "children": [
+      "flex-layout.row#discount-coupon-menu-mobile",
+      "flex-layout.row#discount-coupon-mobile"
+    ]
+  },
+
+  "flex-layout.row#discount-coupon-desktop": {
+    "children": [
+      "flex-layout.col#institutional-sidebar-desktop",
+      "flex-layout.col#content-discount-coupon"
+    ],
+    "props": {
+      "blockClass": "institutionalContainer"
+    }
+  },
+
+  "flex-layout.row#discount-coupon-menu-mobile": {
+    "children": ["flex-layout.col#institutional-sidebar-mobile"],
+    "props": {
+      "blockClass": "institutionalContainer"
+    }
+  },
+
+  "flex-layout.row#discount-coupon-mobile": {
+    "children": ["flex-layout.col#content-discount-coupon-mobile"],
+    "props": {
+      "blockClass": "institutionalContainer"
+    }
+  },
+
+  "flex-layout.col#content-discount-coupon-mobile": {
+    "children": ["rich-text#discount-coupon"],
+    "props": {
+      "blockClass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.col#content-discount-coupon": {
+    "children": ["rich-text#discount-coupon"],
+    "props": {
+      "blockClass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#discount-coupon": {
+    "title": "Conteúdo Institucional",
+    "props": {
+      "text": "### **Política de Fretes**\nVálido para produtos **vendidos** e **entregues** por **Planeta do Bebê**.<br>\n**Frete Grátis Sul e Sudeste** para compras à partir de **R$ 99,00** estado de São Paulo na modalidade de entrega Econômica e Espírito Santo, Minas Gerais, Rio de Janeiro e Sudeste, nas modalidades de entrega Econômica e Expressa; **exceto** categorias **exceções***.<br>\n**Frete Grátis Centro-Oeste, Norte e Nordeste** para compras à partir **R$199,00**, nas modalidades de entrega Econômica e Expressa; **exceto** categorias **exceções***.<br>\n*** Categorias Exceções:**<br><br>\n- Puericultura Pesada: Carrinhos de Bebê, Cadeiras para Auto, Bebês Conforto, Cadeirão e Booster, Mini Veículos para Passeio, Banheiras e Acessórios para Banho, Mini Veículos e Playgrounds.\n- Esporte: Bicicletas, Patins, Skates e Patinetes.\n- Mobiliário: Móveis\n- Produtos com cubagem superior às admitidas pelos Correios.<br><br>\n**PLANETA - IMPORTAÇÃO E DISTRIBUIÇÃO DE BRINQUEDOS LTDA**",
+      "blockClass": ["contentInstitutional", "fretes"]
+    }
+  }
+}

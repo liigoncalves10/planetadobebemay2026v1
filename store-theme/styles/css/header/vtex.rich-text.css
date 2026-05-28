@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+
+/* Título "Navegue por categorias" - CORRETO */
+/* Título "Navegue por categorias" - COM NAMESPACE COMPLETO */
+:global(.vtex-rich-text-0-x-container--unified-cards-title) {
+  font-family: "Fredoka", sans-serif !important;
+  margin-bottom: 10px !important;
+  margin-top: 80px !important;
+  text-align: center !important;
+}
+
+:global(.vtex-rich-text-0-x-heading--unified-cards-title) {
+  font-family: "Fredoka", sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 35px !important;
+  color: #696969 !important;
+}
+
+.wrapper--topbar-text__content {
+  align-items: center;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  width: 100%;
+}
+
+.paragraph--topbar-text__content {
+  font-weight: 500;
+  font-size: 11px;
+  text-align: center;
+  color: #3d3d3d;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 500;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.paragraph--topbar-text__content__text {
+  display: inline-block;
+  width: 100%;
+}
+
+.image--topbar-shipping {
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.container--social-networks--facebook {
+  height: 16.5px;
+  width: 8px;
+}
+
+.wrapper--social-networks--youtube,
+.wrapper--social-networks--instagram,
+.wrapper--social-networks--facebook {
+  height: 100%;
+  width: 100%;
+}
+
+.paragraph--social-networks--youtube,
+.paragraph--social-networks--instagram,
+.paragraph--social-networks--facebook {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+.link--social-networks {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.image--social-networks--facebook,
+.image--social-networks--instagram,
+.image--social-networks--youtube {
+  display: inline-block;
+  max-width: 15px;
+  vertical-align: middle;
+  padding-top: 3px;
+  margin-left: 5px;
+}
+
+.image--social-networks {
+  width: 25px;
+}
+
+@media (width <= 400px) {
+  .paragraph--topbar-text__content {
+    font-size: 10px;
+  }
+}
+
+@media (width >= 991px) {
+  .paragraph--topbar-text__content {
+    font-size: 14px;
+    margin: 0;
+    padding: 7px 0;
+  }
+}

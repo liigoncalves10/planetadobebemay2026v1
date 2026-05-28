@@ -1,0 +1,20 @@
+.seller-p {
+  margin: 0px;
+  color: #696969;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1024px) {
+  .seller-p {
+    text-align: left !important;
+    padding: 0 10px !important;
+    width: 100% !important;
+    display: block !important;
+  }
+}
+
+.seller-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2ab1b7;
+}

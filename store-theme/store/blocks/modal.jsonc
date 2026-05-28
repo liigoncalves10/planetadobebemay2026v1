@@ -1,0 +1,84 @@
+{
+  "modal-trigger#cupon": {
+    "props": {
+      "trigger": "load-session"
+    },
+    "children": ["modal-layout#cupon"]
+  },
+  "modal-layout#cupon": {
+    "props": {
+      "blockClass": "cuponLayout",
+      "backdrop": "none"
+    },
+    "children": ["modal-header#cupon", "modal-content#cupon"]
+  },
+  "modal-header#cupon": {
+    "props": {
+      "iconCloseSize": "18",
+      "blockClass": "cuponHeader"
+    },
+    "children": ["image#cupon-header"]
+  },
+  "image#cupon-header": {
+    "props": {
+      "src": "/arquivos/modal-cupon-header-2-x.png",
+      "alt": "Cabeçalho do Cupom"
+    }
+  },
+  "modal-content#cupon": {
+    "props": {
+      "blockClass": "cuponContent"
+    },
+    "children": ["rich-text#cupon-title", "form#cupon-10"]
+  },
+  "rich-text#cupon-title": {
+    "title": "Texto do Cupom",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "textModalCupon",
+      "text": "<span class='vtex-rich-text-0-x-cuponTitle'>Cadastre-se e Ganhe</span><span class='vtex-rich-text-0-x-cuponTitleDiscount'>10% de desconto</span>"
+    }
+  },
+  "form#cupon-10": {
+    "props": {
+      "entity": "CP",
+      "schema": "cupom10"
+    },
+    "children": [
+      "form-input.text#nome",
+      "form-input.text#email",
+      "form-submit#cupom"
+    ],
+    "blocks": ["form-success#cupom"]
+  },
+  "form-input.text#email": {
+    "props": {
+      "pointer": "#/properties/email",
+      "label": "",
+      "placeholder": "Seu email"
+    }
+  },
+  "form-input.text#nome": {
+    "props": {
+      "pointer": "#/properties/nome",
+      "label": "",
+      "placeholder": "Seu nome"
+    }
+  },
+  "form-submit#cupom": {
+    "props": {
+      "label": "Cadastrar"
+    }
+  },
+  "form-success#cupom": {
+    "children": ["rich-text#cupon-success"]
+  },
+  "rich-text#cupon-success": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Seu email e nome foram cadastrados com sucesso"
+    }
+  }
+}

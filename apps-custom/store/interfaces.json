@@ -1,0 +1,49 @@
+{
+  "react-custom-inputs": {
+    "component": "CustomNewsletter",
+    "render": "client"
+  },
+  "custom-stick-buy": {
+    "component": "CustomStickyDiv",
+    "render": "client"
+  },
+  "share-custom-component": {
+    "component": "CustomSharePdp",
+    "render": "client"
+  },
+  "script-pdp-pagaLeve": {
+    "component": "ScriptPdp",
+    "render": "client"
+  },
+  "script-imagens-pdp-01": {
+    "component": "ScriptImagensPdp01",
+    "render": "client"
+  },
+  "script-imagens-pdp-02": {
+    "component": "ScriptImagensPdp02",
+    "render": "client"
+  },
+  "script-imagens-pdp-03": {
+    "component": "ScriptImagensPdp03",
+    "render": "client"
+  },
+  "PixDiscount": {
+    "component": "PixDiscount"
+  },
+  "PixDiscountShelf": {
+    "component": "PixDiscountShelf"
+  },
+  "color-variation-contactor": {
+    "component": "ColorVariationContactorShelf"
+  },
+  "modalpromocao": {
+    "component": "ModalLead",
+    "render": "client"
+  },
+  "shipping-simulator-custom": {
+    "component": "CustomShippingSimulator"
+  },
+  "gift-tag-custom": {
+    "component": "GiftTag"
+  }
+}

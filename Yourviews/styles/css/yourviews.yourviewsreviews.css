@@ -1,0 +1,136 @@
+.testimonial-flex {
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 1px 1px 10px -4px #494949;
+  margin: 10px;
+  width: 100%;
+  min-height: 232px;
+}
+
+.storeRatings {
+  flex-direction: column;
+}
+
+.userName {
+  font-weight: bold;
+  font-size: 12px;
+  color: grey;
+}
+
+.dateText {
+  font-size: 12px;
+  color: grey;
+  margin-left: 10px;
+}
+
+.commentText {
+  margin: 0;
+}
+
+.questionsAndAnswersQuestionWrapper {
+  margin: 20px 0;
+  background-color: #dbdbdb8a;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.reviewsReviewItem {
+  display: flex;
+  border: 1px solid #cecece;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.reviewUser {
+  display: flex;
+  font-size: 12px;
+}
+
+.reviewUser .richText,
+.reviewUser .userName {
+  margin-right: 5px;
+}
+
+.ratingStarsInactive {
+  fill: #cecece;
+}
+
+.reviewsStoreCommentWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px;
+  margin-left: 60px;
+  border: 1px solid #c6c6c6;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+}
+
+.storeCommentTitle {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.testimonialContent-contentSeller .carouselArrowButton {
+  display: none;
+}
+
+.testimonialContent-contentSeller .carouselSliderContent {
+  max-height: fit-content;
+}
+
+.testimonialContent-contentSeller
+  .carouselSliderContent
+  .carouselSliderItemInactive {
+  display: block;
+}
+
+.testimonialContent-contentSeller .carouselStatusDotsWrapper {
+  display: none;
+}
+
+.slideSeller {
+  display: flex;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 5px;
+  width: 500px;
+}
+
+.tempoAtrasSeller {
+  margin-left: 4px;
+  font-size: 12px;
+  color: grey;
+}
+
+.reviewUserSeller {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.histogramBarColor {
+  background-color: #ffd327;
+}
+.ratingStarsActive {
+  fill: #ffd327;
+}
+.recommendPercentBorder {
+  border-color: #ffd327;
+}
+
+.reviewsContainer,
+.questionsAndAnswersContainer {
+  padding: 32px;
+}
+
+.questionsAndAnswersAnswer {
+  margin-left: 60px;
+}

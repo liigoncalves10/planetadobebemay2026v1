@@ -1,0 +1,69 @@
+.biggy-autocomplete-wrapper {
+  position: absolute;
+  right: 0;
+  width: calc(100vw - 42px);
+}
+
+.biggy-autocomplete {
+  flex-direction: column !important;
+  max-height: unset;
+}
+
+@media only screen and (width >= 1024px) {
+  .biggy-autocomplete-wrapper {
+    width: 614px;
+  }
+}
+
+.tileListTitle {
+  padding: 0 20px 0 6px;
+  font-weight: 400;
+}
+
+.itemList {
+  margin-bottom: 35px;
+  width: 100%;
+}
+
+.tileList {
+  padding: 0 12px;
+  width: 100%;
+}
+
+.tileListItem {
+  justify-content: center;
+  width: 150px;
+}
+
+.tileList :global(.vtex-product-summary-2-x-brandName--main-shelf-name) {
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: clip;
+}
+
+.tileList
+  :global(.vtex-product-summary-2-x-price_sellingPrice--main-shelf-price) {
+  font-size: 14px;
+}
+
+.tileList :global(.vtex-product-price-1-x-installments) {
+  font-size: 11px;
+}
+
+.tileList :global(.vtex-product-summary-2-x-image--main-shelf-image) {
+  max-height: 125px;
+  max-width: 125px;
+  min-height: 125px;
+  object-fit: contain;
+}
+
+.tileList :global(.vtex-product-summary-2-x-nameWrapper--main-shelf-name) {
+  width: 200px;
+}
+
+.tileList
+  :global(.vtex-product-summary-2-x-element--product-summary-shelf)
+  :global(.vtex-button) {
+  background-color: #2ab1b7;
+}

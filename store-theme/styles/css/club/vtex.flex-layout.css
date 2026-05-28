@@ -1,0 +1,102 @@
+.flexRow--club :global(.vtex-store-components-3-x-container) {
+  max-width: 100%;
+  padding: 0;
+}
+
+.flexRow--club-about,
+.flexRowContent--club-benefits {
+  margin: 60px auto 0;
+  max-width: 1258px;
+  padding: 0 20px;
+}
+
+.flexRowContent--club-how-works {
+  background: #f6f6f7;
+  margin-top: 60px;
+  padding: 60px 20px;
+}
+
+.flexRowContent--how-works-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1258px;
+}
+
+.flexRowContent--club-benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flexRowContent--how-works-list
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth),
+.flexRowContent--club-benefits-list
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  flex: 0 0 50%;
+  text-align: center;
+}
+
+@media (width >= 992px) {
+  .flexRowContent--club-about,
+  .flexRowContent--club-how-works,
+  .flexRowContent--club-benefits {
+    flex-wrap: wrap;
+    margin-top: 80px;
+  }
+
+  .flexRowContent--club-about
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth),
+  .flexRowContent--club-how-works
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth),
+  .flexRowContent--club-benefits
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: 100% !important;
+  }
+
+  .flexRowContent--how-works-list
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth),
+  .flexRowContent--club-benefits-list
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    flex: 0 0 25%;
+  }
+
+  .flexCol--how-works-item-1,
+  .flexCol--how-works-item-2,
+  .flexCol--how-works-item-3,
+  .flexCol--how-works-item-4,
+  .flexCol--club-benefits-item-1,
+  .flexCol--club-benefits-item-2,
+  .flexCol--club-benefits-item-3,
+  .flexCol--club-benefits-item-4 {
+    padding: 0 50px;
+  }
+
+  .flexCol--how-works-item-1,
+  .flexCol--how-works-item-2,
+  .flexCol--how-works-item-3,
+  .flexCol--club-benefits-item-1,
+  .flexCol--club-benefits-item-2,
+  .flexCol--club-benefits-item-3 {
+    position: relative;
+  }
+
+  .flexCol--how-works-item-1::after,
+  .flexCol--how-works-item-2::after,
+  .flexCol--how-works-item-3::after,
+  .flexCol--club-benefits-item-1::after,
+  .flexCol--club-benefits-item-2::after,
+  .flexCol--club-benefits-item-3::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='116' height='4' viewBox='0 0 116 4'%3E%3Cline id='icon-dotted-line' x2='112' transform='translate(2 2)' fill='none' stroke='%2399dbf6' stroke-linecap='round' stroke-width='4' stroke-dasharray='1 8'/%3E%3C/svg%3E%0A");
+    background-position: center;
+    background-size: contain;
+    content: '';
+    height: 4px;
+    left: 66%;
+    position: absolute;
+    top: 50px;
+    transform: translateX(50%);
+    width: 112px;
+  }
+}

@@ -1,0 +1,246 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+.listPrice {
+  color: #727273;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+
+.sellingPrice {
+  font-family: 'Neue Helvetica BQ', sans-serif;
+  color: #494949;
+  font-size: 12px;
+}
+
+.sellingPriceValue {
+  font-size: 2.25rem;
+  font-weight: 500;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--product-main) .sellingPriceValue {
+  font-weight: 500;
+  color: #ed6f66 !important;
+  font-size: 40px !important;
+  margin-left: 0 !important;
+  margin-top: 5px !important;
+  margin-bottom: 0 !important;
+}
+
+@media screen and (max-width: 1024px) {
+  :global(.vtex-flex-layout-0-x-flexRow--product-main) .sellingPriceValue {
+  font-weight: 500;
+  color: #ed6f66 !important;
+  font-size: 40px !important;
+  margin-left: 10px !important;
+  margin-top: 5px !important;
+  margin-bottom: 0 !important;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRowContent--selling-price) {
+    justify-content: flex-start !important;
+    padding: 0 10px !important;
+    width: 100% !important;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRowContent--list-price-savings) {
+    justify-content: flex-start !important;
+    padding: 0 10px !important;
+    width: 100% !important;
+  }
+
+  .listPrice {
+    text-align: left !important;
+    padding: 0 10px !important;
+    width: 100% !important;
+    display: block !important;
+  }
+
+  .savings {
+    text-align: left !important;
+    padding: 0 10px !important;
+    width: 100% !important;
+    display: block !important;
+  }
+
+  .installments {
+    text-align: left !important;
+    padding: 0 10px !important;
+    width: 100% !important;
+    display: block !important;
+    justify-content: flex-start !important;
+  }
+}
+
+.installments {
+  color: #727273;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.savings {
+  font-weight: 500;
+  color: #2ab1b7;
+}
+
+.sellingPriceValue--summary {
+  color: #ed6f66 !important;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 700;
+  font-family: 'Helvetica Neue';
+  margin-top: 10px;
+  paint-order: stroke fill;
+}
+
+@media screen and (max-width: 768px) {
+  .sellingPriceValue--summary {
+    color: #ed6f66 !important;
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 900;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sellingPriceValue--summary {
+    color: #ed6f66 !important;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 900;
+    margin-top: 20px;
+  }
+}
+
+.savings--summary {
+  background: #2ab1b7;
+  border-radius: 1000px;
+  align-items: center;
+  display: flex;
+
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  vertical-align: baseline;
+  color: #ffffff;
+}
+
+.savings-discount--summary {
+  font-size: 0.875rem;
+  font-weight: 500;
+  vertical-align: baseline;
+  color: #ffffff;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.listPrice--summary {
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.installments--summary {
+  margin-bottom: 2rem;
+  font-size: 0.875rem;
+}
+
+.savings--summaryPercentage {
+  background: #9e4b80;
+  border-radius: 1000px;
+  align-items: center;
+  display: flex;
+}
+
+.savingsPercentage--summaryPercentage {
+  font-size: 0.875rem;
+  font-weight: 500;
+  vertical-align: baseline;
+  color: #474747;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+}
+
+.installments {
+  margin-top: -4px;
+  font-family: 'Helvetica Neue', sans-serif !important;
+  text-align: center;
+  font-size: 10px;
+  color: #5f5f5f;
+  font-weight: 450;
+  text-transform: lowercase;
+}
+
+.installmentValue .currencyContainer {
+  text-transform: initial;
+}
+
+.sellingPriceValue .currencyContainer {
+  font-family: 'Neue Helvetica BQ', sans-serif;
+  text-transform: initial;
+  color: #696969 !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .sellingPriceValue .currencyContainer {
+  font-family: 'Neue Helvetica BQ', sans-serif;
+  text-transform: initial;
+  color: #696969 !important;
+  font-size: 15px !important;
+  margin-left: -10px !important;
+  font-weight: 700 !important;
+  }
+}
+
+.sellingPriceValue :global(.vtex-product-price-1-x-currencyContainer)::after {
+  content: ' à vista no cartão ou ';
+  font-size: 14px;
+  font-family: 'Neue Helvetica BQ', sans-serif;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1026px) {
+  .installments {
+    padding: 0 15px;
+  }
+}
+
+.installments--installments-pdp {
+  position: relative;
+  display: inline;
+  font-size: 14px;
+  font-family: 'Neue Helvetica BQ', sans-serif;
+}
+
+@media screen and (max-width: 1280px) {
+  .installments--installments-pdp {
+    display: flex;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 1026px) {
+  .installments--installments-pdp {
+    padding: 0 11px;
+  }
+}
+
+.fixed-buy-infos-desktop {
+  width: 240px;
+}
+
+.listPrice--main-shelf-price {
+  color: #696969;
+  font-size: 15px;
+  font-weight: 700;
+  padding-top: 8px;
+  text-align: center !important;
+  width: 100%;
+  display: flex;
+  justify-content: center !important
+}

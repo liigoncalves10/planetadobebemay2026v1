@@ -1,0 +1,107 @@
+.flexCol--formContactUsCol {
+  max-width: 404px;
+}
+
+.flexCol--formContactUsCol :global(.vtex-input__label),
+.flexCol--formContactUsCol :global(.vtex-dropdown__label),
+.flexCol--formContactUsCol :global(.vtex-textarea__label) {
+  color: #4d4d4d;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 21px;
+  margin-bottom: 7px;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+
+.flexCol--formContactUsCol :global(.vtex-input-prefix__group),
+.flexCol--formContactUsCol :global(.vtex-dropdown__container) {
+  border: 1px solid #d6d6d6;
+  color: #a0a0a0;
+  font-size: 13px;
+  line-height: 21px;
+  text-transform: capitalize;
+}
+
+.flexCol--formContactUsCol :global(.vtex-styleguide-9-x-input),
+.flexCol--formContactUsCol :global(.vtex-dropdown__container),
+.flexCol--formContactUsCol :global(.vtex-textarea__input),
+.flexCol--formContactUsCol :global(.vtex-dropdown__button) {
+  color: #a0a0a0;
+  font-size: 13px;
+  height: 100%;
+  line-height: 21px;
+}
+
+.flexCol--formContactUsCol :global(.vtex-dropdown__arrow) {
+  background: url('assets/icons/icon-arrow-down-blue.svg') no-repeat center;
+  color: transparent;
+  fill: transparent;
+  height: 14px;
+  padding: 0;
+  position: absolute;
+  right: 26px;
+  top: 17px;
+  transform: rotate(-90deg);
+  width: 14px;
+}
+
+.flexCol--formContactUsCol :global(.vtex-input-prefix__group),
+.flexCol--formContactUsCol :global(.vtex-dropdown__container) {
+  border-radius: 50px;
+  height: 48px;
+}
+
+.flexCol--formContactUsCol :global(.vtex-dropdown__container) {
+  width: 386px;
+}
+
+.flexCol--formContactUsCol :global(.vtex-textarea__input) {
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+  height: 156px;
+  width: 386px !important;
+}
+
+.flexCol--formContactUsCol :global(.vtex-store-form-0-x-formSubmitContainer) {
+  margin-top: 20px;
+}
+
+.flexCol--formContactUsCol
+  :global(.vtex-store-form-0-x-formSubmitContainer)
+  :global(.vtex-button) {
+  background: #c55fa0;
+  border: none;
+  border-radius: 23px;
+  height: 45px;
+  width: 212px;
+}
+
+.flexCol--formContactUsCol
+  :global(.vtex-store-form-0-x-formSubmitContainer)
+  :global(.vtex-button__label) {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.flexCol--formContactUsCol :global(.vtex-dropdown__label) {
+  font-size: 0;
+}
+
+.flexCol--formContactUsCol :global(.vtex-input__label)::after,
+.flexCol--formContactUsCol :global(.vtex-dropdown__label)::after,
+.flexCol--formContactUsCol :global(.vtex-textarea__label)::after {
+  content: ':';
+  font-size: 13px;
+}
+
+.flexCol--formContactUsCol :global(.vtex-dropdown__label)::before {
+  content: 'Assunto';
+  font-size: 13px;
+}
+
+.flexColChild--formContactUsCol
+  :global(.vtex-styleguide-9-x-dropdown):first-child {
+  width: 100%;
+}

@@ -1,0 +1,158 @@
+{
+  "dynamic-menu": {
+    "props": {
+      "blockClass": ["dynamic-menu", "styled-menu"],
+      "maxItems": 0,
+      "fullWidth": true,
+      "banner": false,
+      "mobile": {
+        "header": {
+          "title": "MENU",
+          "items": [
+            {
+              "name": "Minha Conta",
+              "href": "/account",
+              "blockClass": "menu-account"
+            },
+            {
+              "name": "Home",
+              "href": "/",
+              "blockClass": "menu-home"
+            },
+            {
+              "name": "Ofertas com até 60% OFF",
+              "href": "/152?map=productClusterIds",
+              "blockClass": "menu-offers"
+            },
+            {
+              "name": "Na mídia",
+              "href": "/na-midia",
+              "blockClass": "menu-na-midia"
+            }
+          ]
+        },
+        "footer": {
+          "items": [
+            {
+              "name": "Ofertas",
+              "href": "/152?map=productClusterIds"
+            }
+          ]
+        }
+      },
+      "items": [
+        {
+          "name": "Home",
+          "href": "/"
+        },
+        {
+          "departamentId": 152,
+          "name": "Ofertas com até 60% OFF",
+          "href": "/152?map=productClusterIds",
+          "blockClass": "menu-offers"
+        },
+        {
+          "departamentId": 2,
+          "name": "Alimentação e Amamentação",
+          "href": "/alimentacao-e-amamentacao"
+        },
+        {
+          "departamentId": 4,
+          "name": "Banho e Higiene",
+          "href": "/banho-e-higiene"
+        },
+        {
+          "departamentId": 25,
+          "name": "Brinquedos",
+          "href": "/brinquedos"
+        },
+        /*{
+          "departamentId": 45,
+          "name": "Maternidade",
+          "href": "/maternidade"
+        },*/
+        {
+          "departamentId": 52,
+          "name": "Passeio",
+          "href": "/passeio"
+        },
+        {
+          "departamentId": 66,
+          "name": "Quarto do Bebê",
+          "href": "/quarto-do-bebe"
+        },
+        {
+          "departamentId": 78,
+          "name": "Chupetas e Mordedores",
+          "href": "/chupetas-e-mordedores/chupetas-prendedores-e-protetores/mordedores?initialMap=c&initialQuery=saude-e-bem-estar&map=category-1,category-2,category-2"
+        },
+
+        {
+          "name": "Marcas",
+          "submenuItems": [
+            {
+              "name": "Maxi Baby",
+              "href": "/Maxi-Baby"
+            },
+            {
+              "name": "Replay Kids",
+              "href": "/Replay-Kids"
+            },
+            {
+              "name": "Maxi Toys",
+              "href": "/maxi-toys"
+            },
+            {
+              "name": "Bepantol",
+              "href": "/Bepantol"
+            },
+            {
+              "name": "Lillo",
+              "href": "/Lillo"
+            },
+            {
+              "name": "Mam",
+              "href": "/mam"
+            },
+            {
+              "name": "Graco",
+              "href": "/Graco"
+            },
+            {
+              "name": "Medela",
+              "href": "/Medela"
+            },
+            {
+              "name": "Motorola",
+              "href": "/Motorola"
+            },
+            {
+              "name": "Multikids",
+              "href": "/Multikids"
+            },
+            {
+              "name": "Ergobaby",
+              "href": "/Ergobaby"
+            },
+            {
+              "name": "Nuk",
+              "href": "/Nuk"
+            },
+            {
+              "name": "Safety 1st",
+              "href": "/Safety-1st"
+            },
+            {
+              "name": "Voyage",
+              "href": "/Voyage"
+            }
+          ]
+        },
+        {
+          "name": "Na Mídia",
+          "href": "/na-midia"
+        }
+      ]
+    }
+  }
+}

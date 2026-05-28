@@ -1,0 +1,105 @@
+/* footer - containers */
+.flexRowContent--footerMainContainer,
+.flexRowContent--footerFlagsContainer {
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1252px;
+}
+
+/* footer */
+.flexRow--footerMainContainer {
+  background-color: #f6f6f7;
+  padding: 64px 0;
+}
+
+.flexRowContent--footerMainContainer {
+  padding: 0 76px;
+}
+
+.flexRow--socialMediaList .flexRowContent--socialMediaList {
+  display: flex;
+  height: 22.5px;
+  justify-content: space-between;
+  margin-top: 12px;
+  width: 81px !important;
+}
+
+@media only screen and (width <= 1024px) {
+  .flexRow--socialMediaList .flexRowContent--socialMediaList {
+    width: 123px !important;
+  }
+}
+
+.flexRow--footerFlagsContainer {
+  background: #f6f6f7;
+  border-top: 1px solid #e5e5e5;
+}
+
+.flexRowContent--footerFlagsContainer {
+  height: 73px;
+  padding: 0 10px;
+}
+
+.flexRowContent--footerCredits {
+  align-items: center;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.flexRow--footerPayments,
+.flexRow--footerSecurity {
+  align-items: center;
+  display: flex;
+}
+
+.flexRow--footerPayments .flexRowContent--footerPayments {
+  display: flex;
+  justify-content: space-between;
+  width: 299px !important;
+}
+
+/* footer mobile */
+.flexRow--footerMainMobileRow :global(.vtex-store-components-3-x-container) {
+  padding: 0;
+}
+
+.flexRowContent--footerMainMobileRow {
+  align-items: center;
+  background: #f6f6f7;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 65px 21px 40px;
+}
+
+.flexRowContent--socialMediaListMobile {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 123px;
+}
+
+.flexRowContent--socialMediaListMobile
+  :global(.vtex-rich-text-0-x-paragraph--socialMediaItem) {
+  height: auto;
+  margin: 7.5px 0 0;
+  width: auto;
+}
+
+.flexCol--footerSocialMediaMobile {
+  margin-top: 20px;
+}
+
+.flexRow--footerFlagsContainerMobile {
+  height: 205.5px;
+  padding: 40.5px 0 60px;
+}
+
+.flexRowContent--footerFlagsContainerMobile {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  height: auto;
+}

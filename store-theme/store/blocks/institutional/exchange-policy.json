@@ -1,0 +1,74 @@
+{
+  "store.custom#exchange-policy": {
+    "blocks": [
+      "responsive-layout.desktop#exchange-policy",
+      "responsive-layout.tablet#exchange-policy",
+      "responsive-layout.phone#exchange-policy"
+    ]
+  },
+
+  "responsive-layout.desktop#exchange-policy": {
+    "children": ["flex-layout.row#catalog-desktop-exchange-policy"]
+  },
+
+  "responsive-layout.tablet#exchange-policy": {
+    "children": [
+      "flex-layout.row#catalog-menu-mobile-exchange-policy",
+      "flex-layout.row#catalog-mobile-exchange-policy"
+    ]
+  },
+
+  "responsive-layout.phone#exchange-policy": {
+    "children": [
+      "flex-layout.row#catalog-menu-mobile-exchange-policy",
+      "flex-layout.row#catalog-mobile-exchange-policy"
+    ]
+  },
+  "flex-layout.row#catalog-desktop-exchange-policy": {
+    "children": [
+      "flex-layout.col#institutional-sidebar-desktop",
+      "flex-layout.col#content-catalog-exchange-policy"
+    ],
+    "props": {
+      "blockClass": "institutionalContainer"
+    }
+  },
+
+  "flex-layout.row#catalog-menu-mobile-exchange-policy": {
+    "children": ["flex-layout.col#institutional-sidebar-mobile"],
+    "props": {
+      "blockClass": "institutionalContainer"
+    }
+  },
+
+  "flex-layout.row#catalog-mobile-exchange-policy": {
+    "children": ["flex-layout.col#content-catalog-mobile-exchange-policy"],
+    "props": {
+      "blockClass": "institutionalContainer"
+    }
+  },
+
+  "flex-layout.col#content-catalog-mobile-exchange-policy": {
+    "children": ["rich-text#catalog-exchange-policy"],
+    "props": {
+      "blockClass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.col#content-catalog-exchange-policy": {
+    "children": ["rich-text#catalog-exchange-policy"],
+    "props": {
+      "blockClass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#catalog-exchange-policy": {
+    "title": "Conteúdo Catálogo",
+    "props": {
+      "text": "### **Política de Troca e Devoluções** \n Este documento estabelece os procedimentos de entrega, troca e devolução de produtos adquiridos no Portal Planeta do Bebê. Sua leitura é indispensável para que o visitante finalize um pedido e conheça as normas fixadas para aproveitar da melhor forma possível a facilidade oferecida através deste website.<br>\nEste documento é parte integrante dos Termos de Uso e Condições de Navegação do Planeta do Bebê e, caso haja conflito entre as disposições de ambos os documentos, deve prevalecer o que estiver estabelecido no mais específico.<br><br>\n**1 - Definições:**<br>\nPara fins deste Regulamento, aplicam-se as seguintes definições:<br><br>\n- **Área Restrita**: Seção do Portal que é acessada mediante o fornecimento de senha;\n- **Autenticação**: Ato de o visitante inserir seu nome de usuário e senha para ter acesso às áreas e funcionalidades restritas do Portal;\n- **Clientes**: Pessoas que efetuaram aquisição de produtos ou serviços oferecidos pelo Portal [www.planetadobebe.com.br](http://www.planetadobebe.com.br);\n- **Portal**: Designa o endereço eletrônico www.planetadobebe.com.br e seus subdomínios;\n- **Session** **ID**: Identificação da sessão do visitante, iniciada na sua autenticação com sucesso;\n- **Site**: Página de internet;\n- **Usuário**: Todo visitante autenticado no Portal [www.planetadobebe.com.br](http://www.planetadobebe.com.br);\n- **Visitante**: Qualquer pessoa que navegar pelo Portal [www.planetadobebe.com.br](http://www.planetadobebe.com.br).<br><br><br>\n**2 - Entrega dos Produtos Adquiridos:**<br>\n**2.1.** A entrega dos pedidos pela Planeta do Bebê aos seus clientes é realizada por empresas transportadoras ou Correios, dependendo do local de entrega indicado pelo **Usuário**.<br>\n**2.2.** O preço do frete será calculado no momento de fechamento do pedido de acordo com as regras de cobrança utilizadas pela empresa transportadora.<br>\n**2.3.** Os prazos para entrega também são determinados pela transportadora, e a Planeta do Bebê não possui interferência no transporte dos produtos, bem como, alteração dos prazos informados, quando da finalização do pedido.<br>\n**2.3.1.** Os pedidos possuem um código de rastreio, que, em sua maioria, será informado no e-mail de liberação do pedido e podem ser visualizados através do link 'Meus Pedidos'.<br>\n**2.3.2.** Os endereços de destino que tenham como trechos vias fluviais ou de difícil acesso, podem demorar tempo extra para serem entregues, podendo ainda ficarem disponíveis para retirada pelo cliente na sede do transportador ou dos Correios da localidade da entrega.<br>\n**2.3.3.** O Planeta do Bebê irá sempre aplicar os seus melhores esforços para cumprir com as entregas, mas, por utilizar serviços de terceiros e pela possibilidade de ocorrerem fatos alheios à nossa vontade, casos fortuitos ou força maior, pode haver atrasos na entrega. Nesses casos, iremos informá-lo para melhor condução da situação.<br>\n**2.4.** Para o recebimento dos pedidos é necessário que uma pessoa, maior de idade, esteja no local da entrega para assinar o protocolo de entrega da mercadoria, se a entrega for sem agendamento, ocorrerá nos horários de atividade da empresa transportadora ou dos Correios quando for o caso.<br>\n**2.4.1.** Os horários de entrega das transportadoras e Correios podem variar das 8h (oito horas) às 18h (dezoito horas) nos dias úteis, em alguns casos fora do horário padrão ou finais de semana.<br>\n**2.4.2.** A transportadora efetuará 3 (três) tentativas de entrega e no caso de serem todas mal sucedidas, o pedido será devolvido para a Planeta do Bebê. Para nova entrega, o cliente será comunicado e em havendo nova solicitação de envio o prazo inicial será alterado, gerando uma nova data de acordo com a localidade da entrega, podendo o frete ser re-calculado. Para o reenvio o cliente terá que manifestar o seu de acordo com o novo prazo de recebimento e eventual cobrança de frete. Se o cliente desistir da compra, haverá estorno integral dos valores.<br><br>\n**2.5.** A entrega do produto deve ser recusada sempre que se constatar as seguintes situações:<br><br>\n- Embalagem aberta, violada ou avariada;\n- Produto avariado;\n- Produto em desacordo com o pedido;\n- Falta de acessórios.<br><br><br>\n**3 - Troca de Produtos:**<br>\n**3.1.** O Planeta do Bebê realizará a troca dos produtos adquiridos por seus clientes, desde que seja constatado algum vício ou defeito e o produto não tenha sido utilizado em até 30 dias da data do recebimento, devendo o cliente obrigatoriamente, comunicar a Central de Atendimento, através dos canais disponíveis em nosso site e seguir as instruções recebidas para que o pedido de troca seja analisado e processado. Havendo necessidade, poderá(ão) ser solicitada(s) a(s) imagem(ns) do produto para avaliar o seu estado.<br>\n**3.1.1.** O consumidor terá, nos casos de vício ou defeito após a utilização do produto, o prazo de até 30 dias a contar da data do recebimento para requerer o reparo ou a troca diretamente pelo Planeta do Bebê e após este prazo, terá mais 60 dias para requerer o reparo ou troca através do fabricante/importador do produto, completando o prazo legal de 90  dias, salvo se houver garantia maior fornecida pelo fabricante/importador do produto.<br>\n**3.2.** Será procedimento padrão a análise das solicitações de reparo ou troca pelo Planeta do Bebê antes de serem aprovadas, em razão das condições a serem obedecidas, como: a constatação do vício/defeito e o estado de conservação dos produtos. Se não for constatado qualquer defeito ou se for descumprida qualquer das condições descritas, o produto será reenviado ao cliente.<br>\n**3.3.** Sempre que um cliente desejar, poderá entrar em contato com o Planeta do Bebê  e manifestar seu interesse em trocar seu produto, comunicando suas razões. O caso será analisado e o cliente será comunicado de seu desfecho e dos procedimentos seguintes, se necessário.<br>\n**3.3.1.** O Planeta do Bebê poderá realizar a troca de algum produto ou brinde, que não apresente qualquer defeito ou vício, por mera liberalidade, quando este produto ou brinde não preencher os requisitos necessários indicados nos itens 3.1, 3.1.1 e 3.2 acima. Esta troca será tratada como uma exceção, não constituindo uma nova obrigação ou costume para aplicações em casos parecidos ou similares.<br>\n**3.4.** Os produtos adquiridos na loja virtual poderão ser trocados através das lojas físicas. Para efetuar esse procedimento com sucesso, o cliente deverá seguir as seguintes condições: Produto com embalagem original, onde consta selo de identificação do Planeta do Bebê com a data da venda, código e referência. A loja efetuará a troca mediante estoque e comercialização do item em sua linha de produtos.<br>\n**3.4.1.** Os Produtos “Vendidos e Entregues pelo Planeta do Bebê” adquiridos na loja virtual poderão ser trocados em lojas físicas, exceto produtos que são de comercialização exclusiva do site. A loja efetuará a troca mediante estoque e comercialização do item em sua linha de produtos.<br>\n**3.4.2.** Os Produtos “Vendidos e Entregues por parceiros de Marketplace” somente poderão ser trocados via central de atendimento. Não sendo possível trocá-los em nossas lojas físicas.<br>\n**3.5.** Os produtos adquiridos no evento Black Friday, não poderão ser trocados, com exceção de produtos que apresentarem defeitos de fabricação, sendo a troca efetuada pelo mesmo produto adquirido, quando disponível. Em caso de defeito de fabricação contate nossa central de atendimento, através dos canais disponíveis em nosso site, para maiores informações sobre este procedimento de troca.<br>\n**3.6.** Os produtos adquiridos em eventos promocionais e/ou específicos, como campanhas, não poderão ser trocados, com exceção de produtos que apresentarem defeitos de fabricação sendo a troca efetuada pelo mesmo produto adquirido, quando disponível. Em caso de defeito de fabricação contate nossa central de atendimento para maiores informações sobre este procedimento de troca.<br>\n**3.7.** Troca de Produtos Têxteis – que não sejam exclusivos do site, podem ser efetuadas diretamente nas lojas físicas ou on-line.<br>\n**3.8.** Os produtos adquiridos no site, com a opção de 'Entrega Expressa' são enviados de um Centro de Distribuição regional. Em caso de troca, por qualquer motivo, o produto será coletado e o cancelamento, efetuado. Uma vez coletado e retornado ao Centro de Distribuição Regional, o estorno será efetuado e uma nova compra poderá ser feita, à critério do cliente.<br>\nEmbora a Central de Atendimento não realize troca de produtos de “Entrega Expressa”, o processo pode ser realizado em qualquer uma de nossas lojas físicas, apresentando o produto em embalagem original e a nota fiscal da compra.<br>\n**4 - Devolução de Produtos:**<br>\n**4.1.** Caso o cliente deseje devolver um produto adquirido pela loja virtual, independentemente do motivo ou causa (arrependimento da compra), poderá fazê-lo no prazo de 7 dias a contar de seu recebimento, devendo comunicar seu interesse dentro do prazo legal, entrando em contato com a Central de Atendimento, através dos canais disponíveis em nosso site e aguardar as instruções de procedimento.<br>\n**4.1.1.** É indispensável para análise do pedido de devolução, o envio do(s) produto(s) com a nota fiscal respectiva, ou DANFE, sob pena de paralisação do procedimento até o recebimento pelo Planeta do Bebê. O produto deverá ser enviado em sua embalagem original acompanhado de todos os manuais e acessórios, sendo estes, partes integrantes do produto e portanto indispensáveis. Havendo necessidade, poderá ser solicitado imagens do produto para avaliar o seu estado.<br>\n**4.1.2.** O pedido de desistência passará por uma avaliação, para verificar se houve o atendimento dos requisitos acima e se tal produto não foi utilizado ou danificado, mesmo que parcialmente. Caso alguma destas situações tenha ocorrido, a devolução não será aceita.<br>\n**4.1.3.** O Planeta do Bebê terá o prazo de até 15 (dez) dias úteis, após a confirmação de recebimento do(s) produtos(s) em seu Centro de Distribuição, para analisar o pedido de devolução e, ocorrendo o preenchimento dos requisitos acima, a compra será cancelada e os valores pagos serão restituídos ao cliente, na mesma modalidade em que foi efetuado o pagamento.<br>\n**4.1.4.** Caso o cliente tenha realizado o pagamento via boleto bancário, deverá indicar uma conta de sua titularidade para restituição dos valores pagos, não sendo permitido o depósito em favor de terceiros.<br>\n**4.2.** O Planeta do Bebê poderá, por mera liberalidade, aceitar a devolução do(s) produto(s), mesmo entendendo que tal(is) produto(s) não preencha os requisitos necessários indicados nos itens 4.1.1 e 4.1.2 acima. Esta devolução será tratada como uma exceção, não constituindo em uma nova obrigação ou costume para aplicações em casos parecidos ou similares.<br><br>\n**5 - Atendimento ao cliente:**<br>\n**5.1.** O Planeta do Bebê disponibiliza para seus visitantes e clientes canais de comunicação com a Central de Atendimento através da área de contato no rodapé de todas as páginas e botão de acesso rápido para o whatsapp na lateral inferior direita. O horário de atendimento é de Segunda à Sexta das 8h às 18h, exceto feriados.",
+      "blockClass": "contentInstitutional"
+    }
+  }
+}

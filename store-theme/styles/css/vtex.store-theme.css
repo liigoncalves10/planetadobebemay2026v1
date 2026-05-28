@@ -1,0 +1,66 @@
+/* ARQUIVO: vtex.store-theme.css */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=optional');
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('assets/helvetica.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: optional;
+}
+
+/* Regra Global para forçar a cor do desconto em qualquer lugar */
+:global(.vtex-product-price-1-x-savingsPercentage),
+:global(.vtex-product-price-1-x-savingsPercentage--summaryPercentage),
+:global(.vtex-product-price-2-x-savingsPercentage),
+:global(.vtex-product-price-2-x-savingsPercentage--summaryPercentage) {
+    color: #ffffff !important;            /* Texto Branco */
+    background-color: #ff0000 !important; /* Fundo Vermelho */
+    font-family: 'Fredoka', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    padding: 4px 8px !important;
+    border-radius: 8px !important;
+
+    /* Garante visibilidade */
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    text-shadow: none !important;
+    margin: 5px 0 !important;
+    z-index: 999;
+}
+
+/* 🔹 Padronização global de sessões (Mobile) */
+@media screen and (max-width: 1024px) {
+    /* Espaçamento entre seções */
+    :global(.vtex-store-components-3-x-container),
+    :global(.vtex-flex-layout-0-x-flexRow--unified-cards-row),
+    :global(.vtex-flex-layout-0-x-flexRow--main-shelf-row),
+    :global(.vtex-flex-layout-0-x-flexRow--main-cards-row-1-container),
+    :global(.vtex-flex-layout-0-x-flexRow--two-products-row) {
+        margin-top: 35px !important;
+        margin-bottom: 0 !important;
+    }
+
+    /* Padronização de títulos mobile (Rich Text) */
+    :global(.vtex-rich-text-0-x-container) :global(.vtex-rich-text-0-x-heading),
+    :global(.vtex-rich-text-0-x-container) :global(.vtex-rich-text-0-x-headingLevel2),
+    :global(.vtex-rich-text-0-x-container) :global(.vtex-rich-text-0-x-headingLevel3) {
+        color: #696969;
+        font-size: 26px;
+        font-weight: 900;
+        margin: 0 0 15px 0;
+        line-height: 1.2;
+        text-align: center;
+        font-family: 'Fredoka', sans-serif;
+    }
+
+    /* Garantir que containers não tenham margens laterais negativas que causem overflow */
+    :global(.vtex-store-components-3-x-container) {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        overflow-x: hidden !important;
+    }
+}
+

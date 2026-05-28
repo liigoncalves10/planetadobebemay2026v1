@@ -1,0 +1,13 @@
+.stackItem--product {
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .stackItem--product {
+    margin: 0 !important;
+  }
+}
+
+.stackItem--quickview {
+  background-color: violet;
+}

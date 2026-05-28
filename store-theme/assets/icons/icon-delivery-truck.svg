@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="14.409" viewBox="0 0 30 14.409">
+  <g id="icon-delivery-truck" transform="translate(0 -133.043)">
+    <g id="Grupo_5234" data-name="Grupo 5234" transform="translate(3.142 133.043)">
+      <g id="Grupo_5233" data-name="Grupo 5233" transform="translate(0 0)">
+        <path id="Caminho_8797" data-name="Caminho 8797" d="M80.329,140.271l-3.48-3.973a.6.6,0,0,0-.45-.2H73.5v-2.453a.6.6,0,0,0-.6-.6H60.562a.6.6,0,0,0-.6.6v.806H54.217a.6.6,0,1,0,0,1.2h5.748v7.747H56.5a.6.6,0,1,0,0,1.2h3.46v.607a.6.6,0,0,0,.6.6h1.247a2.26,2.26,0,0,0,4.36,0h7.974a2.26,2.26,0,0,0,4.36,0H79.88a.6.6,0,0,0,.6-.6v-4.527A.6.6,0,0,0,80.329,140.271Zm-16.34,5.986a1.065,1.065,0,1,1,1.065-1.065A1.067,1.067,0,0,1,63.989,146.257Zm2.18-1.663a2.26,2.26,0,0,0-4.36,0h-.65V134.238H72.307v10.356Zm10.154,1.663a1.065,1.065,0,1,1,1.065-1.065A1.067,1.067,0,0,1,76.323,146.257Zm2.959-1.663H78.5a2.26,2.26,0,0,0-4.36,0H73.5v-7.3h2.627l3.153,3.6v3.7Z" transform="translate(-53.619 -133.043)" fill="#c55fa0"/>
+      </g>
+    </g>
+    <g id="Grupo_5236" data-name="Grupo 5236" transform="translate(3.142 143.389)">
+      <g id="Grupo_5235" data-name="Grupo 5235" transform="translate(0 0)">
+        <path id="Caminho_8798" data-name="Caminho 8798" d="M54.536,309.611h-.319a.6.6,0,1,0,0,1.2h.319a.6.6,0,1,0,0-1.2Z" transform="translate(-53.62 -309.611)" fill="#c55fa0"/>
+      </g>
+    </g>
+    <g id="Grupo_5238" data-name="Grupo 5238" transform="translate(0 138.857)">
+      <g id="Grupo_5237" data-name="Grupo 5237" transform="translate(0 0)">
+        <path id="Caminho_8799" data-name="Caminho 8799" d="M7,232.276H.6a.6.6,0,1,0,0,1.2H7a.6.6,0,1,0,0-1.2Z" transform="translate(0 -232.276)" fill="#c55fa0"/>
+      </g>
+    </g>
+  </g>
+</svg>

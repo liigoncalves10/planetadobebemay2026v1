@@ -1,0 +1,6 @@
+{
+  "tageamento": {
+    "component": "Tageamento",
+    "render": "server"
+  }
+}

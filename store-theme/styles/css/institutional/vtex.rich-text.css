@@ -1,0 +1,176 @@
+.paragraph--sidebarMenuTitle {
+  color: #c55fa0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  margin: 0 0 10px;
+}
+
+.headingLevel3--contentInstitutional {
+  color: #696969;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 54px;
+  margin: 0 0 46px;
+  text-transform: lowercase;
+}
+
+.heading--contentInstitutional .strong--contentInstitutional::after {
+  background: #c55fa0;
+  border-radius: 8px;
+  content: '';
+  display: block;
+  height: 6px;
+  width: 40px;
+  font-weight: 500;
+}
+
+.paragraph--linkList {
+  margin-top: 0;
+}
+
+.paragraph--linkList .strong--linkList {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 22px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.container-list-manual {
+  display: flex;
+  flex-flow: column wrap;
+  margin-bottom: 24px;
+  max-height: 646px;
+  width: calc(100% + 230px);
+}
+
+.container-list-manual .link--linkList {
+  align-items: center;
+  color: #c55fa0;
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  height: 24px;
+  line-height: 19px;
+  margin: 10px 200px 10px 0;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.container-list-manual .link--linkList:hover {
+  text-decoration: underline;
+}
+
+.container-list-manual .link--linkList::before {
+  background-size: contain;
+  content: '';
+  display: flex;
+  height: 24px;
+  margin-right: 7px;
+  transition: 0.3s ease-in-out;
+  width: 18px;
+}
+
+.paragraph--titleCard {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 15px;
+  margin: 0;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.paragraph--infoCardContact,
+.link--infoCardContact,
+.link--infoCardContact:visited {
+  color: #25282a;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 15px;
+  margin-top: 10px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.wrapper--successContactUs .paragraph {
+  color: #c55fa0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.alphabeticalList,
+.paragraph--contentInstitutional,
+.listItem--contentInstitutional {
+  color: #4d4d4d;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  line-height: 18px;
+  margin-bottom: 18px;
+  margin-top: 0;
+  text-align: justify;
+}
+
+.alphabeticalList,
+.list--contentInstitutional,
+.listItem--contentInstitutional,
+.paragraph--contentInstitutional {
+  margin: 0;
+}
+
+.list--contentInstitutional {
+  padding-left: 36px;
+}
+
+.alphabeticalList,
+.dashedList {
+  padding-left: 47px;
+}
+
+.listItem--contentInstitutional {
+  padding-left: 10px;
+}
+
+.list--fretes {
+  list-style: square inside
+    url('data:image/gif;base64,R0lGODlhBQAKAIABAAAAAP///yH5BAEAAAEALAAAAAAFAAoAAAIIjI+ZwKwPUQEAOw==');
+}
+
+@media only screen and (width <= 1024px) {
+  .wrapper--contentInstitutional {
+    margin-bottom: 12px;
+  }
+}
+
+@media (width <= 900px) {
+  .container--institutional-breadcrumb {
+    padding-left: 21px;
+  }
+}
+
+@media (width <= 768px) {
+  .container-list-manual .link--linkList {
+    margin-right: 60px;
+  }
+}
+
+@media (width <= 600px) {
+  .container-list-manual {
+    max-height: none;
+    width: 100%;
+  }
+
+  .container-list-manual .link--linkList {
+    margin-right: 0;
+  }
+}
+
+@media (max-widhth: 400px) {
+  .headingLevel3--contentInstitutional {
+    font-size: 22px;
+  }
+}

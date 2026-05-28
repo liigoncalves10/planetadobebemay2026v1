@@ -1,0 +1,866 @@
+{
+  "store.home": {
+    "blocks": [
+      "modalpromocao",
+      "list-context.image-list#banner-home-v12",
+      "tageamento",
+      "__fold__.experimentalLazyAssets",
+      //"rich-text#main-cards-title",
+      "benefitstrip",
+      "rich-text#shelf-title-2",
+      "flex-layout.row#main-shelf-chegar",
+      "flex-layout.row#home-launch-section",
+      "rich-text#unified-cards-title",
+      "responsive-layout.desktop#unified-cards-desktop",
+      "responsive-layout.mobile#unified-cards-mobile",
+      "flex-layout.row#shelf-categories",
+      "rich-text#shelf-title-1",
+      "flex-layout.row#main-shelf-queridinhos",
+      "rich-text#exclusive-brands-title",
+      "responsive-layout.desktop#main-cards-desktop",
+      "responsive-layout.mobile#main-cards-mobile",
+      "list-context.image-list#brands-shelf",
+      "rich-text#seo-title",
+      "feedig",
+      "flex-layout.row#naMidia__grid-cards-slider",
+      "testimonials"
+    ]
+  },
+  /* --- BANNER PRINCIPAL (CONFIGURAÇÃO NOVA v12) --- */
+  "list-context.image-list#banner-home-v12": {
+    "children": ["slider-layout#banner-home-v12"],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "https://via.placeholder.com/1400x500/CCCCCC/969696?text=BANNER+NOVO+V12+(CONFIGURE+NO+CMS)",
+          "mobileImage": "https://via.placeholder.com/600x400/CCCCCC/969696?text=BANNER+MOBILE+V12",
+          "description": "Configure este banner no Site Editor",
+          "alt": "Banner principal da loja",
+          "fetchpriority": "high",
+          "preload": true,
+          "loading": "eager"
+        }
+      ]
+    }
+  },
+  "slider-layout#banner-home-v12": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "blockClass": "carousel",
+      "autoplay": {
+        "timeout": 7000,
+        "stopOnHover": true
+      }
+    }
+  },
+  /* --- CARROSSEL DE MARCAS --- */
+  "list-context.image-list#brands-shelf": {
+    "children": ["slider-layout#brands-shelf-slider"],
+    "props": {
+      "blockClass": "brands-shelf",
+      "height": 75,
+      "images": [
+        {
+          "image": "/arquivos/brand-disney.png",
+          "mobileImage": "/arquivos/brand-disney.png",
+          "alt": "Brand Disney"
+        },
+        {
+          "image": "/arquivos/brand-fisher.png",
+          "mobileImage": "/arquivos/brand-fisher.png",
+          "alt": "Brand Fisher"
+        },
+        {
+          "image": "/arquivos/brand-jhonson.png",
+          "mobileImage": "/arquivos/brand-jhonson.png",
+          "alt": "Brand Jhonson"
+        },
+        {
+          "image": "/arquivos/brand-lilo.png",
+          "mobileImage": "/arquivos/brand-lilo.png",
+          "alt": "Brand Lilo"
+        },
+        {
+          "image": "/arquivos/brand-multilaser.png",
+          "mobileImage": "/arquivos/brand-multilaser.png",
+          "alt": "Brand Multilaser"
+        },
+        {
+          "image": "/arquivos/brand-nuk.png",
+          "mobileImage": "/arquivos/brand-nuk.png",
+          "alt": "Brand Nuk"
+        },
+        {
+          "image": "/arquivos/brand-pampers.png",
+          "mobileImage": "/arquivos/brand-pampers.png",
+          "alt": "Brand Pampers"
+        },
+        {
+          "image": "/arquivos/brand-philips.png",
+          "mobileImage": "/arquivos/brand-philips.png",
+          "alt": "Brand Philips"
+        },
+        {
+          "image": "/arquivos/brand-tommee.png",
+          "mobileImage": "/arquivos/brand-tommee.png",
+          "alt": "Brand Tommee"
+        },
+        {
+          "image": "/arquivos/brand-tutti.png",
+          "mobileImage": "/arquivos/brand-tutti.png",
+          "alt": "Brand Tutti"
+        }
+      ]
+    }
+  },
+  "slider-layout#brands-shelf-slider": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 10,
+        "tablet": 5,
+        "phone": 3
+      },
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "disabled",
+        "phone": "center"
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "mobileOnly",
+      "blockClass": "brands-shelf-slider"
+    }
+  },
+  /* --- Main cards home --- */
+  "rich-text#main-cards-title": {
+    "props": {
+      "blockClass": "main-cards-title",
+      "text": "## Tudo para o seu bebê.",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#exclusive-brands-title": {
+    "props": {
+      "text": "Navegue por marcas exclusivas",
+      "textAlignment": "LEFT",
+      "blockClass": "shelf-title"
+    }
+  },
+  "responsive-layout.desktop#main-cards-desktop": {
+    "children": [
+      "flex-layout.row#main-cards-row-1",
+      "flex-layout.row#main-cards-row-2"
+    ]
+  },
+  "responsive-layout.mobile#main-cards-mobile": {
+    "children": [
+      "slider-layout#main-cards-carousel"
+    ]
+  },
+  "slider-layout#main-cards-carousel": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "always",
+      "blockClass": "main-cards-carousel"
+    },
+    "children": [
+      "image#main-cards-row-1-card-1-content",
+      "image#main-cards-row-1-card-2-content",
+      "image#main-cards-row-2-card-1-content",
+      "image#main-cards-row-2-card-2-content",
+      "image#main-cards-row-2-card-3-content"
+    ]
+  },
+  "flex-layout.row#main-cards-row-1": {
+    "props": {
+      "blockClass": "main-cards-row-1-container",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#main-cards-row-1-card-1",
+      "flex-layout.col#main-cards-row-1-card-2"
+    ]
+  },
+  "flex-layout.col#main-cards-row-1-card-1": {
+    "props": {
+      "blockClass": ["main-cards-row-1-cards", "main-cards-row-1-card-1"],
+      "preventHorizontalStretch": true,
+      "width": "50%"
+    },
+    "children": ["image#main-cards-row-1-card-1-content"]
+  },
+  "image#main-cards-row-1-card-1-content": {
+    "props": {
+      "blockClass": "banner-images",
+      "src": "/arquivos/minibanner-higiene-do-bebe.png",
+      "link": {
+        "url": "/banho-e-higiene"
+      },
+      "minHeight": "100px",
+      "alt": "Banner de produtos de higiene para bebê"
+    }
+  },
+  "flex-layout.col#main-cards-row-1-card-2": {
+    "props": {
+      "blockClass": ["main-cards-row-1-cards", "main-cards-row-1-card-2"],
+      "width": "50%"
+    },
+    "children": ["image#main-cards-row-1-card-2-content"]
+  },
+  "image#main-cards-row-1-card-2-content": {
+    "props": {
+      "blockClass": "banner-images",
+      "src": "/arquivos/minibanner-brinquedos.png",
+      "link": {
+        "url": "/brinquedos"
+      },
+      "minHeight": "100px",
+      "alt": "Banner de brinquedos para bebê"
+    }
+  },
+  "flex-layout.row#main-cards-row-2": {
+    "props": {
+      "blockClass": "main-cards-row-2-container",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#main-cards-row-2-card-1",
+      "flex-layout.col#main-cards-row-2-card-2",
+      "flex-layout.col#main-cards-row-2-card-3"
+    ]
+  },
+  "flex-layout.col#main-cards-row-2-card-1": {
+    "props": {
+      "blockClass": ["main-cards-row-2-cards", "main-cards-row-2-card-1"],
+      "preventHorizontalStretch": true,
+      "width": "50%"
+    },
+    "children": ["image#main-cards-row-2-card-1-content"]
+  },
+  "image#main-cards-row-2-card-1-content": {
+    "props": {
+      "blockClass": "banner-images",
+      "src": "/arquivos/minibanner-acessorios.png",
+      "link": {
+        "url": "/alimentacao-e-amamentacao"
+      },
+      "minHeight": "100px",
+      "alt": "Banner de acessórios para bebê"
+    }
+  },
+  "flex-layout.col#main-cards-row-2-card-2": {
+    "props": {
+      "blockClass": ["main-cards-row-2-cards", "main-cards-row-2-card-2"]
+    },
+    "children": ["image#main-cards-row-2-card-2-content"]
+  },
+  "image#main-cards-row-2-card-2-content": {
+    "props": {
+      "blockClass": "banner-images",
+      "src": "/arquivos/minibanner-equipamentos.png",
+      "link": {
+        "url": "/quarto-do-bebe"
+      },
+      "minHeight": "100px",
+      "alt": "Banner de equipamentos para o quarto do bebê"
+    }
+  },
+  "flex-layout.col#main-cards-row-2-card-3": {
+    "props": {
+      "blockClass": ["main-cards-row-2-cards", "main-cards-row-2-card-3"]
+    },
+    "children": ["image#main-cards-row-2-card-3-content"]
+  },
+  "image#main-cards-row-2-card-3-content": {
+    "props": {
+      "blockClass": "banner-images",
+      "src": "/arquivos/minibanner-seguranca.png",
+      "link": {
+        "url": "/quarto-do-bebe/babas-eletronicas"
+      },
+      "minHeight": "100px",
+      "alt": "Banner de produtos de segurança para bebê"
+    }
+  },
+  /* --- Categorias / Slider --- */
+  "flex-layout.row#shelf-categories": {
+    "props": {
+      "blockClass": "shelf-categories"
+    },
+    "children": ["slider-layout#shelf-categories-slider"]
+  },
+  "slider-layout#shelf-categories-slider": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "mobileOnly",
+      "blockClass": "shelf-categories-slider"
+    },
+    "children": [
+      "flex-layout.row#categories-item-1",
+      "flex-layout.row#categories-item-2",
+      "flex-layout.row#categories-item-3",
+      "flex-layout.row#categories-item-4",
+      "flex-layout.row#categories-item-5",
+      "flex-layout.row#categories-item-6"
+    ]
+  },
+  "flex-layout.row#categories-item-1": {
+    "props": {
+      "blockClass": ["shelf-categories-items", "shelf-categories-item-1"]
+    },
+    "children": [
+      "image#categories-item-1-image",
+      "rich-text#categories-item-1-text"
+    ]
+  },
+  "rich-text#categories-item-1-text": {
+    "props": {
+      "blockClass": ["categories-items-text", "categories-item-1-text"],
+      "text": "[Carrinhos](https://help.vtex.com/en/faq/what-is-vtex-io)"
+    }
+  },
+  "image#categories-item-1-image": {
+    "props": {
+      "blockClass": "categories-items-image",
+      "src": "/arquivos/minibanner-carrinhos.png",
+      "link": {
+        "url": "/passeio/carrinhos-de-passeio-e-acessorios"
+      },
+      "width": "176px",
+      "height": "176px",
+      "alt": "Categoria de carrinhos de bebê"
+    }
+  },
+  "flex-layout.row#categories-item-2": {
+    "props": {
+      "blockClass": ["shelf-categories-items", "shelf-categories-item-2"]
+    },
+    "children": [
+      "image#categories-item-2-image",
+      "rich-text#categories-item-2-text"
+    ]
+  },
+  "rich-text#categories-item-2-text": {
+    "props": {
+      "blockClass": ["categories-items-text", "categories-item-2-text"],
+      "text": "[Roupas](https://help.vtex.com/en/faq/what-is-vtex-io)"
+    }
+  },
+  "image#categories-item-2-image": {
+    "props": {
+      "blockClass": "categories-items-image",
+      "src": "/arquivos/minibanner-roupas.png",
+      "link": {
+        "url": "/roupas"
+      },
+      "width": "176px",
+      "height": "176px",
+      "alt": "Categoria de roupas para bebê"
+    }
+  },
+  "flex-layout.row#categories-item-3": {
+    "props": {
+      "blockClass": ["shelf-categories-items", "shelf-categories-item-3"]
+    },
+    "children": [
+      "image#categories-item-3-image",
+      "rich-text#categories-item-3-text"
+    ]
+  },
+  "rich-text#categories-item-3-text": {
+    "props": {
+      "blockClass": ["categories-items-text", "categories-item-3-text"],
+      "text": "[Cadeirinhas Para Carro](https://help.vtex.com/en/faq/what-is-vtex-io)"
+    }
+  },
+  "image#categories-item-3-image": {
+    "props": {
+      "blockClass": "categories-items-image",
+      "src": "/arquivos/minibanner-cadeirinhas.png",
+      "link": {
+        "url": "/cadeiras-de-carro"
+      },
+      "width": "176px",
+      "height": "176px",
+      "alt": "Categoria de cadeirinhas para carro"
+    }
+  },
+  "flex-layout.row#categories-item-4": {
+    "props": {
+      "blockClass": ["shelf-categories-items", "shelf-categories-item-4"]
+    },
+    "children": [
+      "image#categories-item-4-image",
+      "rich-text#categories-item-4-text"
+    ]
+  },
+  "rich-text#categories-item-4-text": {
+    "props": {
+      "blockClass": ["categories-items-text", "categories-item-4-text"],
+      "text": "[Mamadeiras](https://help.vtex.com/en/faq/what-is-vtex-io)"
+    }
+  },
+  "image#categories-item-4-image": {
+    "props": {
+      "blockClass": "categories-items-image",
+      "src": "/arquivos/minibanner-mamadeiras.png",
+      "link": {
+        "url": "/mamadeiras-e-acessorios"
+      },
+      "width": "176px",
+      "height": "176px",
+      "alt": "Categoria de mamadeiras"
+    }
+  },
+  "flex-layout.row#categories-item-5": {
+    "props": {
+      "blockClass": ["shelf-categories-items", "shelf-categories-item-5"]
+    },
+    "children": [
+      "image#categories-item-5-image",
+      "rich-text#categories-item-5-text"
+    ]
+  },
+  "rich-text#categories-item-5-text": {
+    "props": {
+      "blockClass": ["categories-items-text", "categories-item-5-text"],
+      "text": "[Higiene do Bebê](https://help.vtex.com/en/faq/what-is-vtex-io)"
+    }
+  },
+  "image#categories-item-5-image": {
+    "props": {
+      "blockClass": "categories-items-image",
+      "src": "/arquivos/minibanner-higiene.png",
+      "link": {
+        "url": "/banho-e-higiene"
+      },
+      "width": "176px",
+      "height": "176px",
+      "alt": "Categoria de higiene para bebê"
+    }
+  },
+  "flex-layout.row#categories-item-6": {
+    "props": {
+      "blockClass": ["shelf-categories-items", "shelf-categories-item-6"]
+    },
+    "children": [
+      "image#categories-item-6-image",
+      "rich-text#categories-item-6-text"
+    ]
+  },
+  "rich-text#categories-item-6-text": {
+    "props": {
+      "blockClass": ["categories-items-text", "categories-item-6-text"],
+      "text": "[Chupetas e Mordedores](https://help.vtex.com/en/faq/what-is-vtex-io)"
+    }
+  },
+  "image#categories-item-6-image": {
+    "props": {
+      "blockClass": "categories-items-image",
+      "src": "/arquivos/minibanner-chupetas.png",
+      "link": {
+        "url": "/chupetas-prendedores-e-protetores"
+      },
+      "width": "176px",
+      "height": "176px",
+      "alt": "Categoria de chupetas e mordedores"
+    }
+  },
+  "rich-text#unified-cards-title": {
+    "props": {
+      "blockClass": "unified-cards-title",
+      "text": "## Navegue por categorias",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "responsive-layout.desktop#unified-cards-desktop": {
+    "children": [
+      "flex-layout.row#unified-cards-grid"
+    ]
+  },
+  "responsive-layout.mobile#unified-cards-mobile": {
+    "children": [
+      "slider-layout#unified-cards-mobile"
+    ]
+  },
+  "flex-layout.row#unified-cards-grid": {
+    "props": {
+      "blockClass": "unified-cards-grid",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": false
+    },
+    "children": [
+      "flex-layout.col#unified-cards-col-1",
+      "flex-layout.col#unified-cards-col-2",
+      "flex-layout.col#unified-cards-col-3"
+    ]
+  },
+  "flex-layout.col#unified-cards-col-1": {
+    "props": {
+      "blockClass": "unified-cards-col",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "image#two-cards-1-content",
+      "image#banner-home-0-left"
+    ]
+  },
+  "flex-layout.col#unified-cards-col-2": {
+    "props": {
+      "blockClass": "unified-cards-col",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "image#two-cards-2-content",
+      "image#banner-home-0-right"
+    ]
+  },
+  "flex-layout.col#unified-cards-col-3": {
+    "props": {
+      "blockClass": "unified-cards-col",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "image#two-cards-3-content",
+      "image#banner-home-0-extra"
+    ]
+  },
+  "slider-layout#unified-cards-mobile": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "mobileOnly",
+      "blockClass": "unified-cards-slider"
+    },
+    "children": [
+      "image#two-cards-1-content",
+      "image#two-cards-2-content",
+      "image#two-cards-3-content",
+      "image#banner-home-0-left",
+      "image#banner-home-0-right",
+      "image#banner-home-0-extra"
+    ]
+  },
+  "image#banner-home-0-left": {
+    "props": {
+      "src": "https://via.placeholder.com/800x400/CCCCCC/969696?text=BANNER+ESQUERDA",
+      "link": { "url": "#" },
+      "blockClass": "unified-card-image",
+      "height": "280px",
+      "alt": "Banner esquerdo"
+    }
+  },
+  "image#banner-home-0-right": {
+    "props": {
+      "src": "https://via.placeholder.com/800x400/CCCCCC/969696?text=BANNER+DIREITA",
+      "link": { "url": "#" },
+      "blockClass": "unified-card-image",
+      "height": "280px",
+      "alt": "Banner direito"
+    }
+  },
+  "image#banner-home-0-extra": {
+    "props": {
+      "src": "https://via.placeholder.com/800x400/CCCCCC/969696?text=BANNER+EXTRA",
+      "link": { "url": "#" },
+      "blockClass": "unified-card-image",
+      "height": "280px",
+      "alt": "Banner extra"
+    }
+  },
+  "image#two-cards-1-content": {
+    "props": {
+      "src": "/arquivos/minibanner-cha-de-bebe.png",
+      "link": {
+        "url": "/cha%20de%20bebe?_q=cha%20de%20bebe&map=ft"
+      },
+      "height": "280px",
+      "alt": "Banner para chá de bebê",
+      "blockClass": "unified-card-image"
+    }
+  },
+  "image#two-cards-3-content": {
+    "props": {
+      "src": "https://via.placeholder.com/800x400/CCCCCC/969696?text=BANNER+EXTRA+CATEGORIA",
+      "link": {
+        "url": "#"
+      },
+      "height": "280px",
+      "alt": "Banner extra categoria",
+      "blockClass": "unified-card-image"
+    }
+  },
+  "image#two-cards-2-content": {
+    "props": {
+      "src": "/arquivos/banner-seo-home-one.png",
+      "link": {
+        "url": "/alimentacao-e-amamentacao"
+      },
+      "height": "280px",
+      "alt": "Banner para alimentação e amamentação",
+      "blockClass": "unified-card-image"
+    }
+  },
+
+  /* --- Seo Section --- */
+  "rich-text#seo-title": {
+    "props": {
+      "text": "## Título de conteúdo SEO",
+      "tag": "h2",
+      "blockClass": "seo-title"
+    }
+  },
+
+  "rich-text#seo-content": {
+    "props": {
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard <a>dummy text ever</a> since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "tag": "p",
+      "blockClass": "seo-content"
+    }
+  },
+
+  /* --- Seo Cards --- */
+
+  /* Card 1 */
+  "flex-layout.row#seo-cards-row-1": {
+    "props": {
+      "blockClass": "seo-cards-row-1"
+    },
+    "children": [
+      "flex-layout.row#seo-cards-row-1-col-1",
+      "flex-layout.row#seo-cards-row-1-col-2"
+    ]
+  },
+
+  "flex-layout.row#seo-cards-row-1-col-1": {
+    "props": {
+      "width": "28%",
+      "blockClass": "seo-cards-row-1-col-1"
+    },
+    "children": ["image#seo-cards-row-1-image"]
+  },
+
+  "image#seo-cards-row-1-image": {
+    "props": {
+      "blockClass": "seo-images",
+      "src": "/arquivos/banner-seo-home-one.png",
+      "height": "200px",
+      "alt": "Banner SEO"
+    }
+  },
+
+  "flex-layout.row#seo-cards-row-1-col-2": {
+    "props": {
+      "blockClass": "seo-cards-row-1-col-2"
+    },
+    "children": [
+      "rich-text#seo-cards-row-1-title",
+      "rich-text#seo-cards-row-1-content"
+    ]
+  },
+
+  "rich-text#seo-cards-row-1-title": {
+    "props": {
+      "text": "### Título do tópico",
+      "tag": "h3",
+      "blockClass": "seo-cards-row-1-title"
+    }
+  },
+
+  "rich-text#seo-cards-row-1-content": {
+    "props": {
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+      "tag": "p",
+      "blockClass": "seo-cards-row-1-content"
+    }
+  },
+
+  /* Card 2 */
+  "flex-layout.row#seo-cards-row-2": {
+    "props": {
+      "blockClass": "seo-cards-row-2"
+    },
+    "children": [
+      "flex-layout.row#seo-cards-row-2-col-1",
+      "flex-layout.row#seo-cards-row-2-col-2"
+    ]
+  },
+
+  "flex-layout.row#seo-cards-row-2-col-2": {
+    "props": {
+      "width": "28%",
+      "blockClass": "seo-cards-row-2-col-2"
+    },
+    "children": ["image#seo-cards-row-2-image"]
+  },
+
+  "image#seo-cards-row-2-image": {
+    "props": {
+      "blockClass": "seo-images",
+      "src": "/arquivos/banner-seo-home-two.png",
+      "height": "200px",
+      "alt": "Banner SEO"
+    }
+  },
+
+  "flex-layout.row#seo-cards-row-2-col-1": {
+    "props": {
+      "blockClass": "seo-cards-row-2-col-1"
+    },
+    "children": [
+      "rich-text#seo-cards-row-2-title",
+      "rich-text#seo-cards-row-2-content"
+    ]
+  },
+
+  "rich-text#seo-cards-row-2-title": {
+    "props": {
+      "text": "### Título do tópico",
+      "tag": "h3",
+      "blockClass": "seo-cards-row-2-title"
+    }
+  },
+
+  "rich-text#seo-cards-row-2-content": {
+    "props": {
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+      "tag": "p",
+      "blockClass": "seo-cards-row-2-content"
+    }
+  },
+
+  /* Card 3 */
+  "flex-layout.row#seo-cards-row-3": {
+    "props": {
+      "blockClass": "seo-cards-row-3"
+    },
+    "children": [
+      "flex-layout.row#seo-cards-row-3-col-1",
+      "flex-layout.row#seo-cards-row-3-col-2"
+    ]
+  },
+
+  "flex-layout.row#seo-cards-row-3-col-1": {
+    "props": {
+      "width": "28%",
+      "blockClass": "seo-cards-row-3-col-1"
+    },
+    "children": ["image#seo-cards-row-3-image"]
+  },
+
+  "image#seo-cards-row-3-image": {
+    "props": {
+      "blockClass": "seo-images",
+      "src": "/arquivos/banner-seo-home-one.png",
+      "height": "200px",
+      "alt": "Banner SEO"
+    }
+  },
+
+  "flex-layout.row#seo-cards-row-3-col-2": {
+    "props": {
+      "blockClass": "seo-cards-row-3-col-2"
+    },
+    "children": [
+      "rich-text#seo-cards-row-3-title",
+      "rich-text#seo-cards-row-3-content"
+    ]
+  },
+
+  "rich-text#seo-cards-row-3-title": {
+    "props": {
+      "text": "### Título do tópico",
+      "tag": "h3",
+      "blockClass": "seo-cards-row-3-title"
+    }
+  },
+
+  "rich-text#seo-cards-row-3-content": {
+    "props": {
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+      "tag": "p",
+      "blockClass": "seo-cards-row-3-content"
+    }
+  },
+
+  /* Card 4 */
+  "flex-layout.row#seo-cards-row-4": {
+    "props": {
+      "blockClass": "seo-cards-row-4"
+    },
+    "children": [
+      "flex-layout.row#seo-cards-row-4-col-1",
+      "flex-layout.row#seo-cards-row-4-col-2"
+    ]
+  },
+
+  "flex-layout.row#seo-cards-row-4-col-2": {
+    "props": {
+      "width": "28%",
+      "blockClass": "seo-cards-row-4-col-2"
+    },
+    "children": ["image#seo-cards-row-4-image"]
+  },
+
+  "image#seo-cards-row-4-image": {
+    "props": {
+      "blockClass": "seo-images",
+      "src": "/arquivos/banner-seo-home-two.png",
+      "height": "200px",
+      "alt": "Banner SEO"
+    }
+  },
+
+  "flex-layout.row#seo-cards-row-4-col-1": {
+    "props": {
+      "blockClass": "seo-cards-row-4-col-1"
+    },
+    "children": [
+      "rich-text#seo-cards-row-4-title",
+      "rich-text#seo-cards-row-4-content"
+    ]
+  },
+
+  "rich-text#seo-cards-row-4-title": {
+    "props": {
+      "text": "### Título do tópico",
+      "tag": "h3",
+      "blockClass": "seo-cards-row-4-title"
+    }
+  },
+
+  "rich-text#seo-cards-row-4-content": {
+    "props": {
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+      "tag": "p",
+      "blockClass": "seo-cards-row-4-content"
+    }
+  }
+
+}

@@ -1,0 +1,180 @@
+@import url('https://fonts.cdnfonts.com/css/neue-helvetica-bq');
+
+.flexRowContent--menu-link,
+.flexRowContent--main-header {
+  color: #c55fa0;
+  font-family: 'Helvetica Neue', sans-serif !important;
+  font-weight: 500;
+  padding: 0 0.5rem;
+}
+
+@media screen and (width >= 40em) {
+  .flexRowContent--menu-link,
+  .flexRowContent--main-header {
+    padding: 0 1rem;
+    font-family: 'Helvetica Neue', sans-serif !important;
+  }
+}
+
+@media screen and (width >= 80rem) {
+  .flexRowContent--menu-link,
+  .flexRowContent--main-header {
+    padding: 0 0.25rem;
+    font-family: 'Helvetica Neue', sans-serif !important;
+  }
+}
+
+.flexRowContent--menu-link {
+  background-color: #cecece;
+  color: #fff;
+  font-family: 'Helvetica Neue', sans-serif !important;
+}
+
+.flexRowContent--main-header {
+  background-color: #ffffff;
+  font-family: 'Helvetica Neue', sans-serif !important;
+}
+
+.flexRowContent--main-header-mobile {
+  align-items: center;
+  background-color: #ffffff;
+  justify-content: space-between;
+  padding: 0 21px;
+}
+
+/* ✅ AJUSTE APLICADO AQUI — Top bar opaca ao rolar */
+:global(.vtex-flex-layout-0-x-flexRow--main-header__topbar),
+:global(.vtex-flex-layout-0-x-flexRowContent--main-header__topbar) {
+  background-color: #f8f8f8 !important;
+  box-shadow: 0 2px 4px rgba(121, 121, 121, 0.08);
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+}
+
+@media screen and (width >= 1024px) and (width <= 1025px) {
+  .flexRowContent--main-header-mobile {
+    background-color: #2ab1b7 !important;
+    background-size: cover; /* cobre toda a área */
+    align-items: center;
+    height: 60px;
+    justify-content: space-between;
+    padding: 0 21px;
+    transition: background 0.3s ease;
+    will-change: padding, background;
+  }
+
+  .flexRowContent--menu-link {
+    color: #ffffff;
+    font-size: 14px;
+  }
+
+  .flexRowContent--main-header :global(.vtex-menu-2-x-styledLink) {
+    color: #727273;
+    font-size: 14px;
+    font-family: 'Neue Helvetica BQ', sans-serif;
+    font-weight: 500;
+  }
+
+  .styledLink--menu-offers {
+    color: #2ab1b7;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .flexRow--topbar-text__wrapper {
+    background-color: #2ab1b7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .flexRow--main-header-mobile {
+    background-color: #fff;
+  }
+
+  @media (width >= 992px) {
+    .flexRow--main-header {
+      background-color: #2ab1b7;
+    }
+
+    .flexRow--menu {
+      height: 44px;
+      color: #2ab1b7;
+    }
+
+    .flexRow--main-header :global(.vtex-store-components-3-x-container) {
+      height: 100%;
+      width: 100%;
+    }
+
+    .flexRowContent--main-header {
+      height: 100%;
+      color: #2ab1b7;
+      font-family: 'Neue Helvetica BQ', sans-serif;
+      font-weight: 300;
+    }
+
+    .flexRowContent--main-header__topbar,
+    .flexRowContent--main-header {
+      background-color: #F5F5F5 !important;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    }
+
+    .flexRowContent--main-header {
+      background-color: #F5F5F5 !important;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    }
+
+    .flexColChild--container-social,
+    .flexRow--container-social .flexRowContent--container-social {
+      align-items: center;
+      display: flex;
+      gap: 7px;
+      height: 100%;
+      justify-content: space-between;
+      width: 60px !important;
+    }
+
+    .flexRow--container-social {
+      align-items: center;
+      display: flex;
+      height: 32px;
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  @media only screen and (width <= 1300px) {
+    .flexRow--main-header {
+      padding: 0 21px;
+    }
+
+    .flexRow--container-social {
+      right: 21px;
+    }
+  }
+
+  .flexRow--minicart-footer {
+    border-top: 1px solid #f6f6f7;
+    box-shadow: none;
+  }
+
+  .flexRow--main-header :global(.vtex-button__label) {
+    padding: 0 !important;
+  }
+
+  .flexRow--main-header :global(.vtex-button) {
+    background-color: white;
+    outline: none;
+  }
+}

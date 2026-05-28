@@ -1,0 +1,75 @@
+{
+  "store.custom#purchasing-policy": {
+    "blocks": [
+      "responsive-layout.desktop#purchasing-policy",
+      "responsive-layout.tablet#purchasing-policy",
+      "responsive-layout.phone#purchasing-policy"
+    ]
+  },
+
+  "responsive-layout.desktop#purchasing-policy": {
+    "children": ["flex-layout.row#brand-desktop"]
+  },
+
+  "responsive-layout.tablet#purchasing-policy": {
+    "children": [
+      "flex-layout.row#brand-menu-mobile",
+      "flex-layout.row#brand-mobile"
+    ]
+  },
+
+  "responsive-layout.phone#purchasing-policy": {
+    "children": [
+      "flex-layout.row#brand-menu-mobile",
+      "flex-layout.row#brand-mobile"
+    ]
+  },
+
+  "flex-layout.row#brand-desktop": {
+    "children": [
+      "flex-layout.col#institutional-sidebar-desktop",
+      "flex-layout.col#content-brand"
+    ],
+    "props": {
+      "blockClass": "institutionalContainer"
+    }
+  },
+
+  "flex-layout.row#brand-menu-mobile": {
+    "children": ["flex-layout.col#institutional-sidebar-mobile"],
+    "props": {
+      "blockClass": "institutionalContainer"
+    }
+  },
+
+  "flex-layout.row#brand-mobile": {
+    "children": ["flex-layout.col#content-brand-mobile"],
+    "props": {
+      "blockClass": "institutionalContainer"
+    }
+  },
+
+  "flex-layout.col#content-brand-mobile": {
+    "children": ["rich-text#brand"],
+    "props": {
+      "blockClass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.col#content-brand": {
+    "children": ["rich-text#brand"],
+    "props": {
+      "blockClass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#brand": {
+    "title": "Conteúdo Institucional",
+    "props": {
+      "text": "### **Política de Segurança do Site** \n Para garantir uma operação 100% segura, os dados de sua compra são criptografados. A criptografia é um sistema de codificação de informações criado para garantir que ninguém, em nenhuma hipótese, tenha acesso aos seus dados. Nenhuma informação trafega pela rede sem ser criptografada, utilizando os melhores sistemas disponíveis no mercado.<br>\nA segurança da nossa loja é certificada pela **<< Vtex Lets Encrypt >>**, uma das maiores empresas de certificação de segurança no mundo digital, especializada em segurança no mercado virtual mundial.<br>\n **Aviso! Para maior segurança nas suas compras, use sempre antivírus e firewalls e os mantenha atualizados!**<br>\nA segurança também é de responsabilidade dos clientes. Por isso, é necessário que se forneça informações válidas e verdadeiras e que não exista o compartilhamento de sua senha. Caso haja suspeita de violação de seu sigilo, troque-a o mais rápido possível.<br>\nO Planeta do Bebê não envia e-mails/SMS/WhatsApps solicitando dados de cadastro ou financeiros dos clientes, tampouco solicita que cliquem em links ou proceda com a instalação de quaisquer outros programas de computador ou dispositivo móvel.",
+      "blockClass": "contentInstitutional"
+    }
+  }
+}

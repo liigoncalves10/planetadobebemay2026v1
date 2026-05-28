@@ -1,0 +1,409 @@
+{
+  "store.orderplaced": {
+    "blocks": ["order-placed"]
+  },
+
+  "store.account": {
+    "blocks": ["my-account"],
+    "parent": {
+      "challenge": "challenge.profile"
+    }
+  },
+
+  "store.login": {
+    "blocks": ["login-content#default"]
+  },
+
+  "login-content#default": {
+    "props": {
+      "isInitialScreenOptionOnly": false,
+      "defaultOption": 1,
+      "showPasswordVerificationIntoTooltip": true
+    }
+  },
+
+  "store.product-review-form": {
+    "blocks": ["product-review-form"]
+  },
+
+  "store.not-found#product": {
+    "blocks": ["rich-text#not-found"]
+  },
+
+  "store.not-found#search": {
+    "blocks": ["rich-text#not-found"]
+  },
+
+  "rich-text#not-found": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "**404 <br/> Página Não Encontrada!**",
+      "font": "t-heading-1",
+      "blockClass": "textNotFound"
+    }
+  },
+
+  /*
+     BLOCO GLOBAL REUTILIZÁVEL - NA MÍDIA
+     Declarado aqui para permitir reutilização entre Home e Landing Page.
+  */
+  "flex-layout.row#naMidia__grid-cards-slider": {
+    "title": "Na Mídia - Seção Global",
+    "children": ["flex-layout.col#naMidia__grid-cards-slider-col"],
+    "props": {
+      "blockClass": "naMidia__section-row",
+      "marginTop": 6,
+      "marginBottom": 8
+    }
+  },
+
+  "flex-layout.col#naMidia__grid-cards-slider-col": {
+    "title": "Na Mídia - Coluna Home",
+    "children": [
+      "rich-text#lp-grid-title",
+      "slider-layout#home__naMidia__grid-cards-slider"
+    ]
+  },
+
+  "rich-text#lp-grid-title": {
+    "title": "Na Mídia - Título",
+    "props": {
+      "text": "## Na Mídia",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": "shelf-title"
+    }
+  },
+
+  /* BLOCO ESPECIALIZADO PARA HOME */
+  "slider-layout#home__naMidia__grid-cards-slider": {
+    "title": "Na Mídia - Slider Home",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "always",
+      "blockClass": "naMidia__grid-cards-slider",
+      "fullWidth": false,
+      "experimentalHideEmptyItems": true
+    },
+    "children": [
+      "flex-layout.col#lp-card-1",
+      "flex-layout.col#lp-card-2",
+      "flex-layout.col#lp-card-3",
+      "flex-layout.col#lp-card-4"
+    ]
+  },
+
+  /* BLOCO ESPECIALIZADO PARA LANDING PAGE */
+  "flex-layout.row#lp__naMidia__grid-cards-slider": {
+    "title": "Na Mídia - Seção LP",
+    "children": ["flex-layout.col#lp__naMidia__grid-cards-slider-col"],
+    "props": {
+      "blockClass": "naMidia__section-row",
+      "marginTop": 6,
+      "marginBottom": 8
+    }
+  },
+
+  "flex-layout.col#lp__naMidia__grid-cards-slider-col": {
+    "title": "Na Mídia - Coluna LP",
+    "children": ["rich-text#lp-grid-title", "slider-layout#lp__naMidia__grid-cards-slider"]
+  },
+
+  "slider-layout#lp__naMidia__grid-cards-slider": {
+    "title": "Na Mídia - Slider LP",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "always",
+      "blockClass": "naMidia__grid-cards-slider",
+      "fullWidth": false,
+      "experimentalHideEmptyItems": true
+    },
+    "children": [
+      "flex-layout.col#lp-card-1",
+      "flex-layout.col#lp-card-2",
+      "flex-layout.col#lp-card-3"
+    ]
+  },
+
+  /* Card Definitions */
+  "flex-layout.col#lp-card-1": {
+    "title": "Na Mídia - Card 1",
+    "children": ["flex-layout.col#lp-card-1-content", "link#lp-card-1-button"],
+    "props": { "blockClass": "naMidia__card-col", "horizontalAlign": "center" }
+  },
+  "flex-layout.col#lp-card-1-content": {
+    "children": ["modal-trigger#lp-card-1"],
+    "props": { "blockClass": "naMidia__card-content", "horizontalAlign": "center" }
+  },
+  "modal-trigger#lp-card-1": {
+    "children": ["image#lp-card-1-img", "modal-layout#lp-modal-article-1"],
+    "props": { "blockClass": "naMidia__card-trigger" }
+  },
+  "image#lp-card-1-img": {
+    "props": { "src": "https://via.placeholder.com/400x300", "blockClass": "naMidia__card-img" }
+  },
+  "link#lp-card-1-button": {
+    "props": {
+      "href": "/artigo-1",
+      "label": "Ver mais",
+      "blockClass": "naMidia__card-button"
+    }
+  },
+
+  "flex-layout.col#lp-card-2": {
+    "title": "Na Mídia - Card 2",
+    "children": ["flex-layout.col#lp-card-2-content", "link#lp-card-2-button"],
+    "props": { "blockClass": "naMidia__card-col", "horizontalAlign": "center" }
+  },
+  "flex-layout.col#lp-card-2-content": {
+    "children": ["modal-trigger#lp-card-2"],
+    "props": { "blockClass": "naMidia__card-content", "horizontalAlign": "center" }
+  },
+  "modal-trigger#lp-card-2": {
+    "children": ["image#lp-card-2-img", "modal-layout#lp-modal-article-2"],
+    "props": { "blockClass": "naMidia__card-trigger" }
+  },
+  "image#lp-card-2-img": {
+    "props": { "src": "https://via.placeholder.com/400x300", "blockClass": "naMidia__card-img" }
+  },
+  "link#lp-card-2-button": {
+    "props": {
+      "href": "/artigo-2",
+      "label": "Ver mais",
+      "blockClass": "naMidia__card-button"
+    }
+  },
+
+  "flex-layout.col#lp-card-3": {
+    "title": "Na Mídia - Card 3",
+    "children": ["flex-layout.col#lp-card-3-content", "link#lp-card-3-button"],
+    "props": { "blockClass": "naMidia__card-col", "horizontalAlign": "center" }
+  },
+  "flex-layout.col#lp-card-3-content": {
+    "children": ["modal-trigger#lp-card-3"],
+    "props": { "blockClass": "naMidia__card-content", "horizontalAlign": "center" }
+  },
+  "modal-trigger#lp-card-3": {
+    "children": ["image#lp-card-3-img", "modal-layout#lp-modal-article-3"],
+    "props": { "blockClass": "naMidia__card-trigger" }
+  },
+  "image#lp-card-3-img": {
+    "props": { "src": "https://via.placeholder.com/400x300", "blockClass": "naMidia__card-img" }
+  },
+  "link#lp-card-3-button": {
+    "props": {
+      "href": "/artigo-3",
+      "label": "Ver mais",
+      "blockClass": "naMidia__card-button"
+    }
+  },
+
+  "flex-layout.col#lp-card-4": {
+    "title": "Na Mídia - Card 4",
+    "children": ["flex-layout.col#lp-card-4-content", "link#lp-card-4-button"],
+    "props": { "blockClass": "naMidia__card-col", "horizontalAlign": "center" }
+  },
+  "flex-layout.col#lp-card-4-content": {
+    "children": ["modal-trigger#lp-card-4"],
+    "props": { "blockClass": "naMidia__card-content", "horizontalAlign": "center" }
+  },
+  "modal-trigger#lp-card-4": {
+    "children": ["image#lp-card-4-img", "modal-layout#lp-modal-article-4"],
+    "props": { "blockClass": "naMidia__card-trigger" }
+  },
+  "image#lp-card-4-img": {
+    "props": { "src": "https://via.placeholder.com/400x300", "blockClass": "naMidia__card-img" }
+  },
+  "link#lp-card-4-button": {
+    "props": {
+      "href": "/artigo-4",
+      "label": "Ver mais",
+      "blockClass": "naMidia__card-button"
+    }
+  },
+
+  "flex-layout.col#lp-card-5": {
+    "title": "Na Mídia - Card 5",
+    "children": ["flex-layout.col#lp-card-5-content", "link#lp-card-5-button"],
+    "props": { "blockClass": "naMidia__card-col", "horizontalAlign": "center" }
+  },
+  "flex-layout.col#lp-card-5-content": {
+    "children": ["modal-trigger#lp-card-5"],
+    "props": { "blockClass": "naMidia__card-content", "horizontalAlign": "center" }
+  },
+  "modal-trigger#lp-card-5": {
+    "children": ["image#lp-card-5-img", "modal-layout#lp-modal-article-5"],
+    "props": { "blockClass": "naMidia__card-trigger" }
+  },
+  "image#lp-card-5-img": {
+    "props": { "src": "https://via.placeholder.com/400x300", "blockClass": "naMidia__card-img" }
+  },
+  "link#lp-card-5-button": {
+    "props": {
+      "href": "/artigo-5",
+      "label": "Ver mais",
+      "blockClass": "naMidia__card-button"
+    }
+  },
+
+  "flex-layout.col#lp-card-6": {
+    "title": "Na Mídia - Card 6",
+    "children": ["flex-layout.col#lp-card-6-content", "link#lp-card-6-button"],
+    "props": { "blockClass": "naMidia__card-col", "horizontalAlign": "center" }
+  },
+  "flex-layout.col#lp-card-6-content": {
+    "children": ["modal-trigger#lp-card-6"],
+    "props": { "blockClass": "naMidia__card-content", "horizontalAlign": "center" }
+  },
+  "modal-trigger#lp-card-6": {
+    "children": ["image#lp-card-6-img", "modal-layout#lp-modal-article-6"],
+    "props": { "blockClass": "naMidia__card-trigger" }
+  },
+  "image#lp-card-6-img": {
+    "props": { "src": "https://via.placeholder.com/400x300", "blockClass": "naMidia__card-img" }
+  },
+  "link#lp-card-6-button": {
+    "props": {
+      "href": "/artigo-6",
+      "label": "Ver mais",
+      "blockClass": "naMidia__card-button"
+    }
+  },
+
+  "flex-layout.col#lp-card-7": {
+    "title": "Na Mídia - Card 7",
+    "children": ["flex-layout.col#lp-card-7-content", "link#lp-card-7-button"],
+    "props": { "blockClass": "naMidia__card-col", "horizontalAlign": "center" }
+  },
+  "flex-layout.col#lp-card-7-content": {
+    "children": ["modal-trigger#lp-card-7"],
+    "props": { "blockClass": "naMidia__card-content", "horizontalAlign": "center" }
+  },
+  "modal-trigger#lp-card-7": {
+    "children": ["image#lp-card-7-img", "modal-layout#lp-modal-article-7"],
+    "props": { "blockClass": "naMidia__card-trigger" }
+  },
+  "image#lp-card-7-img": {
+    "props": { "src": "https://via.placeholder.com/400x300", "blockClass": "naMidia__card-img" }
+  },
+  "link#lp-card-7-button": {
+    "props": {
+      "href": "/artigo-7",
+      "label": "Ver mais",
+      "blockClass": "naMidia__card-button"
+    }
+  },
+
+  "flex-layout.col#lp-card-8": {
+    "title": "Na Mídia - Card 8",
+    "children": ["flex-layout.col#lp-card-8-content", "link#lp-card-8-button"],
+    "props": { "blockClass": "naMidia__card-col", "horizontalAlign": "center" }
+  },
+  "flex-layout.col#lp-card-8-content": {
+    "children": ["modal-trigger#lp-card-8"],
+    "props": { "blockClass": "naMidia__card-content", "horizontalAlign": "center" }
+  },
+  "modal-trigger#lp-card-8": {
+    "children": ["image#lp-card-8-img", "modal-layout#lp-modal-article-8"],
+    "props": { "blockClass": "naMidia__card-trigger" }
+  },
+  "image#lp-card-8-img": {
+    "props": { "src": "https://via.placeholder.com/400x300", "blockClass": "naMidia__card-img" }
+  },
+  "link#lp-card-8-button": {
+    "props": {
+      "href": "/artigo-8",
+      "label": "Ver mais",
+      "blockClass": "naMidia__card-button"
+    }
+  },
+
+  "flex-layout.col#lp-card-9": {
+    "title": "Na Mídia - Card 9",
+    "children": ["flex-layout.col#lp-card-9-content", "link#lp-card-9-button"],
+    "props": { "blockClass": "naMidia__card-col", "horizontalAlign": "center" }
+  },
+  "flex-layout.col#lp-card-9-content": {
+    "children": ["modal-trigger#lp-card-9"],
+    "props": { "blockClass": "naMidia__card-content", "horizontalAlign": "center" }
+  },
+  "modal-trigger#lp-card-9": {
+    "children": ["image#lp-card-9-img", "modal-layout#lp-modal-article-9"],
+    "props": { "blockClass": "naMidia__card-trigger" }
+  },
+  "image#lp-card-9-img": {
+    "props": { "src": "https://via.placeholder.com/400x300", "blockClass": "naMidia__card-img" }
+  },
+  "link#lp-card-9-button": {
+    "props": {
+      "href": "/artigo-9",
+      "label": "Ver mais",
+      "blockClass": "naMidia__card-button"
+    }
+  },
+
+  /* Modais de Artigos - Definições Globais */
+  "modal-layout#lp-modal-article-1": {
+    "props": { "blockClass": "lp-modal-article-container" },
+    "children": ["modal-header#lp-modal", "modal-content#lp-modal-1"]
+  },
+  "modal-content#lp-modal-1": {
+    "children": [
+      "rich-text#artigo-carrinho-title",
+      "image#artigo-carrinho-img",
+      "rich-text#artigo-carrinho-body"
+    ]
+  },
+
+  "modal-layout#lp-modal-article-2": {
+    "props": { "blockClass": "lp-modal-article-container" },
+    "children": ["modal-header#lp-modal", "modal-content#lp-modal-2"]
+  },
+  "modal-content#lp-modal-2": {
+    "children": [
+      "rich-text#artigo-lenco-title",
+      "image#artigo-lenco-img",
+      "rich-text#artigo-lenco-body"
+    ]
+  },
+
+  "modal-layout#lp-modal-article-3": {
+    "props": { "blockClass": "lp-modal-article-container" },
+    "children": ["modal-header#lp-modal", "modal-content#lp-modal-3"]
+  },
+  "modal-content#lp-modal-3": {
+    "children": [
+      "rich-text#artigo-natal-title",
+      "image#artigo-natal-img",
+      "rich-text#artigo-natal-body"
+    ]
+  },
+
+  /* Placeholders para outros modais */
+  "modal-layout#lp-modal-article-4": { "props": { "blockClass": "lp-modal-article-container" }, "children": ["modal-header#lp-modal", "rich-text#modal-placeholder"] },
+  "modal-layout#lp-modal-article-5": { "props": { "blockClass": "lp-modal-article-container" }, "children": ["modal-header#lp-modal", "rich-text#modal-placeholder"] },
+  "modal-layout#lp-modal-article-6": { "props": { "blockClass": "lp-modal-article-container" }, "children": ["modal-header#lp-modal", "rich-text#modal-placeholder"] },
+  "modal-layout#lp-modal-article-7": { "props": { "blockClass": "lp-modal-article-container" }, "children": ["modal-header#lp-modal", "rich-text#modal-placeholder"] },
+  "modal-layout#lp-modal-article-8": { "props": { "blockClass": "lp-modal-article-container" }, "children": ["modal-header#lp-modal", "rich-text#modal-placeholder"] },
+  "modal-layout#lp-modal-article-9": { "props": { "blockClass": "lp-modal-article-container" }, "children": ["modal-header#lp-modal", "rich-text#modal-placeholder"] },
+
+  "modal-header#lp-modal": {
+    "props": { "blockClass": "lp-modal-article-container" }
+  },
+  "rich-text#modal-placeholder": {
+    "props": { "text": "Conteúdo do artigo em breve...", "textAlignment": "CENTER", "textPosition": "CENTER" }
+  }
+}

@@ -1,0 +1,79 @@
+.relatedProducts .title {
+  color: #696969;
+  font-size: 40px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  padding-top: 6rem;
+  position: relative;
+  text-align: center;
+}
+
+.relatedProducts .title::after {
+  background: #c55fa0;
+  border-radius: 10px;
+  content: '';
+  height: 6px;
+  left: 50%;
+  position: absolute;
+  top: 90%;
+  transform: translate(-50%, -90%);
+  width: 40px;
+}
+
+.shelfContentContainer {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1252px;
+}
+
+.dot {
+  background: #b8b8b8;
+  height: 0.5rem !important;
+  padding: 3px !important;
+  width: 0.5rem !important;
+}
+
+.dot--isActive {
+  background-color: #c55fa0;
+}
+
+.arrow {
+  background-color: #f6f6f7 !important;
+  background-image: url("data:image/svg+xml,%3Csvg id='icon-arrow-right-blue' xmlns='http://www.w3.org/2000/svg' width='6.574' height='11.191' viewBox='0 0 6.574 11.191'%3E%3Cpath id='Caminho_8808' data-name='Caminho 8808' d='M105.845,5.6l-4.186-4.187a.613.613,0,0,1,0-.866l.367-.367a.613.613,0,0,1,.866,0l4.985,4.984a.618.618,0,0,1,0,.869l-4.98,4.98a.613.613,0,0,1-.866,0l-.367-.367a.613.613,0,0,1,0-.866Z' transform='translate(-101.48 0)' fill='%23c55fa0'/%3E%3C/svg%3E%0A") !important;
+  background-position: 16px 11px !important;
+  background-repeat: no-repeat !important;
+  background-size: 11px !important;
+  border-radius: 50% !important;
+  height: 40px;
+  padding: 0 !important;
+  transition: 0.3s ease;
+  width: 40px;
+}
+
+.arrow .caretIcon {
+  display: none;
+}
+
+.arrowLeft {
+  transform: rotate(180deg);
+  transition: 0.3s ease;
+}
+
+.relatedProducts {
+  margin-bottom: 3rem;
+}
+
+@media screen and (width <= 1026px) {
+  .title {
+    font-size: 30px !important;
+  }
+
+  .relatedProducts {
+    padding: 0 11px;
+  }
+
+  .arrow {
+    display: none;
+  }
+}

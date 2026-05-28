@@ -1,0 +1,140 @@
+.shippingContainer {
+  margin-top: 20px;
+}
+
+.shippingInputContainer {
+  display: column;
+  gap: 10px;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.shippingList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.shippingItem {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.shippingItemLabel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 100%;
+}
+
+.shippingItemRadio {
+  margin-right: 15px;
+  accent-color: #c44d90;
+}
+
+.shippingItemName {
+  color: #494949;
+  font-weight: 500;
+  flex: 1;
+}
+
+.shippingItemDeliveryTime {
+  color: #666;
+  margin: 0 10px;
+}
+
+.shippingItemPrice {
+  font-weight: bold;
+  color: #c44d90;
+}
+
+.shippingItemFree {
+  color: #4CAF50;
+}
+
+/* Gift Tag Styles */
+.giftTagContainer {
+  display: flex;
+  align-items: center;
+  background-color: #c44d90;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin: 15px 0;
+  width: fit-content;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.giftTagIcon {
+  font-size: 20px;
+}
+
+.giftTagText {
+  font-size: 16px;
+}
+
+/* Modal Styles */
+.modalContainer {
+  padding: 20px;
+  text-align: center;
+}
+
+.giftTitle {
+  color: #c44d90;
+  margin-bottom: 20px;
+}
+
+.giftItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+.giftItem:last-child {
+  border-bottom: none;
+}
+
+.giftImageContainer {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.giftImage {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.giftName {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.giftDescription {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  .shippingInputContainer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .giftTagContainer {
+    width: 100%;
+    justify-content: center;
+  }
+}

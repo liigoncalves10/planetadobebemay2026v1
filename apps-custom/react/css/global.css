@@ -1,0 +1,106 @@
+.vtex-sticky-layout-0-x-container--fixed-buy-infos-desktop {
+  display: none !important;
+}
+.vtex-sticky-layout-0-x-container--fixed-buy-infos-mobile {
+  display: none !important;
+}
+
+.show-sticky {
+  display: block !important;
+}
+
+.render-route-store-product .vtex-flex-layout-0-x-flexRowContent--credits {
+  margin-bottom: 90px;
+}
+
+.unified-cards-desktop-only { display: block; }
+.unified-cards-mobile-only { display: none; }
+
+/* Mobile first override: mostra só mobile no máximo de 768px */
+@media (max-width: 768px) {
+  .unified-cards-desktop-only { display: none !important; }
+  .unified-cards-mobile-only { display: block !important; }
+}
+
+/* --- Unified Cards Grid 3x2 --- */
+.unified-cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0 !important;
+  margin: 20px auto;
+  max-width: fit-content;
+}
+
+.unified-cards-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.unified-card-image {
+  border-radius: 16px;
+  overflow: hidden;
+  display: block;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+}
+
+.unified-card-image:hover {
+  transform: scale(1.05);
+}
+
+/* Desktop - Cards centralizados e juntos */
+@media screen and (min-width: 1024px) {
+  .unified-cards-grid {
+    gap: 10px;
+    padding: 0;
+    justify-content: center;
+    max-width: fit-content;
+  }
+
+  .unified-cards-col {
+    gap: 10px;
+  }
+
+  .imageElement.imageElement--unified-card-image {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  img[class*="unified-card-image"] {
+    width: 100% !important;
+    margin: 0 !important;
+    display: block;
+  }
+}
+
+/* Mobile - Carrossel com cards 100% */
+@media screen and (max-width: 1023px) {
+  .unified-cards-grid {
+    padding: 0;
+  }
+
+  /* Estilos para o carrossel mobile */
+  .unified-cards-mobile-only .slick-slide,
+  .unified-cards-mobile-only .vtex-slider-layout-0-x-slide {
+    width: 100% !important;
+  }
+
+  .unified-cards-mobile-only .slick-list,
+  .unified-cards-mobile-only .vtex-slider-layout-0-x-sliderTrack {
+    padding: 0 !important;
+  }
+
+  .imageElement.imageElement--unified-card-image {
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  img[class*="unified-card-image"] {
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+}

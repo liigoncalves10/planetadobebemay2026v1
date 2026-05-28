@@ -1,0 +1,134 @@
+.container--cuponLayout {
+  background: #69696933;
+}
+
+.contentContainer--cuponContent {
+  padding-top: 26px;
+}
+
+.paper--cuponLayout {
+  border-radius: 12px;
+  min-height: 345px;
+  width: 440px;
+}
+
+.headerContainer--cuponHeader {
+  border: none;
+  height: 113px;
+}
+
+.headerContent--cuponHeader {
+  width: 100%;
+}
+
+.headerContent--cuponHeader :global(.vtex-store-components-3-x-imageElement) {
+  height: 100%;
+  width: 100%;
+}
+
+.modal--cuponLayout {
+  z-index: 9999 !important;
+}
+
+/* Close button style */
+
+.closeButtonContainer--cuponHeader {
+  height: 18px;
+  position: absolute;
+  right: 17px;
+  top: 14px;
+  width: 18px;
+}
+
+.closeButton--cuponHeader {
+  height: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+.closeIcon--cuponHeader {
+  background: url('assets/icons/icon-close.svg') no-repeat center;
+  color: transparent;
+  fill: transparent;
+}
+
+/* form style */
+
+.contentContainer--cuponContent :global(.vtex-input) {
+  display: block;
+  height: 40px;
+  margin: 0 auto 10px;
+  max-width: 305px;
+}
+
+@media (width >= 999px) {
+  .paper--cuponLayout {
+    border-radius: 12px;
+    min-height: 420px;
+    width: 440px;
+  }
+}
+
+@media (width <= 991px) {
+  .contentContainer--cuponContent {
+    padding-top: 10px;
+  }
+
+  .container--cuponLayout {
+    background: #69696933;
+  }
+
+  :global(.vtex-modal-layout-0-x-container--cuponLayout):first-child {
+    height: 520px !important;
+  }
+
+  .headerContainer--cuponHeader {
+    border: none;
+    height: auto;
+  }
+
+  .contentContainer--cuponContent :global(.vtex-input) {
+    width: 100%;
+  }
+}
+
+.contentContainer--cuponContent :global(.vtex-input-prefix__group) {
+  border-color: #c55fa0;
+  border-radius: 24px;
+  border-width: 1px;
+}
+
+.contentContainer--cuponContent :global(.vtex-styleguide-9-x-input),
+.contentContainer--cuponContent
+  :global(.vtex-styleguide-9-x-input)::placeholder {
+  color: #c55fa0;
+  font-size: 12px;
+}
+
+.contentContainer--cuponContent
+  :global(.vtex-store-form-0-x-formSubmitContainer) {
+  display: flex;
+  justify-content: center;
+  padding-top: 6px;
+}
+
+.contentContainer--cuponContent
+  :global(.vtex-store-form-0-x-formSubmitContainer)
+  :global(.vtex-button) {
+  background: #ffffff;
+  border: none;
+  border-radius: 24px;
+  color: white;
+  font-size: 11px;
+  font-weight: 500;
+  height: 48px;
+  line-height: 20px;
+  width: 159px;
+}
+
+.contentContainer--cuponContent
+  :global(.vtex-store-form-0-x-formSubmitContainer)
+  :global(.vtex-button)
+  :global(.vtex-button__label) {
+  padding: 0 !important;
+}

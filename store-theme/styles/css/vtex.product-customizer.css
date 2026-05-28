@@ -1,0 +1,30 @@
+.optionsInputValueDropdown :global(.vtex-dropdown__label) {
+  font-weight: 500;
+}
+
+.productAssemblyGroupNameRow--product-assembly-options :global(.vtex-button) {
+  border: none;
+  color: #2ab1b7;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.productAssemblyGroupName--product-assembly-options {
+  color: transparent;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.textInputValue--product-assembly-input :global(.vtex-input-prefix__group) {
+  border-radius: 24px;
+  height: 38px;
+}
+
+.textInputValue--product-assembly-input :global(.vtex-input__label) {
+  color: #696969;
+  font-weight: 500;
+}
+
+.textInputValue--product-assembly-input :global(.vtex-styleguide-9-x-input) {
+  font-size: 12px;
+}

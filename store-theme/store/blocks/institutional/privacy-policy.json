@@ -1,0 +1,75 @@
+{
+  "store.custom#privacy-policy": {
+    "blocks": [
+      "responsive-layout.desktop#privacy-policy",
+      "responsive-layout.tablet#privacy-policy",
+      "responsive-layout.phone#privacy-policy"
+    ]
+  },
+
+  "responsive-layout.desktop#privacy-policy": {
+    "children": ["flex-layout.row#privacy-policy-desktop"]
+  },
+
+  "responsive-layout.tablet#privacy-policy": {
+    "children": [
+      "flex-layout.row#privacy-policy-menu-mobile",
+      "flex-layout.row#privacy-policy-mobile"
+    ]
+  },
+
+  "responsive-layout.phone#privacy-policy": {
+    "children": [
+      "flex-layout.row#privacy-policy-menu-mobile",
+      "flex-layout.row#privacy-policy-mobile"
+    ]
+  },
+
+  "flex-layout.row#privacy-policy-desktop": {
+    "children": [
+      "flex-layout.col#institutional-sidebar-desktop",
+      "flex-layout.col#content-privacy-policy"
+    ],
+    "props": {
+      "blockClass": "institutionalContainer"
+    }
+  },
+
+  "flex-layout.row#privacy-policy-menu-mobile": {
+    "children": ["flex-layout.col#institutional-sidebar-mobile"],
+    "props": {
+      "blockClass": "institutionalContainer"
+    }
+  },
+
+  "flex-layout.row#privacy-policy-mobile": {
+    "children": ["flex-layout.col#content-privacy-policy-mobile"],
+    "props": {
+      "blockClass": "institutionalContainer"
+    }
+  },
+
+  "flex-layout.col#content-privacy-policy-mobile": {
+    "children": ["rich-text#privacy-policy"],
+    "props": {
+      "blockClass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.col#content-privacy-policy": {
+    "children": ["rich-text#privacy-policy"],
+    "props": {
+      "blockClass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#privacy-policy": {
+    "title": "Conteúdo Institucional",
+    "props": {
+      "text": "### **Política de Privacidade**\nLeia com atenção nossa Política de Privacidade para conhecer os termos e o compromisso que o Planeta do Bebê assume com a privacidade das informações trocadas por meio de nossa página na Internet.<br><br>Sabemos da importância e direito à sua privacidade, portanto, o Planeta do Bebê se compromete a garantir a privacidade de seus usuários, protegendo todas as informações. Nosso compromisso é respeitar sua privacidade e garantir o sigilo das informações que você fornece ou que coletamos por meio do portal do [www.planetadobebe.com.br](http://www.planetadobebe.com.br).<br><br>A presente Política de Privacidade do Site Planeta do Bebê contém diretrizes e informações sobre como são tratadas e protegidas as informações cadastradas pelos Usuários, e qual a sua responsabilidade sobre a guarda, proteção e divulgação de tais informações, e será regida pelas condições abaixo transcritas.<br><br>Por isso, apresentamos nossa política de privacidade, que tem por objetivo esclarecer o uso dessas informações. Ao visitar o [www.planetadobebe.com.br](http://www.planetadobebe.com.br), você aceita as práticas descritas nesta política de privacidade.<br><br>As informações trocadas somente são usadas para nos ajudar a oferecer um serviço melhor para você usuário:<br><br>**1 - Definições:**<br><br>Para fins desta Política de Privacidade, aplicam-se as seguintes definições:<br><br>\n\n- **Cookies**: Arquivos enviados pelo servidor do Portal para o computador dos Visitantes, com a finalidade de identificar o computador e obter dados de acesso, como páginas navegadas ou links clicados. Permitindo, desta forma, personalizar a navegação dos Visitantes no Portal, de acordo com o seu perfil.\n- **Planeta do Bebê**: Denominação utilizada neste documento para identificar a controladora e proprietária deste Portal PLANETA - IMPORTAÇÃO E DISTRIBUIÇÃO DE BRINQUEDOS LTDA, inscrita sob o CNPJ:  13.434.272/0001-41, com sede na cidade de Embu - SP.\n- **IP**: Abreviatura de Internet Protocol. É um conjunto de números que identifica o computador dos visitantes no portal.\n- **Logs**: Registros de atividades dos visitantes efetuadas no portal.\n- **Portal**: Designa o endereço eletrônico <http://www.planetadobebe.com.br> e seus subdomínios.\n- **Visitante**: Qualquer pessoa que navegar pelo portal.\n- **Usuário**: Visitantes que estiverem autenticados no sistema do portal.\n- **Web beacons**: Linhas de programação em páginas HTML que tem como finalidade obter detalhes da navegação do usuário, a exemplo de quanto tempo ficou com o site aberto, qual endereço visitado em seguida, dentre outros. Obtenção dos dados e informações<br><br>\n**2 - Dados Obtidos:**<br><br>Os dados e informações serão obtidos quando os Visitantes interagirem com as diversas funcionalidades existentes no Portal, fornecendo as informações voluntariamente, como na seção de 'Central de Atendimento',<br><br>Informações cadastrais: muitos de nossos serviços exigem que o cliente tenha um cadastro único com uma conta de usuário, o que permite o acesso à loja virtual.<br><br>Ao se cadastrar, coletamos seu nome, e-mail, endereço de entrega e cobrança, telefone de contato, CPF, CNPJ, data de nascimento, sexo, preferências de produtos.<br><br>Envio de e-mail: com a finalidade de melhorarmos a relevância de nossa comunicação, recebemos uma notificação quando nossos e-mails são abertos, se esta funcionalidade estiver disponível no computador do cliente.<br><br>* Outras fontes: podemos coletar informações específicas de dispositivos mobile que acessam a loja virtual do Planeta do Bebê. Eventualmente podemos receber informações do cliente de outras fontes, como as lojas físicas do Grupo Infanto Club, Marketplaces que o Planeta do Bebê age como seller, cadastros de parceiros, e somá-los à nossa base de dados, que em hipótese alguma será vendida.<br><br>\n**3 - Armazenamento dos Dados e Informações:**<br><br>**3.1.** Todos os dados e informações coletados dos Visitantes serão incorporados ao banco de dados do Portal, sendo seu responsável PLANETA - IMPORTAÇÃO E DISTRIBUIÇÃO DE BRINQUEDOS LTDA, inscrita sob o CNPJ:  13.434.272/0001-41<br><br>**3.2.** Os dados e informações coletados estarão armazenados em ambiente seguro, observado o estado da técnica disponível, e somente poderão ser acessados por pessoas qualificadas e autorizadas pelo Planeta do Bebê.<br><br>**3.3.** Considerando que nenhum sistema de segurança é absolutamente seguro, o Planeta do Bebê se exime de quaisquer responsabilidades por eventuais danos e/ou prejuízos decorrentes de falhas, vírus ou invasões do banco de dados do Portal, salvo nos casos de dolo ou culpa pela mesma.<br><br>**3.4.** O Planeta do Bebê coleta somente as informações indispensáveis à viabilização de seu negócio, qual seja, venda de produtos e artigos infantis e produtos correlatos.<br><br><br>**4 - Controle do Cliente:**<br><br>O cliente tem a liberdade de escolher quais informações quer fornecer para o Planeta do Bebê, entretanto, algumas delas são essenciais para a conclusão de pedidos e melhor experiência de navegação nas lojas:<br><br><br>**4.1.** No ato do cadastramento ou preenchimento de seu e-mail diretamente no rodapé dos sites, o cliente opta por receber regularmente informativos e promoções por e-mail, SMS ou mala direta.<br><br>**4.2.** O envio de mensagens eletrônicas se dará somente com o consentimento do cliente e poderá ser desativado a qualquer momento, solicitando o descadastro do seu e-mail.<br><br>**4.3.** O cliente pode a qualquer momento solicitar o descadastramento total ou parcial dos seus dados e para efetivar essa solicitação pode escolher entre as seguintes formas:<br>Através da nossa Central de Relacionamento entrando em contato via chat, e-mail ou telefone e dessa forma registrar sua solicitação com um atendente.<br><br>Para desativação dos e-mails promocionais: em todos os e-mails promocionais do Planeta do Bebê você encontrará esta frase: 'Caso não deseje mais receber nossos e-mails, clique aqui.' Basta clicar no link e seguir as instruções na página para descadastramento em nosso portal.<br><br>**5- Do Registro, Cookies e Web Beacons:**<br><br>\n\n**5.1.** O portal poderá registrar todas atividades efetuadas pelo Usuário no site, por meio de logs, incluindo:<br><br>\n- Endereço IP (Internet Protocol) do Usuário;\n- Ações efetuadas pelo Usuário no site;\n- Páginas acessadas pelo Usuário;\n- Datas e horários de cada ação e de acesso a cada funcionalidade do site; \n- Session ID do Usuário.<br><br>\n**5.2.** O Portal poderá fazer o uso de cookies, os principais navegadores de internet possibilitam ao cliente gerenciar a utilização dos cookies em seu dispositivo (computador, celular, tablet e etc.) A nossa recomendação é que mantenha o salvamento de cookies ligados. Desta forma, é possível utilizar todos os recursos de navegação personalizada oferecidos pelo Planeta do Bebê, mas, caso o cliente não concorde, é possível desabilitar esta função sendo bloqueado coleta de alguns tipos de informações, tais como cookies. Todavia, caso deseje bloqueá-los nesta hipótese, algumas funcionalidades do Portal poderão ser limitadas.<br><br>**5.3.** O Portal poderá utilizar web beacons para coletar dados de comportamento dos visitantes das páginas, onde a instalação de arquivos nos equipamentos dos visitantes não é necessária.<br><br>**5.4.** Outras tecnologias poderão ser utilizadas para a obtenção de dados de navegação pelo usuário, no entanto, respeitarão sempre aos termos desta política e as opções do usuário a respeito de sua coleta e armazenamento.<br><br>\n**6- Uso dos Dados e Informações:**<br><br>**6.1.** Os dados e informações coletados dos visitantes poderão ser utilizados para as seguintes finalidades:\n<br><ul class='vtex-rich-text-0-x-alphabeticalList'>a) Responder a eventuais dúvidas e solicitações dos Visitantes;<br><br>b) Cumprimento de ordem legal ou judicial;<br><br>c) Constituir, defender ou exercer regularmente direitos em âmbito judicial ou administrativo;<br><br>d) Elaborar estatísticas gerais, para identificação do perfil dos visitantes e desenvolvimento de campanhas do Planeta do Bebê, mas sem realizar identificação pessoal;<br><br>e) Garantir a segurança dos visitantes;<br><br>f) Manter atualizados os cadastros dos visitantes para fins de contato por telefone, correio eletrônico, SMS, mala direta ou por outros meios de comunicação;<br><br>g) Informar a respeito de novidades, promoções e eventos do Planeta do Bebê e de seus parceiros comerciais.<br><br>h) Compartilhar com empresas parceiras que trabalham com o Planeta do Bebê para aprimorar nosso negócio. São exemplos os serviços logísticos dos pedidos, envio de e-mails, análise da base de dados, criação de ações de marketing e processamento das transações por cartão de crédito. Muitos desses serviços só são possíveis com o compartilhamento de informações de nossos clientes, porém, é importante reforçar que seu uso está autorizado apenas para as finalidades contratadas.<br><br>i) Lojistas Parceiros do Marketplace Planeta do Bebê: tem parceria com lojistas e empresas que utilizam o Marketplace Planeta do Bebêpara a venda de seus produtos. Caso tenha realizado a compra de produtos de alguma dessas empresas, informaremos seus dados pessoais, dados da compra e endereço de entrega para que eles possam processar o pedido e realizar a entrega.<br><br>j) Novos negócios: no contínuo desenvolvimento do nosso negócio, processos de aquisição e fusão de empresas, subsidiárias e outros negócios podem ocorrer. Nessa transferência de negócios, informações dos respectivos clientes também são transferidas, mas ainda assim, será mantida a política de privacidade, e a informação será mantida dentro do ambiente do Planeta do Bebê.<br><br>k) Ao aceitar a compra, você concorda em compartilhar seus dados com o grupo Planeta do Bebê e seus parceiros que utilizam o Marketplace Planeta do Bebê.</ul>\n\n**6.2.** A base de dados coletados pelo Portal Planeta do Bebê não será vendida, transferida ou alugada a terceiros.<br><br>**6.3.** Os dados adquiridos somente poderão ser acessados por profissionais devidamente autorizados pelo Planeta do Bebê, respeitando a necessidade a que serão submetidos e relevância para os objetivos do Portal e aos interesses dos usuários, além de preservar a privacidade dos usuários.<br><br>**6.4.** Caso o Usuário deixe de utilizar os serviços oferecidos pelo Portal, o Planeta do Bebêpoderá, para fins de auditoria e preservação de direitos, permanecer com o registro de seus dados e informações, pelo período máximo de 5 (cinco) anos, com a faculdade de excluí-los definitivamente segundo sua conveniência.<br><br>\n**7 - Do Registro de Atividades:**<br><br>**7.1.** O Planeta do Bebê registrará todas as atividades efetuadas pelos visitantes no portal, por meio de logs, incluindo:<br><br><ul class='vtex-rich-text-0-x-alphabeticalList'>a) Endereço IP dos visitantes;<br><br>b) Ações efetuadas pelos visitantes no portal;<br><br>c) Páginas acessadas pelos visitantes;<br><br>d) Datas e horários de cada ação e de acesso a cada página do portal;<br><br>e) Session ID dos visitantes.</ul>\n\n**7.2.** Os registros mencionados no item 7.1 poderão ser utilizados pelo Planeta do Bebê em casos de investigação de fraudes ou de alterações indevidas em seus sistemas e cadastros.<br><br>\n**8 - Disposições Gerais:**<br><br>**8.1.** As disposições constantes desta Política de Privacidade poderão ser atualizadas ou modificadas a qualquer momento, cabendo aos visitantes verificá-la sempre que efetuar o acesso ao portal.<br><br>**8.2.** Os visitantes deverão entrar em contato em caso de qualquer dúvida com relação às disposições constantes desta Política de Privacidade através da Seção de 'Central de Atendimento'.<br><br>**8.3.** O usuário ao colocar informações em uma área pública do portal Planeta do Bebê está ciente de que elas estarão disponíveis a outros visitantes e usuários do site.<br><br>**8.4.** O Planeta do Bebê não pode controlar o que os visitantes e usuários façam da informação publicada no site (Por exemplo avaliações). Lembre-se de que qualquer informação divulgada nestas áreas pode tornar-se informação pública e que, portanto, é importante cautela e bom senso ao publicar qualquer conteúdo.<br><br>\n**9 - Lei Aplicável e Jurisdição:**<br><br>**9.1.** A presente Política de Privacidade será interpretada segundo a legislação brasileira, no idioma português, sendo eleito o Foro da Comarca de São Paulo no Estado de São Paulo para dirimir qualquer litígio, questão ou dúvida superveniente, com expressa renúncia de qualquer outro, por mais privilegiado que seja.<br><br>Sem mais,\n**PLANETA - IMPORTAÇÃO E DISTRIBUIÇÃO DE BRINQUEDOS LTDA**",
+      "blockClass": "contentInstitutional"
+    }
+  }
+}

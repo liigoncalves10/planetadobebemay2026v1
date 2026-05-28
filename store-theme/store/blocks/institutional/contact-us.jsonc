@@ -1,0 +1,169 @@
+{
+  "store.custom#contact-us": {
+    "blocks": [
+      "responsive-layout.desktop#contact-us",
+      "responsive-layout.tablet#contact-us",
+      "responsive-layout.phone#contact-us"
+    ]
+  },
+
+  "responsive-layout.desktop#contact-us": {
+    "children": ["flex-layout.row#contact-us-desktop"]
+  },
+
+  "responsive-layout.tablet#contact-us": {
+    "children": [
+      "flex-layout.row#contact-us-menu-mobile",
+      "flex-layout.row#contact-us-mobile",
+      "flex-layout.col#contact-info"
+    ]
+  },
+
+  "responsive-layout.phone#contact-us": {
+    "children": [
+      "flex-layout.row#contact-us-menu-mobile",
+      "flex-layout.row#contact-us-mobile",
+      "flex-layout.col#contact-info"
+    ]
+  },
+
+  "flex-layout.row#contact-us-desktop": {
+    "children": [
+      "flex-layout.col#institutional-sidebar-desktop",
+      "flex-layout.col#content-contact-us",
+      "flex-layout.col#contact-info"
+    ],
+    "props": {
+      "blockClass": "institutionalContainer"
+    }
+  },
+
+  "flex-layout.row#contact-us-menu-mobile": {
+    "children": ["flex-layout.col#institutional-sidebar-mobile"],
+    "props": {
+      "blockClass": "institutionalContainer"
+    }
+  },
+
+  "flex-layout.row#contact-us-mobile": {
+    "children": [
+      "flex-layout.col#content-contact-us-mobile",
+      "flex-layout.col#contact-info"
+    ],
+    "props": {
+      "blockClass": "institutionalContainer"
+    }
+  },
+
+  "flex-layout.col#content-contact-us-mobile": {
+    "children": ["rich-text#contact-us", "flex-layout.col#form-contact-us"],
+    "props": {
+      "blockClass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  /* Content col */
+  "flex-layout.col#content-contact-us": {
+    "children": ["rich-text#contact-us", "flex-layout.col#form-contact-us"],
+    "props": {
+      "blockClass": "textColumn",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    }
+  },
+
+  "rich-text#contact-us": {
+    "title": "Conteúdo Institucional",
+    "props": {
+      "text": "### **fale conosco**",
+      "blockClass": ["contentInstitutional", "faleConosco"]
+    }
+  },
+
+  /* Contact us form */
+  "flex-layout.col#form-contact-us": {
+    "children": ["form#contact-us"],
+    "props": {
+      "blockClass": "formContactUsCol",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    }
+  },
+  "form#contact-us": {
+    "props": {
+      "entity": "faleconosco",
+      "schema": "schemasfaleconosco"
+    },
+    "children": [
+      "form-input.text#name",
+      "form-input.text#email-contact",
+      "form-input.text#telephone",
+      "form-input.dropdown#subject",
+      "form-input.textarea#message",
+      "form-submit"
+    ],
+    "blocks": ["form-success"]
+  },
+  "form-input.text#name": {
+    "props": {
+      "pointer": "#/properties/name"
+    }
+  },
+  "form-input.text#email-contact": {
+    "props": {
+      "pointer": "#/properties/email"
+    }
+  },
+
+  "form-input.text#telephone": {
+    "props": {
+      "pointer": "#/properties/telephone"
+    }
+  },
+
+  "form-input.dropdown#subject": {
+    "props": {
+      "pointer": "#/properties/subject"
+    }
+  },
+  "form-input.textarea#message": {
+    "props": {
+      "pointer": "#/properties/message"
+    }
+  },
+  "form-submit": {
+    "props": {
+      "label": "Enviar"
+    }
+  },
+  "form-success": {
+    "children": ["rich-text#form-success"]
+  },
+  "rich-text#form-success": {
+    "props": {
+      "text": "Obrigado por preencher, sua mensagem foi enviada e será analisada.",
+      "blockClass": "formSuccessText"
+    }
+  },
+
+  /* Contact information card */
+  "flex-layout.col#contact-info": {
+    "children": ["rich-text#contact-inf"],
+    "props": {
+      "blockClass": "contactInfoCol",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "width": "auto"
+    }
+  },
+   "rich-text#contact-inf": {
+    "title": "Bloco atendimento",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "contactInfoCard",
+      "text": "<span class='b vtex-rich-text-0-x-titleContainer'>Fale conosco</span><span class='b vtex-rich-text-0-x-telephoneContainer'>(11) 3895-1572</span><span class='vtex-rich-text-0-x-emailContainer'>atendimento@planetadobebe.com.br</span><span class='vtex-rich-text-0-x-atendimentoContainer'>Horário de atendimento:\nSeg. à Sex. Das 08 às 18h</span><a class='vtex-rich-text-0-x-whatsContainer' href='https://api.whatsapp.com/send?phone=5511966353092' target='_blank'><span alt='Whatsapp' class='vtex-rich-text-0-x-whatsImage'></span><span class='b vtex-rich-text-0-x-whatsText'>Atendimento pelo Whatsapp</span></a>"
+    }
+  }
+}

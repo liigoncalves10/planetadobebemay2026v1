@@ -1,0 +1,201 @@
+/* 🔹 Ajustes exclusivos para o Menu Mobile do Dynamic Menu */
+@media screen and (max-width: 1024px) {
+  /* Navbar (Drawer) */
+  .navbar {
+    width: 85% !important;
+    max-width: 320px !important;
+    left: -100% !important; /* Força fechado por padrão */
+    transition: left 250ms ease-in-out !important;
+    display: block !important;
+    background-color: #ffffff !important;
+    box-shadow: 5px 0 15px rgba(0,0,0,0.1) !important;
+    position: fixed !important;
+    top: 0 !important;
+    height: 100vh !important;
+    z-index: 9999 !important;
+    overflow-y: auto !important;
+  }
+
+  .avatarContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    border-bottom: 1px solid #eeeeee;
+    background-color: #ffffff;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 40px;
+  }
+
+  .avatarIcon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 12px;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+    padding: 10px;
+  }
+
+  .welcomeText {
+    font-size: 18px;
+    color: #4b4b4b;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    font-family: 'Fredoka', sans-serif;
+  }
+
+  .accountLink {
+    display: block;
+    color: #4b4b4b;
+    text-decoration: none;
+    margin-top: 5px;
+  }
+
+  /* Estado Aberto */
+  .navbarOpened {
+    left: 0 !important;
+  }
+
+  /* Container dos itens */
+  .menuContainer {
+    padding: 10px 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+
+  /* Itens do Menu */
+  .menuItem {
+    border-bottom: 1px solid #eeeeee !important;
+    width: 100% !important;
+    display: block !important;
+    background-color: transparent !important;
+    margin: 0 !important;
+  }
+
+  /* Link dos Itens */
+  .menuLink {
+    padding: 15px 20px !important;
+    font-size: 15px !important;
+    color: #4b4b4b !important;
+    text-decoration: none !important;
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 1️⃣ DESTAQUE: Minha Conta (Hiding the old one as it is now in the header) */
+  .menuItem--menu-account {
+    display: none !important;
+  }
+
+  /* 2️⃣ HOME: Estilo Botão Rosa */
+  .menuItem--menu-home {
+    background-color: #c55fa0 !important;
+    color: #ffffff !important;
+    border-radius: 25px !important;
+    margin: 8px 15px !important;
+    padding: 12px 20px !important;
+    justify-content: center !important;
+    font-weight: 600 !important;
+    width: calc(100% - 30px) !important;
+    text-transform: capitalize !important;
+  }
+  .menuItem--menu-home .menuLink--menu-home {
+    background-color: #c55fa0 !important;
+    color: #ffffff !important;
+    border-radius: 25px !important;
+    margin: 8px 15px !important;
+    padding: 12px 20px !important;
+    justify-content: center !important;
+    font-weight: 600 !important;
+    width: calc(100% - 30px) !important;
+    text-transform: capitalize !important;
+  }
+
+  /* 3️⃣ OFERTAS: Estilo Botão Azul */
+  .menuItem--menu-offers {
+    border-bottom: none !important;
+  }
+  .menuItem--menu-offers .menuLink--menu-offers {
+    background-color: #2ab1b7 !important;
+    color: #ffffff !important;
+    border-radius: 25px !important;
+    margin: 8px 15px !important;
+    padding: 12px 20px !important;
+    justify-content: center !important;
+    font-weight: 600 !important;
+    width: calc(100% - 30px) !important;
+    text-transform: uppercase !important;
+  }
+
+  /* Submenus Visual Improvements */
+  .submenuWrapper {
+    padding-left: 15px !important;
+  }
+
+  .submenuItem {
+    border-bottom: none !important;
+  }
+
+  .submenuItem .menuLink {
+    padding: 12px 20px !important;
+    font-size: 14px !important;
+    color: #727272 !important;
+  }
+
+  .seeMore {
+    padding: 10px 20px !important;
+  }
+
+  .seeMore .menuLink {
+    color: #c55fa0 !important;
+    font-weight: 700 !important;
+    text-decoration: underline !important;
+    padding: 10px 0 !important;
+    font-size: 14px !important;
+    justify-content: flex-start !important;
+  }
+
+  /* Na Midia in Mobile only */
+  .menuItem--menu-na-midia {
+    display: none !important;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .menuItem--menu-na-midia {
+      display: block !important;
+    }
+  }
+
+  /* Garantir que não existam pseudo-elementos indesejados */
+  .menuItem::before, .menuItem::after {
+    display: none !important;
+  }
+
+  /* Ajustes para itens de categoria (Demais itens) */
+  .menuItem:not(.menuItem--menu-account):not(.menuItem--menu-home):not(.menuItem--menu-offers):not(.menuItem--menu-na-midia) .menuLink {
+    color: #4b4b4b !important;
+    font-weight: 500 !important;
+    border-bottom: 1px solid #eeeeee !important;
+    padding: 18px 20px !important;
+  }
+
+  .menuItem--menu-na-midia .menuLink {
+    color: #4b4b4b !important;
+    font-weight: 500 !important;
+    border-bottom: 1px solid #eeeeee !important;
+    padding: 18px 20px !important;
+  }
+
+  /* Evitar overflow lateral */
+  .navbarContainer {
+    width: 100% !important;
+    overflow-x: hidden !important;
+  }
+}

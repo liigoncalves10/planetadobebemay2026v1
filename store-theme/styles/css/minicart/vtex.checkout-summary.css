@@ -1,0 +1,18 @@
+.summaryItemLabel {
+  color: #585858;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.price {
+  color: #585858;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.fw6 .price {
+  color: #696969;
+  font-size: 16px;
+  font-weight: 500;
+}

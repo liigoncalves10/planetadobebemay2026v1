@@ -1,0 +1,281 @@
+{
+  "store.custom#artigo-carrinho-elysian": {
+    "blocks": [
+      "responsive-layout.desktop#artigo-carrinho",
+      "responsive-layout.tablet#artigo-carrinho",
+      "responsive-layout.phone#artigo-carrinho"
+    ]
+  },
+
+  "responsive-layout.desktop#artigo-carrinho": {
+    "children": ["flex-layout.row#lp-artigo-container-carrinho"]
+  },
+  "flex-layout.row#lp-artigo-container-carrinho": {
+    "title": "Artigo 1 - Container Principal",
+    "children": ["flex-layout.col#lp-artigo-container-carrinho"],
+    "props": { "blockClass": "lp-na-midia-container", "fullWidth": true }
+  },
+  "flex-layout.col#lp-artigo-container-carrinho": {
+    "title": "Artigo 1 - Container",
+    "children": [
+      "flex-layout.row#artigo-header",
+      "flex-layout.row#artigo-carrinho-content",
+      "flex-layout.row#artigo-footer"
+    ]
+  },
+  "responsive-layout.tablet#artigo-carrinho": {
+    "children": ["flex-layout.row#lp-artigo-container-carrinho"]
+  },
+  "responsive-layout.phone#artigo-carrinho": {
+    "children": ["flex-layout.row#lp-artigo-container-carrinho"]
+  },
+
+  "store.custom#artigo-lenco-umedecido": {
+    "blocks": [
+      "responsive-layout.desktop#artigo-lenco",
+      "responsive-layout.tablet#artigo-lenco",
+      "responsive-layout.phone#artigo-lenco"
+    ]
+  },
+
+  "responsive-layout.desktop#artigo-lenco": {
+    "children": ["flex-layout.row#lp-artigo-container-lenco"]
+  },
+  "flex-layout.row#lp-artigo-container-lenco": {
+    "title": "Artigo 2 - Container Principal",
+    "children": ["flex-layout.col#lp-artigo-container-lenco"],
+    "props": { "blockClass": "lp-na-midia-container", "fullWidth": true }
+  },
+  "flex-layout.col#lp-artigo-container-lenco": {
+    "title": "Artigo 2 - Container",
+    "children": [
+      "flex-layout.row#artigo-header",
+      "flex-layout.row#artigo-lenco-content",
+      "flex-layout.row#artigo-footer"
+    ]
+  },
+  "responsive-layout.tablet#artigo-lenco": {
+    "children": ["flex-layout.row#lp-artigo-container-lenco"]
+  },
+  "responsive-layout.phone#artigo-lenco": {
+    "children": ["flex-layout.row#lp-artigo-container-lenco"]
+  },
+
+  "store.custom#artigo-natal": {
+    "blocks": [
+      "responsive-layout.desktop#artigo-natal",
+      "responsive-layout.tablet#artigo-natal",
+      "responsive-layout.phone#artigo-natal"
+    ]
+  },
+
+  "responsive-layout.desktop#artigo-natal": {
+    "children": ["flex-layout.row#lp-artigo-container-natal"]
+  },
+  "flex-layout.row#lp-artigo-container-natal": {
+    "title": "Artigo 3 - Container Principal",
+    "children": ["flex-layout.col#lp-artigo-container-natal"],
+    "props": { "blockClass": "lp-na-midia-container", "fullWidth": true }
+  },
+  "flex-layout.col#lp-artigo-container-natal": {
+    "title": "Artigo 3 - Container",
+    "children": [
+      "flex-layout.row#artigo-header",
+      "flex-layout.row#artigo-natal-content",
+      "flex-layout.row#artigo-footer"
+    ]
+  },
+  "responsive-layout.tablet#artigo-natal": {
+    "children": ["flex-layout.row#lp-artigo-container-natal"]
+  },
+  "responsive-layout.phone#artigo-natal": {
+    "children": ["flex-layout.row#lp-artigo-container-natal"]
+  },
+
+  "flex-layout.row#artigo-header": {
+    "title": "Artigo - Cabeçalho",
+    "children": ["flex-layout.col#artigo-header"],
+    "props": {
+      "marginTop": 4,
+      "marginBottom": 4,
+      "paddingLeft": 5,
+      "paddingRight": 5
+    }
+  },
+
+  "flex-layout.col#artigo-header": {
+    "title": "Artigo - Coluna Cabeçalho",
+    "children": ["rich-text#artigo-breadcrumb"]
+  },
+
+  "rich-text#artigo-breadcrumb": {
+    "title": "Artigo - Breadcrumb",
+    "props": {
+      "text": "[Home](/) > [Blog](/na-midia) > Artigo",
+      "blockClass": "artigo-breadcrumb"
+    }
+  },
+
+  "flex-layout.row#artigo-footer": {
+    "title": "Artigo - Rodapé",
+    "children": ["flex-layout.col#artigo-footer"],
+    "props": {
+      "marginTop": 6,
+      "marginBottom": 8,
+      "paddingLeft": 5,
+      "paddingRight": 5
+    }
+  },
+
+  "flex-layout.col#artigo-footer": {
+    "title": "Artigo - Coluna Rodapé",
+    "children": ["link#voltar-blog"]
+  },
+
+  "link#voltar-blog": {
+    "title": "Artigo - Botão Voltar",
+    "props": {
+      "href": "/na-midia",
+      "label": "← Voltar para o Blog",
+      "blockClass": "link-voltar"
+    }
+  },
+
+  /* Artigo 1 - Carrinho Elysian */
+  "flex-layout.row#artigo-carrinho-content": {
+    "title": "Artigo 1 - Conteúdo",
+    "children": ["flex-layout.col#artigo-carrinho-inner"],
+    "props": {
+      "paddingLeft": 5,
+      "paddingRight": 5
+    }
+  },
+
+  "flex-layout.col#artigo-carrinho-inner": {
+    "title": "Artigo 1 - Inner Content",
+    "children": [
+      "rich-text#artigo-carrinho-title",
+      "image#artigo-carrinho-img",
+      "rich-text#artigo-carrinho-body"
+    ],
+    "props": {
+      "rowGap": 5
+    }
+  },
+
+  "rich-text#artigo-carrinho-title": {
+    "title": "Artigo 1 - Título",
+    "props": {
+      "text": "# Maxi Baby lança Carrinho Berço Moisés Elysian",
+      "blockClass": "artigo-title"
+    }
+  },
+
+  "image#artigo-carrinho-img": {
+    "title": "Artigo 1 - Imagem Principal",
+    "props": {
+      "src": "https://via.placeholder.com/1200x600",
+      "blockClass": "artigo-main-img"
+    }
+  },
+
+  "rich-text#artigo-carrinho-body": {
+    "title": "Artigo 1 - Corpo do Texto",
+    "props": {
+      "text": "A Maxi Baby amplia o seu portfólio com o lançamento do Carrinho Berço Moisés Travel System Elysian Maxi Baby, desenvolvido para acompanhar as famílias desde o nascimento do bebé até aproximadamente 22 kg. O modelo reúne design sofisticado, estrutura reforçada e soluções inteligentes. Conta com assento reversível removível e oferece a função berço Moisés. O carrinho dispõe de um amplo cesto porta-objetos, porta-copos removível e capota retrátil. O sistema de fecho com apenas uma mão facilita o transporte. O Travel System acompanha o Bebé Conforto Elysian Maxi Baby. Ambos possuem selo de certificação do INMETRO.",
+      "blockClass": "artigo-body"
+    }
+  },
+
+  /* Artigo 2 - Lenço Umedecido */
+  "flex-layout.row#artigo-lenco-content": {
+    "title": "Artigo 2 - Conteúdo",
+    "children": ["flex-layout.col#artigo-lenco-inner"],
+    "props": {
+      "paddingLeft": 5,
+      "paddingRight": 5
+    }
+  },
+
+  "flex-layout.col#artigo-lenco-inner": {
+    "title": "Artigo 2 - Inner Content",
+    "children": [
+      "rich-text#artigo-lenco-title",
+      "image#artigo-lenco-img",
+      "rich-text#artigo-lenco-body"
+    ],
+    "props": {
+      "rowGap": 5
+    }
+  },
+
+  "rich-text#artigo-lenco-title": {
+    "title": "Artigo 2 - Título",
+    "props": {
+      "text": "# Maxi Baby lança lenço umedecido de alta qualidade e preço acessível",
+      "blockClass": "artigo-title"
+    }
+  },
+
+  "image#artigo-lenco-img": {
+    "title": "Artigo 2 - Imagem Principal",
+    "props": {
+      "src": "https://via.placeholder.com/1200x600",
+      "blockClass": "artigo-main-img"
+    }
+  },
+
+  "rich-text#artigo-lenco-body": {
+    "title": "Artigo 2 - Corpo do Texto",
+    "props": {
+      "text": "A Maxi Baby lança um lenço umedecido que alia alta qualidade, segurança, tecnologia e preço acessível. Com fórmula hipoalergénica, o novo lenço é livre de álcool e parabenos. É produzido com 60% de materiais naturais e a sua composição conta com aloe vera e extrato de camomila. A embalagem possui tampa plástica rígida e a versão com 50 unidades garante excelente durabilidade.",
+      "blockClass": "artigo-body"
+    }
+  },
+
+  /* Artigo 3 - Natal */
+  "flex-layout.row#artigo-natal-content": {
+    "title": "Artigo 3 - Conteúdo",
+    "children": ["flex-layout.col#artigo-natal-inner"],
+    "props": {
+      "paddingLeft": 5,
+      "paddingRight": 5
+    }
+  },
+
+  "flex-layout.col#artigo-natal-inner": {
+    "title": "Artigo 3 - Inner Content",
+    "children": [
+      "rich-text#artigo-natal-title",
+      "image#artigo-natal-img",
+      "rich-text#artigo-natal-body"
+    ],
+    "props": {
+      "rowGap": 5
+    }
+  },
+
+  "rich-text#artigo-natal-title": {
+    "title": "Artigo 3 - Título",
+    "props": {
+      "text": "# Planeta do Bebê projeta crescimento de 12% no volume de vendas de Natal",
+      "blockClass": "artigo-title"
+    }
+  },
+
+  "image#artigo-natal-img": {
+    "title": "Artigo 3 - Imagem Principal",
+    "props": {
+      "src": "https://via.placeholder.com/1200x600",
+      "blockClass": "artigo-main-img"
+    }
+  },
+
+  "rich-text#artigo-natal-body": {
+    "title": "Artigo 3 - Corpo do Texto",
+    "props": {
+      "text": "A Planeta do Bebê projeta um crescimento de 12% no volume de vendas de Natal. Para o Natal de 2025, a expectativa é de alta em comparação ao mesmo período do ano passado. A aposta é em trotinetes (patinetes), carrinhos de controlo remoto, carrinhos elétricos, brinquedos de faz de conta e bonecas licenciadas da Disney. As sugestões de presentes incluem: Patinete Infantil Luppy, Moto Elétrica Infantil, Carrinho de Controlo Remoto Diecast, Triciclo Beep 4 em 1 (Maxi Toys) e Cadeirinha de Descanso Teddy (Maxi Baby).",
+      "blockClass": "artigo-body"
+    }
+  }
+}

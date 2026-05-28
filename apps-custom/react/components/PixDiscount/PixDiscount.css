@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+.pixComponent {
+  font-size: 16px;
+  padding-left: -20px;
+}
+
+@media (min-width: 768px) {
+  :global(.vtex-product-summary-2-x-container--elementoShelf) .pixComponent {
+    font-size: 12px !important;
+  }
+}
+
+:global(.vtex-product-summary-2-x-container--elementoShelf) .pixComponent {
+  color: #727272;
+  font-weight: 400;
+}
+
+.boldSpan {
+  color: '#727272';
+  font-weight: 100;
+}
+
+.pixPriceProductPage {
+  font-family: 'Fredoka', sans-serif;
+  display: flex;
+  align-items: baseline;
+  white-space: nowrap;
+  gap: 5px;
+  color: #ed6f66;
+  line-height: 30px;
+  font-size: 35px !important;
+  font-weight: 800 !important;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.noPix {
+  font-size: 20px;
+}
+
+@media (min-width: 1024px) {
+  .pixPriceProductPage {
+    font-size: 40px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .pixPriceProductPage {
+    font-size: 34px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+  }
+}

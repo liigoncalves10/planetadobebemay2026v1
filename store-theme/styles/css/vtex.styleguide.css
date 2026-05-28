@@ -1,0 +1,11 @@
+.input,
+.hideDecorators,
+.noAppearance {
+  border-radius: 30px;
+}
+
+.popup {
+  z-index: 99999999999999999 !important;
+  background: #f4f4f4;
+  color: rgb(24, 24, 24);
+}

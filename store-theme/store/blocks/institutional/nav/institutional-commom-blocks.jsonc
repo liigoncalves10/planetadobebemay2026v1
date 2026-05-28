@@ -1,0 +1,244 @@
+{
+  "flex-layout.col#institutional-sidebar-desktop": {
+    "children": [
+      "menu-item#institutional-sidebar-accordion-desktop-institucional",
+      "menu-item#institutional-sidebar-accordion-desktop-politicas"
+    ],
+    "props": {
+      "blockClass": "institucionalSidebar",
+      "preventVerticalStretch": true,
+      "width": "25%"
+    }
+  },
+
+  "menu-item#institutional-sidebar-accordion-desktop-institucional": {
+    "blocks": ["vtex.menu@2.x:submenu.accordion#sideBarInstitutional"],
+    "props": {
+      "text": "Institucional",
+      "blockClass": "accordionTitleDesktop"
+    }
+  },
+
+  "vtex.menu@2.x:submenu.accordion#sideBarInstitutional": {
+    "children": ["vtex.menu@2.x:menu#sidebar-menu-institutional"],
+    "props": {
+      "blockClass": "sideBarAccordionMobile",
+      "isOpen": true
+    }
+  },
+
+  "menu-item#institutional-sidebar-accordion-desktop-politicas": {
+    "blocks": ["vtex.menu@2.x:submenu.accordion#sideBarPoliticas"],
+    "props": {
+      "text": "Políticas",
+      "blockClass": "accordionTitleDesktop"
+    }
+  },
+
+  "vtex.menu@2.x:submenu.accordion#sideBarPoliticas": {
+    "children": ["vtex.menu@2.x:menu#sidebar-menu-politicas"],
+    "props": {
+      "blockClass": "sideBarAccordionMobile",
+      "isOpen": true
+    }
+  },
+
+  "flex-layout.col#institutional-sidebar-mobile": {
+    "children": ["menu-item#institutional-sidebar-accordion-mobile"],
+    "props": {
+      "blockClass": "institucionalSidebarMobile",
+      "preventVerticalStretch": false
+    }
+  },
+
+  "menu-item#institutional-sidebar-accordion-mobile": {
+    "blocks": ["vtex.menu@2.x:submenu.accordion#sideBar"],
+    "props": {
+      "text": "Navegue pelo menu",
+      "blockClass": "accordionTitleInstitutional"
+    }
+  },
+
+  "vtex.menu@2.x:submenu.accordion#sideBar": {
+    "children": [
+      "vtex.menu@2.x:menu#sidebar-menu-institutional",
+      "vtex.menu@2.x:menu#sidebar-menu-politicas"
+    ],
+    "props": {
+      "blockClass": "sideBarAccordionMobile"
+    }
+  },
+
+  "rich-text#sidebar-menu-title-institutional": {
+    "props": {
+      "text": "Institucional",
+      "blockClass": "sidebarMenuTitle"
+    }
+  },
+
+  "vtex.menu@2.x:menu#sidebar-menu-institutional": {
+    "children": ["rich-text#sidebar-menu-title-institutional"],
+    "props": {
+      "items": [
+        {
+          "id": "menu-item-about",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institutional/sobre-a-gente",
+            "noFollow": true,
+            "tagTitle": "Sobre a gente",
+            "text": "Sobre a gente"
+          }
+        },
+        {
+          "id": "menu-item-where-buy",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institutional/politica-de-compra-segura",
+            "tagTitle": "Política de Compra Segura",
+            "text": "Política de Compra Segura"
+          }
+        },
+        {
+          "id": "menu-item-privacy",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institutional/politica-de-privacidade",
+            "noFollow": true,
+            "tagTitle": "Política de Privacidade",
+            "text": "Política de Privacidade"
+          }
+        },
+        {
+          "id": "menu-item-exchanges-physical",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institutional/politica-de-trocas-fisica",
+            "tagTitle": "Políticas de Trocas - Lojas Físicas",
+            "text": "Políticas de Trocas - Lojas Físicas"
+          }
+        },
+        {
+          "id": "menu-item-exchanges",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institutional/politica-de-trocas",
+            "noFollow": true,
+            "tagTitle": "Política de Troca e Devolução",
+            "text": "Política de Troca e Devolução"
+          }
+        },
+        {
+          "id": "menu-item-terms-of-usage",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institutional/termos-e-condicoes-gerais",
+            "noFollow": true,
+            "tagTitle": "Termos Gerais do Market Place",
+            "text": "Termos Gerais do Market Place"
+          }
+        }
+      ],
+      "blockClass": "sidebarMenu",
+      "orientation": "vertical"
+    }
+  },
+
+  "rich-text#sidebar-menu-title-politicas": {
+    "props": {
+      "text": "Ajuda",
+      "blockClass": "sidebarMenuTitle"
+    }
+  },
+
+  "vtex.menu@2.x:menu#sidebar-menu-politicas": {
+    "children": ["rich-text#sidebar-menu-title-politicas"],
+    "props": {
+      "items": [
+        {
+          "id": "menu-item-frequent-doubts",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institutional/termos-de-uso-e-condicoes-de-navegacao",
+            "tagTitle": "Termos de Uso e de Navegação",
+            "text": "Termos de Uso e de Navegação"
+          }
+        },
+        {
+          "id": "menu-item-shipping-delivery",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institutional/politica-de-frete",
+            "tagTitle": "Política de Frete",
+            "text": "Política de Frete"
+          }
+        },
+        {
+          "id": "menu-item-payment",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institutional/regras-gerais-do-uso-de-cupom",
+            "tagTitle": "Regras Gerais do Uso de Cupom",
+            "text": "Regras Gerais do Uso de Cupom"
+          }
+        },
+        {
+          "id": "menu-item-talk-us",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institutional/fale-conosco",
+            "noFollow": true,
+            "tagTitle": "Fale Conosco",
+            "text": "Fale Conosco"
+          }
+        }
+      ],
+      "blockClass": "sidebarMenu",
+      "orientation": "vertical"
+    }
+  },
+
+  "rich-text#sidebar-menu-title-servicos": {
+    "props": {
+      "text": "Serviços",
+      "blockClass": "sidebarMenuTitle"
+    }
+  },
+
+  "rich-text#sidebar-menu-title-ajuda": {
+    "props": {
+      "text": "Precisa de ajuda?",
+      "blockClass": "sidebarMenuTitle"
+    }
+  }
+}

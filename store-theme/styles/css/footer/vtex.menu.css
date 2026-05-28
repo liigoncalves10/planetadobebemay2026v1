@@ -1,0 +1,83 @@
+@import url('https://fonts.cdnfonts.com/css/neue-helvetica-bq');
+/* footer - menus */
+
+/* .styledLinkContainer--generalMenuTitle {
+  margin: 0 0 8px;
+  padding: 0;
+}
+
+.styledLinkContent--generalMenuTitle {
+  color: #696969;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+} */
+
+.styledLink--generalMenuItem {
+  color: #696969;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  width: max-content;
+  font-family: 'Helvetica', sans-serif !important;
+}
+
+.styledLinkContainer--generalMenuItem {
+  margin: 0;
+  padding: 6px 0;
+}
+
+.styledLinkContainer--generalMenuItem :hover {
+  color: #c55fa0;
+}
+
+.styledLinkContainer--contactUs {
+  text-decoration: underline;
+}
+
+.styledLink--noLink :hover,
+.styledLinkContent--noLink :hover {
+  color: #696969;
+}
+
+/* Footer mobile */
+
+.styledLinkContainer--generalMenuTitleMobile {
+  margin: 0;
+}
+
+.submenuAccordion--generalAccordion {
+  padding: 0;
+}
+
+.styledLinkContent--generalMenuTitleMobile {
+  font-weight: 500;
+  height: 22px;
+}
+
+.menuItem--generalMenuTitleMobile {
+  width: 280px;
+}
+
+.menuItem--generalMenuTitleMobile--isOpen {
+  margin-bottom: 19px;
+}
+
+.menuItem--generalMenuTitleMobile--isOpen
+  .menuItemInnerDiv--generalMenuTitleMobile {
+  margin-bottom: 3px;
+}
+
+.accordionIcon--generalMenuTitleMobile {
+  background: url('assets/icons/icon-down-arrow.svg') no-repeat center;
+  color: transparent;
+  height: 18px;
+  width: 18px;
+}
+
+@media only screen and (width <= 1024px) {
+  .styledLink--generalMenuItem {
+    font-size: 16px;
+  }
+}

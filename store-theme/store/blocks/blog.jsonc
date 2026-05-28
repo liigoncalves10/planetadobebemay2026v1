@@ -1,0 +1,22 @@
+{
+  /* "store.page": {
+    "blocks": ["flex-layout.row#blog-banner", "rich-text#blog-title"]
+  },*/
+
+  "flex-layout.row#blog-banner": {
+    "children": ["image#blog-banner"]
+  },
+
+  "image#blog-banner": {
+    "props": {
+      "src": "https://planetadobebe.vteximg.com.br/arquivos/banner-blog-sempre-materna.png",
+      "alt": "Banner Blog Sempre Materna"
+    }
+  },
+
+  "rich-text#blog-title": {
+    "props": {
+      "text": "Sigam-nos no Instagram"
+    }
+  }
+}

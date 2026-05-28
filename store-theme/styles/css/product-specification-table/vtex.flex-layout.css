@@ -1,0 +1,95 @@
+.flexRow--productSpecificationGroup {
+  margin: auto;
+  max-width: 1252px;
+}
+
+.flexRow--productSpecificationGroupName {
+  display: none;
+}
+
+.flexCol--productSpecificationName {
+  padding: 1rem;
+}
+
+.flexCol--productSpecificationValue {
+  padding: 1rem 1rem 1rem 0;
+}
+
+.flexRow--productSpecification:nth-child(odd) {
+  background-color: #f6f6f7;
+}
+
+.flexRow--specifications-title-row:not(:first-child) {
+  display: none;
+}
+
+@media screen and (width <= 1026px) {
+  .flexRowContent--productSpecificationGroup {
+    padding: 0 11px;
+  }
+}
+
+.flexRowContent--price-row-shelf {
+  flex-direction: column;
+}
+
+.flexRowContent--price-row-shelf .stretchChildrenWidth {
+  width: 100% !important;
+}
+
+.flexRowContent--message-availability
+  :global(.vtex-availability-notify-1-x-title) {
+  display: none;
+}
+
+:global(.vtex-availability-notify-1-x-notifyLabel) {
+  color: #696969;
+  font-size: 14px;
+}
+
+:global(.vtex-availability-notify-1-x-content) {
+  flex-direction: column;
+}
+
+:global(.vtex-input-prefix__group) {
+  border-radius: 24px;
+}
+
+:global(.vtex-button) {
+  background: #2ab1b7;
+  border: none;
+  border-radius: 24px;
+  color: #c55fa0;
+  font-weight: 800;
+  height: 40px;
+  letter-spacing: 1px;
+  padding: 0;
+  width: 100%;
+  font-family: 'Fredoka', sans-serif;
+}
+
+:global(.vtex-button):hover {
+  background: #8ed7ff;
+}
+
+.vtex-flex-layout-0-x-flexRow--main-header .vtex-button {
+  background-color: #c55fa0 !important; /* sua cor desejada */
+  border-color: #c55fa0 !important;
+  color: #fff !important;
+}
+
+.vtex-flex-layout-0-x-flexRow--main-header .vtex-button:hover {
+  background-color: #c55fa0 !important; /* cor no hover */
+  border-color: #c55fa0 !important;
+}
+
+/* Remove o botão de login inteiro, preservando apenas o ícone */
+:global(.vtex-login-2-x-container) :global(.vtex-button) {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  min-height: auto !important;
+  height: auto !important;
+  width: auto !important;
+}

@@ -1,0 +1,47 @@
+.container--textModalCupon {
+  margin-bottom: 14px;
+}
+
+.paragraph--textModalCupon {
+  margin: 0;
+}
+
+.cuponTitle {
+  color: #2ab1b7;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.cuponTitleDiscount {
+  color: #c55fa0;
+  display: block;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 30px;
+  max-width: 328px;
+}
+
+@media only screen and (width <= 414px) {
+  .paragraph--textModalCupon .cuponTitleDiscount {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (width <= 630px) {
+  .paragraph--textModalCupon .cuponTitleDiscount {
+    color: #c55fa0;
+    display: block;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 20px;
+    max-width: 328px;
+  }
+
+  .cuponTitle {
+    color: #2ab1b7;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+}

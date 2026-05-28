@@ -1,0 +1,43 @@
+
+/* NA MÍDIA LANDING PAGE */
+.link--naMidia__card-button {
+  background-color: #2ab1b7 !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  padding: 10px 24px !important;
+  border-radius: 50px !important;
+  font-weight: 700 !important;
+  margin: 0 !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease !important;
+  font-size: 16px !important;
+  box-shadow: 0 4px 12px rgba(42, 177, 183, 0.4) !important;
+  min-width: 140px;
+  border: none !important;
+  cursor: pointer;
+}
+
+.link--naMidia__card-button:hover {
+  background-color: #239a9f !important;
+  box-shadow: 0 6px 20px rgba(42, 177, 183, 0.5) !important;
+  transform: scale(1.05) !important;
+}
+
+.label--naMidia__card-button {
+  color: #ffffff !important;
+  padding: 0 !important;
+}
+
+.label--link-voltar {
+  font-family: 'Helvetica', Arial, sans-serif !important;
+  color: #494949;
+}
+
+@media screen and (max-width: 1024px) {
+  .link--naMidia__card-button {
+    padding: 10px 30px !important;
+    font-size: 14px !important;
+  }
+}

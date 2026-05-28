@@ -1,0 +1,70 @@
+.pixComponent {
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  :global(.vtex-product-summary-2-x-container--elementoShelf) .pixComponent {
+    font-size: 12px !important;
+  }
+}
+
+:global(.vtex-product-summary-2-x-container--elementoShelf) .pixComponent {
+  color: #727272;
+  font-weight: 400;
+}
+
+.boldSpan {
+  color: '#727272';
+}
+
+:global(
+    .vtex-product-summary-2-x-element--elementoShelf
+      .vtex-product-price-1-x-sellingPrice
+  ),
+:global(
+    .vtex-slider-layout-0-x-sliderLayoutContainer--shelf
+      .vtex-product-price-1-x-sellingPrice
+  ) {
+  display: none;
+}
+
+.pixPrice {
+  display: block;
+}
+
+.actualPrice {
+  display: block;
+  padding-top: 10px;
+  font-size: 15px;
+  text-align: left;
+  font-weight: 100;
+}
+
+@media (max-width: 767px) {
+  :global(.vtex-product-summary-2-x-container--elementoShelf) .pixComponent {
+    font-size: 9px !important;
+  }
+  .element--elementoShelf :global(.vtex-product-price-1-x-installmentsNumber),
+  :global(.vtex-product-summary-2-x-element--elementoShelf)
+    :global(.vtex-product-price-1-x-installmentValue)::before,
+  :global(.vtex-product-summary-2-x-element--elementoShelf)
+    :global(.vtex-product-price-1-x-installmentValue)::after,
+  :global(.vtex-product-summary-2-x-element--elementoShelf)
+    .installmentsNumber::before,
+  :global(.vtex-product-summary-2-x-element--elementoShelf)
+    .installmentsNumber::before,
+  :global(.vtex-product-summary-2-x-element--elementoShelf)
+    :global(.vtex-product-price-1-x-installmentValue) {
+    font-size: 10px !important;
+  }
+  :global(.vtex-product-summary-2-x-element--elementoShelf)
+    :global(.vtex-product-price-1-x-installmentsNumber) {
+    font-size: 12px !important;
+  }
+  :global(.vtex-product-summary-2-x-element--elementoShelf)
+    :global(.vtex-product-price-1-x-installmentValue::before),
+  :global(.vtex-product-summary-2-x-element--elementoShelf)
+    :global(.vtex-product-price-1-x-installmentsNumber::after) {
+    font-size: 10px !important;
+  }
+}

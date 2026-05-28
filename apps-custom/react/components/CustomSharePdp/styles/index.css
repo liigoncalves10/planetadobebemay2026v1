@@ -1,0 +1,87 @@
+.container-share{
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .container-share {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 300px;
+  margin: 15px 0;
+
+  }
+}
+
+.container-share span{
+  font-family: frutiger,sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #37474F;
+}
+
+.button-share-mobile-facebook{
+  display: flex;
+}
+.button-share-mobile-facebook:before{
+  content: '';
+  background-image: url("/arquivos/share-facebook-icon.png");
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+}
+
+.button-share-mobile-twitter{
+  display: flex
+}
+.button-share-mobile-twitter:before{
+  content: '';
+  background-image: url("/arquivos/share-twitter-icon.png");
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+}
+
+.button-share-mobile-whatsapp{
+  display: flex;
+}
+.button-share-mobile-whatsapp:before{
+  content: '';
+  background-image: url("/arquivos/share-whats-icon.png");
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+}
+
+.button-share-mobile-pinterest{
+  display: flex;
+}
+.button-share-mobile-pinterest:before{
+  content: '';
+  background-image: url("/arquivos/share-pinterest-icon.png");
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+}
+
+.button-share-mobile-email{
+  display: flex;
+}
+.button-share-mobile-email:before {
+  content: '';
+  background-image: url("/arquivos/share-email-iton.png");
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+}
+
+@media (max-width: 767px) {
+  .container-share{
+    margin-top: 20px;
+  }
+}

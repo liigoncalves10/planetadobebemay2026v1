@@ -1,0 +1,5 @@
+{
+  "store.custom#structured-data": {
+    "blocks": ["structured-data"]
+  }
+}

@@ -1,0 +1,358 @@
+{
+  "store.custom#club": {
+    "children": [
+      "flex-layout.row#club"
+    ]
+  },
+
+  "flex-layout.row#club": {
+    "props": {
+      "blockClass": "club"
+    },
+    "children": [
+      "flex-layout.col#club"
+    ]
+  },
+
+  "flex-layout.col#club": {
+    "children": [
+      "rich-text#club-banner-mobile",
+      "rich-text#club-banner-desktop",
+      "flex-layout.row#club-breadcrumb",
+      "flex-layout.row#club-about",
+      "flex-layout.row#seo-cards-row-1-club",
+      "flex-layout.row#seo-cards-row-2-club",
+      "flex-layout.row#seo-cards-row-3-club",
+      "flex-layout.row#seo-cards-row-4-club",
+      "flex-layout.row#club-how-works",
+      "flex-layout.row#club-benefits",
+      "flex-layout.row#club-extras"
+    ]
+  },
+  "rich-text#club-banner-mobile": {
+    "props": {
+      "title": "banner-mobile-club",
+      "text": "<a class='vtex-rich-text-0-x-link--banner-club' href='/club' target='_blank'><img class='vtex-rich-text-0-x-image--banner-club--mobile' src='/arquivos/club-banner-mobile.png'></a>",
+      "blockClass": ["club-images", "club-images--mobile"],
+      "minHeight": "500px"
+    }
+  },
+  "rich-text#club-banner-desktop": {
+    "props": {
+      "title": "banner-desktop-club",
+      "text": "<a class='vtex-rich-text-0-x-link--banner-club' href='/club' target='_blank'><img class='vtex-rich-text-0-x-image--banner-club--desktop' src='/arquivos/club-banner-desk.png'></a>",
+      "blockClass": ["club-images", "club-images--desktop"],
+      "minHeight": "400px"
+    }
+  },
+  "flex-layout.row#club-breadcrumb": {
+    "children": ["breadcrumb.search"],
+    "props": {
+      "blockClass": ["breadcrumb-row", "row-search"],
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.row#club-about": {
+    "props": {
+      "blockClass": "club-about"
+    },
+    "children": [
+      "rich-text#club-title",
+      "rich-text#club-content"
+    ]
+  },
+  "rich-text#club-title": {
+    "props": {
+      "title": "title-club-page",
+      "text": "# Clube Planeta do Bebê",
+      "blockClass": "club-title"
+    }
+  },
+
+  "rich-text#club-content": {
+    "props": {
+      "title": "about-club-page",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+      "blockClass": ["club-content", "about-club-page"]
+    }
+  },
+
+  "flex-layout.row#club-how-works": {
+    "props": {
+      "blockClass": "club-how-works"
+    },
+    "children": [
+      "rich-text#title-how-works",
+      "flex-layout.row#how-works-list"
+    ]
+  },
+
+  "rich-text#title-how-works": {
+    "props": {
+      "title": "how-works-title",
+      "text": "## Como funciona",
+      "blockClass": ["club-content", "how-works-title"]
+    }
+  },
+
+  "flex-layout.row#how-works-list": {
+    "children": [
+      "flex-layout.col#how-works-item-1",
+      "flex-layout.col#how-works-item-2",
+      "flex-layout.col#how-works-item-3",
+      "flex-layout.col#how-works-item-4"
+    ],
+    "props": {
+      "blockClass": "how-works-list"
+    }
+  },
+
+  "flex-layout.col#how-works-item-1": {
+    "props": {
+      "blockClass": "how-works-item-1"
+    },
+    "children": [
+      "image#how-works-item-1",
+      "rich-text#how-works-item-1"
+    ]
+  },
+  "image#how-works-item-1": {
+    "props": {
+      "title": "how-works-item-1",
+      "blockClass": "how-works-item-1",
+      "src": "assets/icons/icon-puzzle-game.svg",
+      "maxHeight": "109px"
+    }
+  },
+  "rich-text#how-works-item-1": {
+    "props": {
+      "title": "find-plan-text",
+      "text": "Encontre o plano perfeito para o seu filho",
+      "blockClass": "find-plan"
+    }
+  },
+  "flex-layout.col#how-works-item-2": {
+    "props": {
+      "blockClass": "how-works-item-2"
+    },
+    "children": [
+      "image#how-works-item-2",
+      "rich-text#how-works-item-2"
+    ]
+  },
+  "image#how-works-item-2": {
+    "props": {
+      "title": "how-works-item-2",
+      "blockClass": "how-works-item-2",
+      "src": "assets/icons/icon-card-club.svg",
+      "maxHeight": "109px"
+    }
+  },
+  "rich-text#how-works-item-2": {
+    "props": {
+      "title": "buy-plan",
+      "text": "O seu plano será cobrado todo mês no seu cartão",
+      "blockClass": "buy-plan"
+    }
+  },
+  "flex-layout.col#how-works-item-3": {
+    "props": {
+      "blockClass": "how-works-item-3"
+    },
+    "children": [
+      "image#how-works-item-3",
+      "rich-text#how-works-item-3"
+    ]
+  },
+  "image#how-works-item-3": {
+    "props": {
+      "title": "how-works-item-3",
+      "blockClass": "how-works-item-3",
+      "src": "assets/icons/icon-cubes.svg",
+      "maxHeight": "109px"
+    }
+  },
+  "rich-text#how-works-item-3": {
+    "props": {
+      "title": "recive-plan",
+      "text": "Receba todo mês os produtos selecionados na sua casa",
+      "blockClass": "recive-plan"
+    }
+  },
+  "flex-layout.col#how-works-item-4": {
+    "props": {
+      "blockClass": "how-works-item-4"
+    },
+    "children": [
+      "image#how-works-item-4",
+      "rich-text#how-works-item-4"
+    ]
+  },
+  "image#how-works-item-4": {
+    "props": {
+      "title": "how-works-item-4",
+      "blockClass": "how-works-item-4",
+      "src": "assets/icons/icon-mamae.svg",
+      "maxHeight": "109px"
+    }
+  },
+  "rich-text#how-works-item-4": {
+    "props": {
+      "title": "enjoy-plan",
+      "text": "Aproveite os momentos mais importantes com seu filho.",
+      "blockClass": "enjoy-plan"
+    }
+  },
+
+  "flex-layout.row#club-benefits": {
+    "props": {
+      "blockClass": "club-benefits"
+    },
+    "children": [
+      "rich-text#title-club-benefits",
+      "flex-layout.row#club-benefits-list"
+    ]
+  },
+
+  "rich-text#title-club-benefits": {
+    "props": {
+      "title": "club-benefits-title",
+      "text": "### benefícios",
+      "blockClass": ["club-content", "club-benefits-title"]
+    }
+  },
+
+  "flex-layout.row#club-benefits-list": {
+    "children": [
+      "flex-layout.col#club-benefits-item-1",
+      "flex-layout.col#club-benefits-item-2",
+      "flex-layout.col#club-benefits-item-3",
+      "flex-layout.col#club-benefits-item-4"
+    ],
+    "props": {
+      "blockClass": "club-benefits-list"
+    }
+  },
+  "flex-layout.col#club-benefits-item-1": {
+    "props": {
+      "blockClass": "club-benefits-item-1"
+    },
+    "children": [
+      "image#club-benefits-item-1",
+      "rich-text#club-benefits-item-1"
+    ]
+  },
+  "image#club-benefits-item-1": {
+    "props": {
+      "title": "club-benefits-item-1",
+      "blockClass": "club-benefits-item-1",
+      "src": "assets/icons/icon-discount.svg",
+      "maxHeight": "109px"
+    }
+  },
+  "rich-text#club-benefits-item-1": {
+    "props": {
+      "title": "club-benefits-text-item-1",
+      "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
+      "blockClass": "club-benefits-text"
+    }
+  },
+  "flex-layout.col#club-benefits-item-2": {
+    "props": {
+      "blockClass": "club-benefits-item-2"
+    },
+    "children": [
+      "image#club-benefits-item-2",
+      "rich-text#club-benefits-item-2"
+    ]
+  },
+  "image#club-benefits-item-2": {
+    "props": {
+      "title": "club-benefits-item-2",
+      "blockClass": "club-benefits-item-2",
+      "src": "assets/icons/icon-discount.svg",
+      "maxHeight": "109px"
+    }
+  },
+  "rich-text#club-benefits-item-2": {
+    "props": {
+      "title": "club-benefits-text-item-2",
+      "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
+      "blockClass": "club-benefits-text"
+    }
+  },
+  "flex-layout.col#club-benefits-item-3": {
+    "props": {
+      "blockClass": "club-benefits-item-3"
+    },
+    "children": [
+      "image#club-benefits-item-3",
+      "rich-text#club-benefits-item-3"
+    ]
+  },
+  "image#club-benefits-item-3": {
+    "props": {
+      "title": "club-benefits-item-3",
+      "blockClass": "club-benefits-item-3",
+      "src": "assets/icons/icon-discount.svg",
+      "maxHeight": "109px"
+    }
+  },
+  "rich-text#club-benefits-item-3": {
+    "props": {
+      "title": "club-benefits-text-item-3",
+      "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
+      "blockClass": "club-benefits-text"
+    }
+  },
+  "flex-layout.col#club-benefits-item-4": {
+    "props": {
+      "blockClass": "club-benefits-item-4"
+    },
+    "children": [
+      "image#club-benefits-item-4",
+      "rich-text#club-benefits-item-4"
+    ]
+  },
+  "image#club-benefits-item-4": {
+    "props": {
+      "title": "club-benefits-item-4",
+      "blockClass": "club-benefits-item-4",
+      "src": "assets/icons/icon-discount.svg",
+      "maxHeight": "109px"
+    }
+  },
+  "rich-text#club-benefits-item-4": {
+    "props": {
+      "title": "club-benefits-text-item-4",
+      "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
+      "blockClass": "club-benefits-text"
+    }
+  },
+  "flex-layout.row#club-extras": {
+    "props": {
+      "blockClass": "club-about"
+    },
+    "children": [
+      "rich-text#club-extras-title",
+      "rich-text#club-extras-content"
+    ]
+  },
+  "rich-text#club-extras-title": {
+    "props": {
+      "title": "title-club-extras",
+      "text": "### Clube Planeta do Bebê Extras",
+      "blockClass": "club-title"
+    }
+  },
+
+  "rich-text#club-extras-content": {
+    "props": {
+      "title": "about-club-extras",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+      "blockClass": ["about-club-extras"]
+    }
+  }
+}

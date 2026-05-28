@@ -1,0 +1,99 @@
+.flexRow--institutionalContainer {
+  margin: 20px auto 80px;
+  max-width: 1252px;
+}
+
+/* Nav style */
+.flexCol--institucionalSidebar {
+  background: #f6f6f7;
+  border-radius: 10px;
+  gap: 30px;
+  height: 385px;
+  padding: 20px 0 45px 15.5px;
+}
+
+/* Text col style */
+.flexCol--textColumn {
+  padding-left: 73px;
+}
+
+.flexCol--cardProduct {
+  background-color: #eee;
+  height: 202px;
+  margin-top: 60px;
+  max-width: 404px;
+  padding: 23px 31px;
+}
+
+.flexColChild--formContactUs :global(.vtex-input-prefix__group),
+.flexColChild--formContactUs :global(.vtex-dropdown__container),
+.flexColChild--formContactUs :global(.vtex-textarea__input) {
+  border: solid 1px #eee;
+  border-radius: 0;
+  margin-bottom: 20px;
+  max-width: 404px;
+}
+
+.flexColChild--formContactUs :global(.vtex-textarea__input) {
+  min-height: 156px;
+}
+
+.flexColChild--formContactUs :global(.vtex-dropdown__arrow) {
+  color: #afafaf;
+}
+
+.flexColChild--formContactUs :global(.vtex-input__label),
+.flexColChild--formContactUs :global(.vtex-dropdown__label),
+.flexColChild--formContactUs :global(.vtex-textarea__label) {
+  color: #25282a;
+  font-size: 12px;
+  line-height: 21px;
+  text-transform: capitalize;
+}
+
+.flexColChild--formContactUs :global(.vtex-input__label)::after,
+.flexColChild--formContactUs :global(.vtex-dropdown__label)::after,
+.flexColChild--formContactUs :global(.vtex-textarea__label)::after {
+  content: ':';
+}
+
+.flexColChild--formContactUs
+  :global(.vtex-store-form-0-x-formSubmitButton)
+  :global(.vtex-button) {
+  background-color: #2ab1b7;
+  border: none;
+  border-radius: 0;
+  font-size: 12px;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+  width: 201px;
+}
+
+.flexColChild--formContactUs
+  :global(.vtex-store-form-0-x-formSubmitButton)
+  :global(.vtex-button):hover {
+  background-color: #c55fa0;
+}
+
+@media (width <= 1024px) {
+  .flexCol--textColumn {
+    padding-left: 0;
+  }
+
+  .flexRow--institutionalContainer {
+    margin-bottom: 40px;
+  }
+}
+
+@media (width <= 900px) {
+  .flexRow--institutionalContainer
+    :global(.vtex-store-components-3-x-container) {
+    padding: 0 21px !important;
+  }
+}
+
+@media (width <= 600px) {
+  .flexRow--contactUs :global(.vtex-store-components-3-x-container) {
+    padding: 0 21px;
+  }
+}

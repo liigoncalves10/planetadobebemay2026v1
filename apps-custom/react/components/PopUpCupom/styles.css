@@ -1,0 +1,280 @@
+.modalLeadContainerOvelay {
+  position: relative;
+  width: 465px;
+  max-width: 90%;
+}
+.modalLeadHead {
+  position: absolute;
+  top: 18px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-self: flex-start;
+  align-items: center;
+}
+.modalLeadLogo {
+  width: auto;
+  object-fit: contain;
+  height: auto;
+  max-width: 105px;
+}
+.modalLeadTitleContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: max-content;
+  align-items: center;
+  margin-left: 10px;
+}
+.modalLeadTitle,
+.modalLeadSubTitle {
+  color: #fff;
+  text-align: center;
+  font-family: "Fredoka", sans-serif;;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.modalLeadTitle {
+  margin-bottom: 0px;
+}
+.modalLeadSubTitle {
+  margin: 0;
+}
+.modalLeadImage {
+  width: 100%;
+  height: auto;
+}
+.modalLeadForm {
+  width: 226px;
+  height: auto;
+  max-width: 100%;
+}
+.modalLeadForm span {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  width: auto;
+}
+.modalLeadFormInput {
+  background: #d9d9d9;
+  border: none;
+  width: 100%;
+  height: 30px;
+  font-size: 12px;
+  text-align: center;
+  padding: 5px;
+  margin-top: 12px;
+}
+.modalLeadCupomContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modalLeadCupomContainer strong {
+  font-family: '"Fredoka", sans-serif;';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 128.99%;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: absolute;
+  top: -190px;
+  left: -32px;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  width: 111px;
+}
+.closeModal {
+  position: absolute;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  top: 6px;
+  right: 8px;
+  z-index: 6454;
+  color: #ffff;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 21px;
+  height: 21px;
+  background: transparent;
+  background-image: url(/arquivos/bg-popup-newsletter-close.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.closeModalAlt {
+  background-image: url(/arquivos/bg-popup-newsletter-close-alt.png);
+}
+
+.modalLeadFormContainer {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 457px;
+  padding: 25px;
+  padding-top: 108px;
+}
+
+.modalLeadFormTitle {
+  color: #fff;
+  text-align: center;
+  font-family: "Fredoka", sans-serif;;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 226px;
+  margin-bottom: 0px;
+}
+.modalLeadFormAcceptContainer input {
+  display: none;
+}
+.modalLeadFormAcceptContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #fff;
+  font-family: '"Fredoka", sans-serif;';
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 7px;
+}
+.modalLeadFormAcceptLabel {
+  font-size: 11px;
+}
+.modalLeadSend {
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  background: #2ab1b7;
+  border: none;
+  color: #fff;
+  font-family: '"Fredoka", sans-serif;';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  color: #ffffff;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalLeadShowCupom {
+  position: relative;
+  min-height: 457px;
+  padding: 25px;
+  display: flex;
+  padding-left: 10px;
+}
+
+.cupom {
+  background: #ffffff;
+  border-radius: 2px;
+  font-family: '"Fredoka", sans-serif;';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 128.99%;
+  text-transform: uppercase;
+  color: #8e8e8e;
+  width: 187px;
+  max-width: 100%;
+  height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  margin: 0;
+}
+.modalLeadShowCupom .copyButton {
+  appearance: none;
+  border: none;
+  outline: none;
+  color: #696969;
+  text-align: center;
+  font-family: "Fredoka", sans-serif;;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: #d9d9d9;
+  width: 187px;
+  max-width: 100%;
+  height: 30px;
+}
+.modalLeadShowCupom .condition {
+  color: #fff;
+  text-align: center;
+  font-family: "Fredoka", sans-serif;;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 30px;
+}
+
+.modalLeadShowCupomTitle {
+  color: #fff;
+  text-align: center;
+  font-family: "Fredoka", sans-serif;;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 7px;
+}
+
+.modalLeadShowCupomSubTitle {
+  color: #fff;
+  text-align: center;
+  font-family: "Fredoka", sans-serif;;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 7px;
+}
+
+.modalLeadShowCupomContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  max-width: 220px;
+}
+
+@media (max-width: 991px) {
+  .modalLeadContainerOvelay {
+    width: 353px;
+    max-width: 95vw;
+  }
+  .modalLeadFormContainer {
+    min-height: 90vw;
+    padding-right: 35%;
+  }
+
+  .modalLeadTitle,
+  .modalLeadSubTitle {
+    font-size: 14px;
+  }
+
+  .modalLeadShowCupom {
+    padding-right: 35%;
+  }
+}

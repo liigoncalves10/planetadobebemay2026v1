@@ -1,0 +1,16 @@
+{
+  "image#banner-0-left": {
+    "title": "Banner esquerda/superior",
+    "props": {
+      "src": "/arquivos/001.png",
+      "blockClass":"img-zoom"
+    }
+  },
+  "image#banner-0-right": {
+    "title": "Banner direita/inferior",
+    "props": {
+      "src": "/arquivos/2.png",
+      "blockClass":"img-zoom"
+    }
+  }
+}

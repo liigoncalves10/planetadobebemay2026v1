@@ -1,0 +1,78 @@
+.confirmationTitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #4d4d4d;
+}
+
+.confirmationMessage {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #4d4d4d;
+}
+
+.c-on-action-secondary {
+  color: #c55fa0;
+}
+
+.noticeListItem {
+  border-color: #707070;
+}
+
+.updateOrderButton :global(.vtex-button),
+.myOrdersButton :global(.vtex-button) {
+  background-color: #eef3f7;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #2ab1b7;
+}
+
+.cancelOrderButton :global(.vtex-button) {
+  background-color: #eef3f7;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: ed6f66;
+}
+
+.productPrice {
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 1.665px;
+  color: #696969;
+}
+
+.productName {
+  font-size: 11px;
+  letter-spacing: 1.21px;
+  font-family: 'Helvetica Neue';
+  color: #0b0f1a;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.productQuantity {
+  margin-left: 10px;
+}
+
+.totalListItemLabel,
+.totalListItemValue {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  color: #4e4e4e;
+}
+
+@media (max-width: 991px) {
+  .orderPlacedWrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

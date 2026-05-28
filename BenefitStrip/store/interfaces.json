@@ -1,0 +1,8 @@
+{
+  "benefitstrip": {
+    "component": "BenefitStrip",
+    "title": "Faixa de Benefícios",
+    "description": "Exibe uma faixa com os principais benefícios da loja",
+    "props": {}
+  }
+}

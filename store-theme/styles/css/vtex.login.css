@@ -1,0 +1,82 @@
+.label {
+  font-size: 0;
+  background-image: url('/arquivos/login2-new.svg');
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: -35px;
+  margin-left: 120px;
+}
+
+.label:hover {
+  background-image: url('/arquivos/user-bf-after.svg');
+}
+
+.arrowUp {
+  box-shadow: none;
+  width: 32px;
+  height: 4px;
+  border-radius: 2px;
+  background: #ffffff;
+  transform: rotate(0deg);
+  top: 4px;
+  right: 10px;
+}
+
+.contentContainer {
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 7px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contentInitialScreen {
+  border-radius: 8px;
+}
+
+.content {
+  align-items: center;
+}
+
+.formTitle {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #696969;
+  text-transform: lowercase;
+}
+
+.button :global(.vtex-button) {
+  background-color: #c55fa0;
+  font-weight: 500;
+  font-size: 11px;
+  text-align: center;
+  color: #696969;
+  border-radius: 20px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+}
+
+.profile {
+  max-width: 100%;
+  color: #c55fa0;
+  font-weight: 500;
+}
+
+.inputContainer :global(.vtex-input-prefix__group) {
+  border-radius: 50px;
+  border-width: 1px;
+}
+
+.inputContainerAccessCode :global(.vtex-styleguide-9-x-input)::placeholder {
+  font-size: 14px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.formFooter :global(.vtex-button) {
+  background: #c55fa0;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+}

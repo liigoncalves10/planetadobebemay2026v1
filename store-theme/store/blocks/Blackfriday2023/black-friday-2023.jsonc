@@ -1,0 +1,257 @@
+{
+    "store.custom#landing_page-blackfriday": {
+      "blocks": ["responsive-layout.desktop#lp-blackfriday",
+                "responsive-layout.mobile#lp-blackfriday"]
+    },
+    "responsive-layout.desktop#lp-blackfriday":{
+      "children":["flex-layout.row#lp-blackfriday-desktop"]
+
+    },
+    "responsive-layout.mobile#lp-blackfriday":{
+      "children":["flex-layout.row#lp-blackfriday-mobile"]
+
+    },
+    "flex-layout.row#lp-blackfriday-desktop":{
+        "children":["flex-layout.col#lp-blackfriday-desktop"],
+
+        "props":{
+          "blockClass": "lp-row"
+      }
+    },
+    "flex-layout.row#lp-blackfriday-mobile":{
+      "children":["flex-layout.col#lp-blackfriday-mobile"],
+
+        "props":{
+          "blockClass": "lp-row-mob"
+      }
+    },
+    "flex-layout.col#lp-blackfriday-desktop":{
+      "children":["image#banner-desktop",
+                  "flex-layout.row#deals-desktop",
+                  "search-result-layout.customQuery",
+                  "flex-layout.col#text-blackfriday",
+                  "flex-layout.col#text_images-blackfriday"
+                ],
+      "props":{
+                  "blockClass": "lp-content"
+              }
+    },
+    "flex-layout.col#lp-blackfriday-mobile":{
+      "children":["image#banner-mobile",
+                  "flex-layout.row#deals-mobile",
+                  "search-result-layout.customQuery",
+                  "flex-layout.col#text-blackfriday",
+                  "flex-layout.col#text_images-blackfriday"
+                ],
+      "props":{
+                  "blockClass": "lp-mob-content"
+              }
+    },
+    "image#banner-desktop":{
+      "title": "banner desktop",
+      "props":{
+          "blockClass": "banner-blackfriday-baby",
+          "src": "/arquivos/banners/Group2.png",
+          "maxWidth": "100%",
+          "maxiHeight": "auto"
+      }
+    },
+    "image#banner-mobile":{
+      "title": "banner mobile",
+      "props":{
+          "blockClass": "banner-blackfriday-babe-mob",
+          "src": "/arquivos/banners/Group4.png",
+          "maxWidth": "100%",
+          "maxiHeight": "auto"
+      }
+    },
+    "flex-layout.row#deals-desktop":{
+      "title": "deals desktop",
+      "children":["flex-layout.row#deals-images"],
+
+      "props":{
+        "blockClass": "row-deals-desk"
+      }
+    },
+    "flex-layout.row#deals-images":{
+      "children":["image#deals-1",
+                  "image#deals-2",
+                  "image#deals-3",
+                  "image#deals-4",
+                  "image#deals-5"],
+      "props":{
+        "blockClass": "col-deals-desk"
+      }
+    },
+    "image#deals-1":{
+      "props":{
+        "blockClass": ["images-deals","images-deals1"],
+        "src": "assets/img/Component-1.svg"
+      }
+    },
+    "image#deals-2":{
+      "props":{
+        "blockClass": ["images-deals","images-deals2"],
+        "src": "assets/img/Component-2.svg"
+      }
+    },
+    "image#deals-3":{
+      "props":{
+        "blockClass": ["images-deals","images-deals3"],
+        "src": "assets/img/Component-3.svg"
+      }
+    },
+    "image#deals-4":{
+      "props":{
+        "blockClass": ["images-deals","images-deals4"],
+        "src": "assets/img/Component-4.svg"
+      }
+    },
+    "image#deals-5":{
+      "props":{
+        "blockClass": ["images-deals","images-deals5"],
+        "src": "assets/img/Component-5.svg"
+      }
+    },
+    "flex-layout.col#text-blackfriday": {
+      "title": "primeiro bloco de texto",
+      "children":["rich-text#title-blackfriday-PB",
+                  "rich-text#text-blackfriday-PB"],
+      "props":{
+        "blockClass": "title-text-blackfriday-content"
+      }
+    },
+    "rich-text#title-blackfriday-PB": {
+      "title": "titulo blackfriday",
+      "props": {
+        "text": "## Título de conteúdo SEO",
+        "tag": "h2",
+        "blockClass": "seo-title"
+      }
+    },
+    "rich-text#text-blackfriday-PB": {
+        "title": "texto da blackfriday",
+        "props": {
+          "text": "Lorem Ipsum",
+          "tag": "p",
+          "blockClass": "seo-content"
+        }
+    },
+    "flex-layout.col#text_images-blackfriday":{
+      "title": "bloco tudo para o seu bebê",
+      "children":["flex-layout.row#title-text-all_for_baby",
+                  "flex-layout.row#image_title-text-who_are_planet_baby",
+                  "flex-layout.row#title-text-our_greatest_mission",
+                  "flex-layout.row#title-text-our_greatest_priority"],
+      "props":{
+        "blockClass": "text_images-blackfriday-content"
+      }
+    },
+    "flex-layout.row#title-text-all_for_baby":{
+      "title": "texto tudo do bebe",
+      "children":["rich-text#seo-title",
+                  "rich-text#seo-content"],
+      "props":{
+        "blockClass": "all-for-baby"
+      }
+    },
+    "flex-layout.row#image_title-text-who_are_planet_baby":{
+      "title": "texto quem e o PB",
+      "children":["flex-layout.row#seo-cards-row-1"]
+    },
+    "flex-layout.row#title-text-our_greatest_mission":{
+      "title": "texto nossa missao PB",
+      "children":[ "flex-layout.row#seo-cards-row-2"]
+    },
+    "flex-layout.row#title-text-our_greatest_priority":{
+      "title": "texto nossa missao PB",
+      "children":["flex-layout.row#seo-cards-row-3"]
+    },
+    "flex-layout.row#deals-mobile":{
+      "title": "deals mobile",
+      "children":["slider-layout#deals"]
+    },
+    "slider-layout#deals": {
+      "props": {
+        /* "fullWidth": true, */
+        "infinite": true,
+        "showNavigationArrows": "never",
+        "showPaginationDots": "never",
+        "autoplay": {
+          "timeout": 3000
+        },
+        "centerMode": {
+          "desktop": "disabled",
+          "tablet": "disabled",
+          "phone": "to-the-left"
+        },
+        "itemsPerPage": {
+          "tablet": 3,
+          "phone": 2
+        },
+        "blockClass": "deals-mobi"
+      },
+      "children": [
+                  "image#deals-1",
+                  "image#deals-2",
+                  "image#deals-3",
+                  "image#deals-4",
+                  "image#deals-5"
+                ]
+    },
+    "search-result-layout.customQuery": {
+      "title": "shelf esquenta Black Friday",
+      "props": {
+        "blockClass": "seach-blackfriday",
+        "querySchema": {
+          "orderByField": "OrderByReleaseDateDESC",
+          "hideUnavailableItems": true,
+          "maxItemsPerPage": 50,
+          "queryField": "Blue Top Retro Camera",
+          "mapField": "ft"
+        }
+      },
+      "blocks": [
+        "search-result-layout.desktop#blackfriday",
+        "search-result-layout.mobile#blackfriday",
+        "search-not-found-layout"
+      ]
+    },
+    "search-result-layout.desktop#blackfriday": {
+      "children": [
+        /* "flex-layout.row#banner-department",
+        "flex-layout.row#searchbread",
+        "flex-layout.row#searchtitle", */
+        "flex-layout.row#result"
+      ],
+      "props": {
+        "pagination": "show-more",
+        "preventRouteChange": false,
+        "blockClass": "container-category",
+        "defaultGalleryLayout": "grid"
+      }
+    },
+    "search-result-layout.mobile#blackfriday": {
+      "children": [
+
+        "flex-layout.row#searchbread",
+        "flex-layout.row#searchtitle",
+        "flex-layout.row#searchinfomobile",
+        "flex-layout.row#productCountMobile",
+        "flex-layout.row#contentmobile",
+        "flex-layout.row#fetchmore"
+      ],
+      "props": {
+        "pagination": "show-more",
+        "mobileLayout": {
+          "mode1": "small",
+          "mode2": "normal"
+        },
+        "defaultGalleryLayout": "grid"
+      }
+    },
+    "flex-layout.row#banner-department":{
+      "children":["rich-text#title-blackfriday-PB"]
+    }
+}
+

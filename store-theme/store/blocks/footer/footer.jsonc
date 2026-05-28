@@ -1,0 +1,228 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+
+  // footer [desktop]
+  "footer-layout.desktop": {
+    "children": [
+      "react-custom-inputs",
+      "flex-layout.row#footer-main-desktop",
+      "flex-layout.row#footer-bar-flags",
+      "flex-layout.row#footer-bar-copyright"
+    ]
+  },
+
+  "flex-layout.row#footer-main-desktop": {
+    "children": [
+      "vtex.menu@2.x:menu#general-menu-institutional",
+      "vtex.menu@2.x:menu#general-menu-help",
+      "vtex.menu@2.x:menu#general-menu-contact"
+    ],
+    "props": {
+      "blockClass": "footerMainContainer"
+    }
+  },
+
+  // footer [mobile]
+  "footer-layout.mobile": {
+    "children": [
+      /* "react-custom-inputs", */
+      "flex-layout.row#newsletter",
+      "flex-layout.row#footer-main-mobile",
+      "flex-layout.row#footer-bar-flags-mobile",
+      "flex-layout.row#footer-bar-copyright"
+    ]
+  },
+  "vtex.menu@2.x:menu#footer-accordionmobile":{
+    "title": "menu-footer-mobile",
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer-menu-mobile_geral"
+    },
+    "children":["menu-item#general-menu-institutional-mobile",
+                "menu-item#general-menu-help-mobile",
+                "menu-item#general-menu-contact-mobile"]
+  },
+
+  "flex-layout.row#footer-main-mobile": {
+    "children": [
+      "vtex.menu@2.x:menu#footer-accordionmobile",
+      "flex-layout.col#footer-social-mobile"
+    ],
+    "props": {
+      "blockClass": "footerMainMobileRow",
+      "preventVerticalStretch": "true",
+      "preventHorizontalStretch": "true"
+    }
+  },
+
+  // general - list: social media
+  "flex-layout.col#footer-social": {
+    "children": [
+      "rich-text#footer-social-title",
+      "flex-layout.row#general-social-list"
+    ],
+    "props": {
+      "blockClass": "footerSocialMedia",
+      "preventVerticalStretch": "true"
+    }
+  },
+  "flex-layout.col#footer-social-mobile": {
+    "children": [
+      "rich-text#footer-social-title",
+      "flex-layout.row#general-social-list-mobile"
+    ],
+    "props": {
+      "blockClass": "footerSocialMediaMobile",
+      "preventVerticalStretch": "true"
+    }
+  },
+  "rich-text#footer-social-title": {
+    "props": {
+      "blockClass": "socialMediaTitle",
+      "text": "Siga-nos nas Redes"
+    }
+  },
+  "flex-layout.row#general-social-list": {
+    "children": [
+      "rich-text#social-facebook",
+      "rich-text#social-instagram",
+      "rich-text#social-youtube"
+    ],
+    "props": {
+      "blockClass": "socialMediaList",
+      "preventHorizontalStretch": "true",
+      "preventVerticalStretch": "true"
+    }
+  },
+  "flex-layout.row#general-social-list-mobile": {
+    "children": [
+      "rich-text#social-facebook",
+      "rich-text#social-instagram",
+      "rich-text#social-youtube"
+    ],
+    "props": {
+      "blockClass": ["socialMediaList", "socialMediaListMobile"],
+      "preventHorizontalStretch": "true",
+      "preventVerticalStretch": "true"
+    }
+  },
+  "rich-text#social-facebook": {
+    "props": {
+      "blockClass": ["socialMediaItem", "socialFacebook"],
+      "text": "<a href='https://www.facebook.com/planeta.dobebe.79' class='vtex-rich-text-0-x-link vtex-rich-text-0-x-link--socialMediaItem vtex-rich-text-0-x-link--socialFacebook' target='_blank'>Facebook</a>"
+    }
+  },
+  "rich-text#social-instagram": {
+    "props": {
+      "blockClass": ["socialMediaItem", "socialInstagram"],
+      "text": "<a href='https://www.instagram.com/lojaplanetadobebe/' class='vtex-rich-text-0-x-link vtex-rich-text-0-x-link--socialMediaItem vtex-rich-text-0-x-link--socialInstagram' target='_blank'>Instagram</a>"
+    }
+  },
+  "rich-text#social-youtube": {
+    "props": {
+      "blockClass": ["socialMediaItem", "socialYoutube"],
+      "text": "<a href='https://www.youtube.com/channel/UC1h3dZa-kIr4KYoPp0Y_Ekw' class='vtex-rich-text-0-x-link vtex-rich-text-0-x-link--socialMediaItem vtex-rich-text-0-x-link--socialYoutube' target='_blank'>Youtube</a>"
+    }
+  },
+
+  // footer - flags
+  "flex-layout.row#footer-bar-flags": {
+    "children": [
+      "flex-layout.row#footer-payments",
+      "flex-layout.row#footer-security"
+    ],
+    "props": {
+      "blockClass": "footerFlagsContainer",
+      "preventHorizontalStretch": "true",
+      "preventVerticalStretch": "true"
+    }
+  },
+  "flex-layout.row#footer-bar-flags-mobile": {
+    "children": [
+      "flex-layout.row#footer-payments",
+      "flex-layout.row#footer-security"
+    ],
+    "props": {
+      "blockClass": ["footerFlagsContainer", "footerFlagsContainerMobile"],
+      "preventHorizontalStretch": "true",
+      "preventVerticalStretch": "true"
+    }
+  },
+  "flex-layout.row#footer-payments": {
+    "children": [
+      "image#payment-mastercard",
+      "image#payment-visa",
+      "image#payment-americanexpress",
+      "image#payment-dinersclub",
+      "image#payment-elo",
+      "image#payment-boleto",
+      "image#payment-pix"
+    ],
+    "props": {
+      "blockClass": "footerPayments",
+      "preventHorizontalStretch": "true",
+      "preventVerticalStretch": "true"
+    }
+  },
+
+  "flex-layout.row#footer-security": {
+    "children": ["image#security"],
+    "props": {
+      "blockClass": "footerSecurity"
+    }
+  },
+
+  // footer - copyright
+  "flex-layout.row#footer-bar-copyright": {
+    "children": ["flex-layout.col#footer-copyright"],
+    "props": {
+      "blockClass": "footerCopyrightContainer"
+    }
+  },
+  "flex-layout.col#footer-copyright": {
+    "children": [
+      "flex-layout.row#footer-copyright",
+      "flex-layout.row#footer-credits"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventVerticalStretch": "true"
+    }
+  },
+  "flex-layout.row#footer-copyright": {
+    "children": ["rich-text#footer-copyright"],
+    "props": {
+      "fullWidth": "true",
+      "preventHorizontalStretch": "false"
+    }
+  },
+  "rich-text#footer-copyright": {
+    "props": {
+      "blockClass": "footerCopyrightText",
+      "text": "PLANETA - IMPORTACAO E DISTRIBUICAO DE BRINQUEDOS LTDA CNPJ 13.434.272/0001-41"
+    }
+  },
+  "flex-layout.row#footer-credits": {
+    "children": ["rich-text#credit-avanti", "rich-text#credit-vtex"],
+    "props": {
+      "blockClass": "footerCredits",
+      "fullWidth": "true",
+      "preventVerticalStretch": "true",
+      "preventHorizontalStretch": "false"
+    }
+  },
+  "rich-text#credit-avanti": {
+    "props": {
+      "blockClass": ["footerCreditImage", "creditAvanti"],
+      "text": "[Avanti](https://penseavanti.com.br)"
+    }
+  },
+  "rich-text#credit-vtex": {
+    "props": {
+      "blockClass": ["footerCreditImage", "creditVtex"],
+      "text": "[Vtex](https://vtex.com)"
+    }
+  }
+}

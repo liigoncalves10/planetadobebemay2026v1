@@ -1,0 +1,41 @@
+.styled-menu {
+  background-color: white;
+}
+
+.vtex-menu-2-x-submenu {
+  background-color: white;
+}
+
+/* Botão Ofertas colorido */
+
+/* Botão Home colorido */
+.menu-menu-home {
+  background: #c55fa0;
+  color: #fff !important;
+  font-weight: bold;
+  border-radius: 24px;
+  padding: 8px 24px !important;
+  margin-right: 8px;
+  display: inline-block;
+  transition: background 0.2s;
+}
+.menu-menu-home:hover {
+  background: #a94e8a;
+  color: #fff !important;
+}
+
+/* Botão Ofertas colorido */
+.menu-menu-offers {
+  background: #2ab1b7;
+  color: #fff !important;
+  font-weight: bold;
+  border-radius: 24px;
+  padding: 8px 24px !important;
+  margin-right: 8px;
+  display: inline-block;
+  transition: background 0.2s;
+}
+.menu-menu-offers:hover {
+  background: #219ca3;
+  color: #fff !important;
+}

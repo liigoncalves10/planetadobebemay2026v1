@@ -1,0 +1,76 @@
+{
+  "store.custom#exchange-policy-physical": {
+    "blocks": [
+      "responsive-layout.desktop#exchange-policy-physical",
+      "responsive-layout.tablet#exchange-policy-physical",
+      "responsive-layout.phone#exchange-policy-physical"
+    ]
+  },
+
+  "responsive-layout.desktop#exchange-policy-physical": {
+    "children": ["flex-layout.row#catalog-desktop-exchange-policy-physical"]
+  },
+
+  "responsive-layout.tablet#exchange-policy-physical": {
+    "children": [
+      "flex-layout.row#catalog-menu-mobile-exchange-policy-physical",
+      "flex-layout.row#catalog-mobile-exchange-policy-physical"
+    ]
+  },
+
+  "responsive-layout.phone#exchange-policy-physical": {
+    "children": [
+      "flex-layout.row#catalog-menu-mobile-exchange-policy-physical",
+      "flex-layout.row#catalog-mobile-exchange-policy-physical"
+    ]
+  },
+  "flex-layout.row#catalog-desktop-exchange-policy-physical": {
+    "children": [
+      "flex-layout.col#institutional-sidebar-desktop",
+      "flex-layout.col#content-catalog-exchange-policy-physical"
+    ],
+    "props": {
+      "blockClass": "institutionalContainer"
+    }
+  },
+
+  "flex-layout.row#catalog-menu-mobile-exchange-policy-physical": {
+    "children": ["flex-layout.col#institutional-sidebar-mobile"],
+    "props": {
+      "blockClass": "institutionalContainer"
+    }
+  },
+
+  "flex-layout.row#catalog-mobile-exchange-policy-physical": {
+    "children": [
+      "flex-layout.col#content-catalog-mobile-exchange-policy-physical"
+    ],
+    "props": {
+      "blockClass": "institutionalContainer"
+    }
+  },
+
+  "flex-layout.col#content-catalog-mobile-exchange-policy-physical": {
+    "children": ["rich-text#catalog-exchange-policy-physical"],
+    "props": {
+      "blockClass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.col#content-catalog-exchange-policy-physical": {
+    "children": ["rich-text#catalog-exchange-policy-physical"],
+    "props": {
+      "blockClass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#catalog-exchange-policy-physical": {
+    "title": "Conteúdo Catálogo",
+    "props": {
+      "text": "### **Política de Troca - Lojas Físicas** \n Prezado Consumidor,<br>\nO Planeta do Bebê em parceria com o grupo de redes Infanto Club, mantém uma política de troca que respeita nossos consumidores, parceiros comerciais e as leis de consumo de nosso país.<br>\nAs compras realizadas em nossas lojas físicas não são passíveis de arrependimento e devolução do valor pago. Esta modalidade só se aplica para as compras realizadas fora dos estabelecimentos comerciais, conforme trata o artigo 49 do Código de Defesa do Consumidor.<br>\nTodos os produtos de certificação obrigatória comercializados em nossas lojas possuem certificação dos órgãos autorizados - OCP'S (Organismos de Certificação de Produtos).<br>\n**1.** **Troca de produtos sem defeito de fabricação, manuseio ou uso**<br>\nTodos os produtos adquiridos em nossas lojas físicas poderão ser trocados em uma de nossas filiais, desde que façam parte da linha de produtos daquela loja. O prazo para troca é de 30 dias da data da compra, estando o produto na embalagem original, sem indícios de uso, sem violação do lacre original do fabricante, acompanhado do manual e todos os acessórios. Com a etiqueta de identificação, cupom ou nota fiscal das nossas lojas.<br>\nA ausência das condições acima descritas ensejará a negativa da troca do produto por nossas lojas.<br>\n**2.** **Cupom Fiscal**<br>\nO cupom fiscal da compra será solicitado pela loja quando houver divergência entre o valor pago e o valor atual do produto, ausência da etiqueta de identificação, ausência da data da compra na etiqueta para fins de comprovação do prazo estipulado para troca.<br>\nLembramos que para efeito de garantia do fabricante/fornecedor do produto, em caso de defeito de fabricação, é obrigatório que o consumidor apresente o cupom fiscal da compra.<br>\nToda solicitação de reimpressão de cupom fiscal deverá ser feita diretamente na loja onde a compra foi realizada ou através de nossa Central de Atendimento, sendo necessário e obrigatório que o consumidor forneça os dados: data exata da compra, valor, forma de pagamento e o item adquirido. A reimpressão do cupom fiscal será realizada, estando todos os dados referentes à compra corretos, em até 10 dias úteis do pedido, devendo o mesmo ser retirado na própria loja.<br>\n**3. Produtos não sujeitos a troca**<br>\n**3.1.** Produtos abertos, produtos usados e/ou manuseados, produtos de mostruário e produtos decorrentes de insatisfação, não poderão ser trocados em nossas lojas.<br>\n**3.2.** Os produtos adquiridos em eventos promocionais, tais como: mega liquida, mega oferta, black friday entre outros não poderão ser trocados, com exceção de produtos que apresentarem defeitos de fabricação. Em se tratando de defeito o prazo para troca é de 90 dias da data da compra. A troca será realizada pelo mesmo produto adquirido, na loja de origem da compra.<br>\n**3.3.** Produtos das linhas de puericultura leve e pesada, serão abertos e conferidos na presença dos consumidores e após adquiridos não poderão ser trocados.<br>\nSe o produto adquirido apresentar defeito de fabricação após o uso e durante o prazo de garantia, deverá ser levado a Assistência Técnica do fornecedor/fabricante para reparo ou eventual troca.<br>\nCaso encontre alguma dificuldade em contatar o fabricante ou assistência técnica consulte nosso gerente ou nossa Central de Atendimento que poderão auxiliá-lo na solução.<br>\n**3.4.** Linha Baby: peças de mostruário, fralda, produtos de higiene, alimentação e itens promocionais não poderão ser trocados.<br>\n**3.5.** Vestuário e Enxoval: após utilizado caso venha apresentar defeito, serão analisados pela loja e pelo fornecedor, ficando a troca vinculada a confirmação do defeito e somente poderão ser trocados na loja de origem da compra ou em outra filial que possua o mesmo mix de produtos.<br>\n**3.5.1.** Não serão considerados defeitos: uso inadequado ou desgaste natural; lavagem incorreta; dano acidental ou provocado; manchas causadas por produtos de limpeza.<br><br>\n**4. Produtos com defeito de fabricação**<br>\nCaso o produto adquirido apresente defeito de fabricação, o consumidor terá garantia legal de 90 (noventa) dias para reclamar de vício ou defeito do produto, garantia esta dada pelo fabricante, podendo alguns produtos ter um prazo de garantia maior que a estabelecida por Lei (noventa dias da compra do produto), o que será sempre informado ao consumidor.<br>\nA garantia é do fabricante/fornecedor do produto, devendo o consumidor ao constatar defeito ou vício no produto, contatar diretamente o fabricante/fornecedor do produto.<br>\nProdutos que apresentarem defeito de fabricação, que estejam sem uso, poderão ser levados até a loja de origem da compra para avaliação e possível troca. Lembrando que a troca poderá ou não ser realizada. Nestes casos, é necessário levar o produto com sua embalagem original, com todos os acessórios e com nossa etiqueta afixada e datada, no prazo de 90 dias da data da compra.<br>\nA ausência das condições acima descritas ensejará a negativa de análise e possibilidade da troca do produto.<br>\nEsta política não se aplica aos produtos mencionados no tópico 3. Produtos Não Sujeitos A Troca.<br>\nProdutos que apresentarem defeito de fabricação após a utilização, não se enquadram nesta política, devendo nesses casos, o fabricante/fornecedor ser contatado para as devidas orientações ao consumidor..<br>\n**5. Atendimento ao Cliente**<br>\nEm caso de dúvidas entre em contato com nossa Central de Atendimento pelo endereço: <sac@planetadobebe.com.br>. O atendimento é realizado de segunda a sexta-feira das 09h às 18h.",
+      "blockClass": "contentInstitutional"
+    }
+  }
+}

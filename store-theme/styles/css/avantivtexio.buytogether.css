@@ -1,0 +1,953 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+.shelfTitle {
+  color: #fff;
+  font-family: 'Helvetica Neue', sans-serif !important;
+  font-size: 30px;
+  font-style: normal;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 900;
+  line-height: 41px;
+  text-align: center;
+  text-transform: lowercase;
+}
+
+.shelfProductName__name {
+  color: #494949;
+  font-family: 'Helvetica Neue', sans-serif !important;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 138%;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.shelfProductName__secondName {
+  display: none;
+}
+
+.productInCash {
+  color: #696969;
+  display: flex;
+  font-family: 'Helvetica Neue', sans-serif !important;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  justify-content: center;
+  line-height: 140%;
+  padding: 2px;
+  text-align: center;
+}
+
+.shelfInstallmentsContainer {
+  color: #696969;
+  display: flex;
+  font-family: 'Helvetica Neue', sans-serif !important;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  gap: 4px;
+  justify-content: center;
+  line-height: 140%;
+  margin-top: -8px;
+  text-align: center;
+}
+
+.shelfInstallmentsContainer::after {
+  content: 'sem juros';
+}
+
+.shelfSellingPrice {
+  color: #494949;
+  display: flex;
+  font-family: 'Helvetica Neue', sans-serif !important;
+  font-size: 14px;
+  font-style: normal;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 900;
+  justify-content: center;
+  line-height: 140%;
+  margin-bottom: 0;
+  text-decoration: line-through;
+}
+
+.shelfBestPrice {
+  color: #c55fa0;
+  display: flex;
+  font-family: 'Helvetica Neue', sans-serif !important;
+  font-size: 14px;
+  font-style: normal;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 900;
+  gap: 5px;
+  justify-content: center;
+  line-height: 140%;
+  text-align: center;
+}
+
+.shelfWrapperBuyButton {
+  background: #f6f6f7;
+  border: 1px solid rgb(90 97 103 / 4%);
+  border-radius: 10px;
+  box-sizing: border-box;
+  height: 259px;
+  margin: 0 19px 0 18px;
+  position: relative;
+}
+
+.shelfPriceBuy::before {
+  color: #212529;
+  content: 'Compre os dois produtos por:';
+  display: flex;
+  font-family: 'Helvetica Neue', sans-serif !important;
+  font-size: 16px;
+  font-style: normal;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 900;
+  justify-content: center;
+  line-height: 22px;
+  padding-top: 25px;
+  text-align: center;
+}
+
+.shelfPriceBuyOldPrice {
+  color: #adadad;
+  display: flex;
+  font-family: 'Helvetica Neue', sans-serif !important;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  justify-content: center;
+  line-height: 16px;
+  padding-top: 6px;
+  text-align: center;
+  text-decoration-line: line-through;
+}
+
+.shelfPriceBuyFullPrice {
+  color: #c55fa0;
+  display: flex;
+  font-family: 'Helvetica Neue', sans-serif !important;
+  font-size: 20px;
+  font-style: normal;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 900;
+  justify-content: center;
+  line-height: 27px;
+  margin-bottom: 8px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.shelfInstallmentPrice {
+  color: #696969;
+  font-family: 'Helvetica Neue', sans-serif !important;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  text-align: center;
+}
+
+.shelfBuyButton::after {
+  color: #fff;
+  content: 'Comprar';
+  font-size: 12px;
+  font-style: normal;
+  font-family: 'Fredoka', sans-serif !important;
+  font-weight: 900;
+  line-height: 140%;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.shelfBoxItems {
+  display: flex;
+  gap: 0.5rem;
+  margin: 18px;
+}
+
+.shelfItem {
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  height: 455px;
+  padding: 5px;
+  width: 183px;
+}
+
+.shelfPrice:nth-child(4n + 3) {
+  margin-bottom: 5px;
+}
+
+.shelfButton {
+  display: none;
+}
+
+.shelfMessage {
+  display: none;
+}
+
+@media screen and (width <= 999px) {
+  .shelfTitle {
+    color: #fff;
+    font-family: 'Helvetica Neue', sans-serif !important;
+    font-size: 2px;
+    font-style: normal;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 900;
+    line-height: 0px;
+    text-align: center;
+    text-transform: lowercase;
+  }
+
+  .shelfTitle::after {
+    background: #c55fa0;
+    border-radius: 10px;
+    content: '';
+    height: 6px;
+    left: 50%;
+    position: absolute;
+    top: 1747px;
+    transform: translate(-50%, -140%);
+    width: 40px;
+  }
+
+  .shelfTitle::before {
+    color: #212529;
+    content: 'Compre Junto';
+    font-family: 'Helvetica Neue', sans-serif !important;
+    font-size: 30px;
+    font-style: normal;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 900;
+    left: 50%;
+    line-height: 41px;
+    position: absolute;
+    text-align: center;
+    top: 1758px;
+    transform: translate(-50%, -140%);
+    width: 100%;
+  }
+
+  .shelfProductName__name {
+    color: #494949;
+    font-family: 'Helvetica Neue', sans-serif !important;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 138%;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .shelfProductName__secondName {
+    display: none;
+  }
+
+  .productInCash {
+    color: #696969;
+    display: flex;
+    font-family: 'Helvetica Neue', sans-serif !important;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    justify-content: center;
+    line-height: 140%;
+    padding: 2px;
+    text-align: center;
+  }
+
+  .shelfInstallmentsContainer {
+    color: #696969;
+    display: flex;
+    font-family: 'Helvetica Neue', sans-serif !important;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    gap: 4px;
+    justify-content: center;
+    line-height: 140%;
+    margin-top: -8px;
+    text-align: center;
+  }
+
+  .shelfInstallmentsContainer::after {
+    content: 'sem juros';
+  }
+
+  .shelfSellingPrice {
+    color: #494949;
+    display: flex;
+    font-family: 'Helvetica Neue', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 900;
+    justify-content: center;
+    line-height: 140%;
+    margin-bottom: 0;
+    text-decoration: line-through;
+  }
+
+  .shelfBestPrice {
+    color: #c55fa0;
+    display: flex;
+    font-family: 'Helvetica Neue', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 900;
+    gap: 5px;
+    justify-content: center;
+    line-height: 140%;
+    text-align: center;
+  }
+
+  .shelfWrapperBuyButton {
+    background: #f6f6f7;
+    border: 1px solid rgb(90 97 103 / 4%);
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: 259px;
+    margin: 0 19px 0 18px;
+  }
+
+  .shelfPriceBuy::before {
+    color: #212529;
+    content: 'Compre os dois produtos por:';
+    display: flex;
+    font-family: 'Helvetica Neue', sans-serif !important;
+    font-size: 16px;
+    font-style: normal;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 900;
+    justify-content: center;
+    line-height: 22px;
+    padding-top: 25px;
+    text-align: center;
+  }
+
+  .shelfPriceBuyOldPrice {
+    color: #adadad;
+    display: flex;
+    font-family: 'Helvetica Neue', sans-serif !important;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    justify-content: center;
+    line-height: 16px;
+    padding-top: 6px;
+    text-align: center;
+    text-decoration-line: line-through;
+  }
+
+  .shelfPriceBuyFullPrice {
+    color: #c55fa0;
+    display: flex;
+    font-family: 'Helvetica Neue', sans-serif !important;
+    font-size: 20px;
+    font-style: normal;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 900;
+    justify-content: center;
+    line-height: 27px;
+    margin-bottom: 8px;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .shelfInstallmentPrice {
+    color: #696969;
+    font-family: 'Helvetica Neue', sans-serif !important;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    text-align: center;
+  }
+
+  .shelfBuyButton::after {
+    color: #fff;
+    content: 'Comprar';
+    font-family: 'Helvetica Neue', sans-serif !important;
+    font-size: 12px;
+    font-style: normal;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 900;
+    line-height: 140%;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .shelfBoxItems {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin: 0;
+    position: relative;
+  }
+
+  .shelfItem {
+    border: 1px solid #e6e6e6;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    height: 455px;
+    padding: 5px;
+    width: 183px;
+  }
+
+  .shelfPrice:nth-child(4n + 3) {
+    margin-bottom: 5px;
+  }
+
+  .shelfButton {
+    display: none;
+  }
+
+  .shelfMessage {
+    display: none;
+  }
+
+  .container {
+    height: 100%;
+    width: auto;
+  }
+
+  .shelfWrapperBuyButton {
+    width: auto;
+  }
+
+  .shelfWrapper {
+    height: 100%;
+    width: auto;
+  }
+
+  .shelfPriceBuySavedPrice {
+    background: #c55fa0;
+    border-radius: 40px;
+    color: #fff;
+    font-family: 'Helvetica Neue', sans-serif !important;
+    font-size: 10px;
+    font-style: normal;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 900;
+    height: 22px;
+    left: 30%;
+    line-height: 14px;
+    margin-bottom: 0;
+    padding-top: 4px;
+    position: absolute;
+    text-align: center;
+    top: 55px;
+    width: 144px;
+  }
+
+  .shelfBuyButton {
+    align-items: center;
+    background: #c55fa0;
+    border: 0;
+    border-radius: 40px;
+    color: #c55fa0;
+    cursor: pointer;
+    display: flex;
+    height: 41px;
+    justify-content: center;
+    left: 50%;
+    position: absolute;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    width: 264px;
+  }
+
+  .shelfWrapperBuyButton::after {
+    align-items: center;
+    background: #c55fa0;
+    border-radius: 50%;
+    content: url('assets/icons/icons8-sinal-de-igual-24.png');
+    display: flex;
+    height: 38px;
+    justify-content: center;
+    left: 49%;
+    padding-top: 5px;
+    position: absolute;
+    top: -9%;
+    transform: translate(-50%, -50%);
+    width: 38px;
+  }
+
+  .shelfBoxItems::after {
+    align-items: center;
+    background: #c55fa0;
+    border-radius: 50%;
+    content: url('assets/icons/icons8-soma-24.png');
+    display: flex;
+    justify-content: center;
+    left: 49%;
+    padding-top: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 36px;
+  }
+
+  .shelfWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .shelfInstallmentsWrapper {
+    margin-top: -18px;
+  }
+}
+
+@media (width <= 650px) {
+  .shelfTitle::after {
+    background: #c55fa0;
+    border-radius: 10px;
+    content: '';
+    height: 6px;
+    left: -44%;
+    position: relative;
+    top: 30px;
+    transform: translate(-50%, -140%);
+    width: 40px;
+  }
+
+  .shelfTitle::before {
+    color: #212529;
+    content: 'Compre Junto';
+    font-family: 'Helvetica Neue', sans-serif !important;
+    font-size: 30px;
+    font-style: normal;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 900;
+    left: 50%;
+    line-height: 41px;
+    position: relative;
+    text-align: center;
+    top: 40px;
+    transform: translate(-50%, -140%);
+    width: 100%;
+  }
+
+  .shelfItem {
+    border: 1px solid #e6e6e6;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    height: 455px;
+    padding: 5px;
+    width: 183px;
+  }
+
+  .shelfInstallmentVariantsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    order: 4;
+  }
+
+  .shelfWrapperBuyButton::after {
+    align-items: center;
+    background: #c55fa0;
+    border-radius: 50%;
+    content: url('assets/icons/icons8-sinal-de-igual-24.png');
+    display: flex;
+    height: 38px;
+    justify-content: center;
+    left: 49%;
+    padding-top: 5px;
+    position: absolute;
+    top: -9%;
+    transform: translate(-50%, -50%);
+    width: 38px;
+  }
+
+  .shelfBuyButton {
+    align-items: center;
+    background: #c55fa0;
+    border: 0;
+    border-radius: 40px;
+    color: #c55fa0;
+    cursor: pointer;
+    display: flex;
+    height: 41px;
+    justify-content: center;
+    left: 50%;
+    position: absolute;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    width: 264px;
+  }
+
+  .shelfPriceBuySavedPrice {
+    background: #c55fa0;
+    border-radius: 40px;
+    color: #fff;
+    font-family: 'Helvetica Neue', sans-serif !important;
+    font-size: 10px;
+    font-style: normal;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 900;
+    height: 22px;
+    left: 30%;
+    line-height: 14px;
+    margin-bottom: 0;
+    padding-top: 4px;
+    position: absolute;
+    text-align: center;
+    top: 27%;
+    width: 144px;
+  }
+
+  .shelfWrapperBuyButton {
+    padding-top: 9px;
+  }
+
+  .shelfPriceBuy::before {
+    color: #212529;
+    content: 'Compre os dois produtos por:';
+    display: flex;
+    font-family: 'Helvetica Neue', sans-serif !important;
+    font-size: 16px;
+    font-style: normal;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 900;
+    justify-content: center;
+    line-height: 22px;
+    padding-top: 0;
+    text-align: center;
+  }
+}
+
+@media (width <= 400px) {
+  .shelfWrapperBuyButton {
+    padding-top: 13px;
+  }
+
+  .shelfWrapperBuyButton::after {
+    align-items: center;
+    background: #c55fa0;
+    border-radius: 50%;
+    content: url('assets/icons/icons8-sinal-de-igual-24.png');
+    display: flex;
+    height: 38px;
+    justify-content: center;
+    left: 49%;
+    padding-top: 5px;
+    position: absolute;
+    top: -9%;
+    transform: translate(-50%, -50%);
+    width: 38px;
+  }
+
+  .shelfBoxItems::after {
+    align-items: center;
+    background: #c55fa0;
+    border-radius: 50%;
+    content: url('assets/icons/icons8-soma-24.png');
+    display: flex;
+    justify-content: center;
+    left: 49%;
+    padding-top: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 36px;
+  }
+}
+
+@media (width <= 330px) {
+  .shelfBuyButton {
+    margin-left: 10px;
+    margin-top: 16px;
+  }
+
+  .shelfPriceBuySavedPrice {
+    left: 26%;
+  }
+}
+
+@media only screen and (width >= 999px) {
+  .shelfTitle {
+    color: #fff;
+    font-family: 'Helvetica Neue', sans-serif !important;
+    font-size: 30px;
+    font-style: normal;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 900;
+    line-height: 41px;
+    padding-bottom: 30px;
+    text-align: center;
+    text-transform: lowercase;
+  }
+
+  .shelfTitle::before {
+    color: #212529;
+    content: 'Compre Junto';
+    font-family: 'Helvetica Neue', sans-serif !important;
+    font-size: 30px;
+    font-style: normal;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 900;
+    left: 50%;
+    line-height: 41px;
+    position: absolute;
+    text-align: center;
+    top: 8%;
+    transform: translate(-50%, -140%);
+  }
+
+  .shelfTitle::after {
+    background: #c55fa0;
+    border-radius: 10px;
+    content: '';
+    height: 6px;
+    left: 50%;
+    position: absolute;
+    top: 7%;
+    transform: translate(-50%, -140%);
+    width: 40px;
+  }
+
+  .container {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1240px;
+    padding: 0;
+    position: relative;
+  }
+
+  .shelfWrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .shelfWrapperBuyButton {
+    background: #f6f6f7;
+    border: 1px solid rgb(90 97 103 / 4%);
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: 277px;
+    margin: 0 19px 0 18px;
+    position: relative;
+    width: 540px;
+  }
+
+  .shelfWrapperBuyButton::after {
+    align-items: center;
+    background: #c55fa0;
+    border-radius: 50%;
+    content: url('assets/icons/icons8-sinal-de-igual-24.png');
+    display: flex;
+    height: 38px;
+    justify-content: center;
+    left: -15%;
+    padding-top: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 38px;
+  }
+
+  .shelfPriceBuy {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    position: relative;
+  }
+
+  .shelfPriceBuySavedPrice {
+    background: #c55fa0;
+    border-radius: 40px;
+    color: #fff;
+    font-family: 'Helvetica Neue', sans-serif !important;
+    font-size: 10px;
+    font-style: normal;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 900;
+    height: 22px;
+    left: 50%;
+    line-height: 14px;
+    margin-bottom: 0;
+    margin-top: 13px;
+    padding-top: 4px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 144px;
+  }
+
+  .shelfBuyButton {
+    align-items: center;
+    background: #c55fa0;
+    border: 0;
+    border-radius: 40px;
+    color: #c55fa0;
+    cursor: pointer;
+    display: flex;
+    height: 41px;
+    justify-content: center;
+    left: 50%;
+    position: absolute;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    width: 264px;
+  }
+
+  .shelfItem {
+    background: #fff;
+    border: 1px solid #f6f6f7;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 575px;
+    padding: 5px;
+    width: 300px;
+  }
+
+  .shelfBoxItems {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: inherit;
+  }
+
+  .shelfBoxItems::after {
+    align-items: center;
+    background: #c55fa0;
+    border-radius: 50%;
+    content: url('assets/icons/icons8-soma-24.png');
+    display: flex;
+    height: 38px;
+    justify-content: center;
+    left: 46%;
+    padding-top: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 38px;
+  }
+}
+
+.shelfImgButton {
+  display: flex;
+  height: auto !important;
+  width: 100%;
+}
+
+.shelfContainerColor {
+  display: flex;
+  gap: 0.4rem;
+  justify-content: center;
+}
+
+.SelectionVariationItemColor {
+  background: transparent;
+  border-color: #f3f3f3;
+  height: 42px;
+  line-height: 36px;
+  min-width: 42px;
+  width: 42px;
+}
+
+.totalizerValue {
+  color: #696969;
+  font-family: 'Helvetica Neue', sans-serif !important;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  text-align: center;
+}
+
+.shelfInstallmentVariantsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  order: 4;
+}
+
+.shelfInstallmentVariantsWrapperFirst
+  .shelfContainerColor
+  .selectionVariationItemColorActive {
+  background: transparent;
+  height: 42px;
+  line-height: 36px;
+  min-width: 42px;
+  outline: 5px auto #c55fa0 !important;
+  width: 42px;
+}
+
+.shelfInstallmentVariantsWrapperFirst
+  .selectionVariationItemColorActive
+  .shelfColorVariantText {
+  display: none;
+}
+
+.shelfInstallmentVariantsWrapperSecond
+  .SelectionVariationItemColor
+  .shelfImgButton {
+  display: none;
+}
+
+.shelfInstallmentVariantsWrapperFirst
+  .SelectionVariationItemColor
+  .shelfColorVariantText {
+  display: none;
+}
+
+.shelfColorButton:focus {
+  border-color: #c55fa0 !important;
+  border-radius: 0;
+  outline: 5px auto #c55fa0 !important;
+  z-index: 10;
+}
+
+.SKUButtonActive {
+  border-color: #c55fa0 !important;
+  border-radius: 0;
+  outline: 5px auto #c55fa0 !important;
+}
+
+.shelfInstallmentVariantsWrapperSecond::before {
+  color: #494949;
+  content: 'Tamanho:';
+  font-family: 'Helvetica Neue', sans-serif !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  left: 50%;
+  line-height: 140%;
+  position: absolute;
+  top: -14px;
+  transform: translate(-50%, -50%);
+  width: 64px;
+}
+
+.shelfInstallmentVariantsWrapperSecond {
+  position: relative;
+}
+
+.shelfColorVariantText {
+  align-items: center;
+  color: #494949;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}

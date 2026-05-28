@@ -1,0 +1,53 @@
+<script>
+  $(document).ready(function () {
+    allProduct()
+
+    $(window).on('orderFormUpdated.vtex', function (evt, orderForm) {
+      allProduct();
+    });
+  });
+
+  function allProduct() {
+    var intervalProduct = setInterval(function () {
+      if ($('.product-item').length > 0) {
+        clearInterval(intervalProduct);
+        $('.product-item').each(function (index, element) {
+          var _this = $(element);
+          var productID = _this.attr('data-sku');
+
+          vtexjs.checkout.orderForm.items.map(function (item) {
+            if (item.id == productID) {
+              if (item.attachmentOfferings.length > 0) {
+                item.attachmentOfferings.map(function (typesAttachMents) {
+                  if (typesAttachMents.name != 'Customizar Produtos') {
+                    for (var _i = 0, _Object$entries = Object.entries(typesAttachMents.schema); _i < _Object$entries.length; _i++) {
+                      var _Object$entries$_i = _Object$entries[_i],
+                        key = _Object$entries$_i[0],
+                        value = _Object$entries$_i[1];
+                      value.domain.map(function (finalValue) {
+                        if (finalValue.indexOf("month")) {
+                          var numberPattern = /\d+/g;
+                          var theNumber = finalValue.match(numberPattern);
+
+                          if (_this.find('.product-item-attachment-offerings-select')) {
+                            $('.product-item-attachment-offerings-select option:eq(0)').text('Escolha sua assinatura')
+
+                            if (theNumber <= 1) {
+                              $('.product-item-attachment-offerings-select option:eq(1)').text(theNumber + ' mês')
+                            } else {
+                              $('.product-item-attachment-offerings-select option:eq(2)').text(theNumber + ' meses')
+                            }
+                          }
+                        }
+                      })
+                    }
+                  }
+                })
+              }
+            }
+          })
+        })
+      }
+    })
+  }
+</script>

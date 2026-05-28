@@ -1,0 +1,627 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+  <head>
+    <title>{{_accountInfo.TradingName}}</title>
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55:wght@400;500;700&display=swap" rel="stylesheet" />
+    <style type="text/css">
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #ccc;
+      }
+
+      table,
+      td,
+      tr {
+        vertical-align: top;
+        border-collapse: collapse;
+        font-size: 14px;
+      }
+
+      * {
+        line-height: inherit;
+        font-family: "Raleway", sans-serif;
+      }
+
+      table {
+        width: 100%;
+      }
+
+      td {
+        word-break: normal;
+        word-spacing: normal;
+        word-wrap: normal;
+      }
+
+      .product {
+        display: inline-block;
+      }
+
+      .footer-politicas {
+        color: #696969;
+        max-width: 515px;
+        margin: 0 auto;
+      }
+
+      .footerItems {
+        padding: 0;
+        margin: 0;
+        color: #696969;
+        display: inline-block;
+      }
+
+      .footerItems.right {
+        width: 185px;
+      }
+
+      .footerItems.left {
+        width: 205px;
+      }
+
+      .footerSpacing {
+        width: 125px;
+      }
+
+      .footerItem {
+        font-family: 'Helvetica Neue', sans-serif !important;;
+        text-align: left;
+        font-weight: 300;
+      }
+
+      a.footerItem {
+        color: inherit;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .footerTitle {
+        font-size: 16px;
+        font-weight: 500;
+        display: block;
+        height: 20px;
+      }
+
+      .payment {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      a[x-apple-data-detectors="true"] {
+        color: inherit !important;
+        text-decoration: none !important;
+      }
+    </style>
+    <style id="media-query" type="text/css">
+      @media (max-width: 660px) {
+        .footer-politicas {
+          margin-left: 35px;
+        }
+
+        .footerSpacing {
+          display: none;
+        }
+
+        .footerItems.right {
+          width: 100%;
+          margin-bottom: 34px;
+        }
+
+        .footerItems.left {
+          width: 100%;
+          margin-bottom: 40px;
+        }
+
+        .imgRodape {
+          height: 30px;
+          margin: 0 0 0 30px !important;
+          text-align: left !important;
+          width: 250px !important;
+        }
+
+        .imageLateralMobile {
+          float: left;
+          margin: 0 15px 0 0 !important;
+        }
+
+        .contentRedes {
+          display: block !important;
+          margin-top: 20px;
+        }
+
+        .fraseRodape {
+          float: left;
+        }
+
+        .espacoPoliticas {
+          padding: 25px 0 0px !important;
+        }
+
+        .politicasBordaEspaco {
+          padding: 25px 0 !important;
+          border-top: 1px solid #eaeaea !important;
+        }
+
+        .contatosRodape {
+          margin: 0 0 15px 30px;
+          text-align: left;
+        }
+
+        .contatosRodapeUltimo {
+          margin: 0 0 0px 30px;
+          text-align: left;
+        }
+
+        .bordaNegativa {
+          border: 0 !important;
+        }
+
+        .center-mobile {
+          text-align: center;
+        }
+
+        .payment {
+          display: block;
+          text-align: center;
+        }
+
+        .payment img {
+          margin: 0 auto;
+        }
+
+        .block-grid,
+        .col {
+          min-width: 320px !important;
+          max-width: 100% !important;
+          display: block !important;
+        }
+
+        .block-grid {
+          width: 100% !important;
+        }
+
+        .col {
+          width: 100% !important;
+        }
+
+        .col>div {
+          margin: 0 auto;
+        }
+
+        img.fullwidth,
+        img.fullwidthOnMobile {
+          max-width: 100% !important;
+        }
+
+        .no-stack .col {
+          min-width: 0 !important;
+          display: table-cell !important;
+        }
+
+        .no-stack.two-up .col {
+          width: 50% !important;
+        }
+
+        .no-stack .col.num4 {
+          width: 33% !important;
+        }
+
+        .no-stack .col.num8 {
+          width: 66% !important;
+        }
+
+        .no-stack .col.num4 {
+          width: 33% !important;
+        }
+
+        .no-stack .col.num3 {
+          width: 25% !important;
+        }
+
+        .no-stack .col.num6 {
+          width: 50% !important;
+        }
+
+        .no-stack .col.num9 {
+          width: 75% !important;
+        }
+
+        .num4>div>div {
+          padding-right: 0 !important;
+          padding-left: 0 !important;
+        }
+
+        .video-block {
+          max-width: none !important;
+        }
+
+        .mobile_hide {
+          min-height: 0px;
+          max-height: 0px;
+          max-width: 0px;
+          display: none;
+          overflow: hidden;
+          font-size: 0px;
+        }
+
+        .desktop_hide {
+          display: block !important;
+          max-height: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body class="clean-body" style="
+      margin: 0;
+      padding: 0;
+      -webkit-text-size-adjust: 100%;
+      background-color: #ffffff;
+      font-family: 'Raleway', sans-serif;
+    ">
+    <table bgcolor="#FFFFFF" cellpadding="0" cellspacing="0" class="nl-container" role="presentation" style="
+        table-layout: fixed;
+        vertical-align: top;
+        min-width: 320px;
+        margin: 0 auto;
+        border-spacing: 0;
+        border-collapse: collapse;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+        background-color: #ffffff;
+        width: 100%;
+        max-width: 640px;
+      " valign="top" width="100%">
+      <tbody>
+        <tr style="vertical-align: top;" valign="top">
+          <td style="word-break: break-word; vertical-align: top; width: 100%" valign="top">
+            <div style="background-color: transparent">
+              <div class="block-grid" style="
+                  margin: 0 auto;
+                  min-width: 320px;
+                  max-width: 640px;
+                  overflow-wrap: break-word;
+                  word-wrap: break-word;
+                  word-break: break-word;
+                  background-color: transparent;
+                ">
+                <div style="
+                    border-collapse: collapse;
+                    display: table;
+                    width: 100%;
+                    background-color: transparent;
+                  ">
+                  <div class="col num12" style="
+                      min-width: 320px;
+                      max-width: 640px;
+                      display: table-cell;
+                      vertical-align: top;
+                      width: 640px;
+                    ">
+                    <div style="width: 100% !important">
+                      <div style="
+      background-color: #ffffff;
+      padding-right: 0px;
+      padding-left: 0px;
+    ">
+                        <div style="text-align: center" class="img-container center autowidth">
+                          <a href="https://planetadobebe.com.br" target="_blank">
+                            <img alt="Image" src="https://planetadobebe.vteximg.com.br/arquivos/logo-email.png" class="center autowidth" style="
+            text-align: center;
+            border: none;
+            text-decoration: none;
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            width: 100%;
+            max-width: 92px;
+            display: block;
+            margin: 16px auto 17px;
+          " title="Image" width="92" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="background-color: transparent">
+              <div class="block-grid" style="
+                  margin: 0 auto;
+                  min-width: 320px;
+                  max-width: 640px;
+                  overflow-wrap: break-word;
+                  word-wrap: break-word;
+                  word-break: break-word;
+                  background-color: transparent;
+                ">
+                <div style="
+                    border-collapse: collapse;
+                    display: table;
+                    width: 100%;
+                    background-color: transparent;
+                  ">
+                  <div class="col num12" style="
+                      min-width: 320px;
+                      max-width: 640px;
+                      display: table-cell;
+                      vertical-align: top;
+                      width: 640px;
+                    ">
+                    <div style="
+                        width: 100% !important;
+                        max-width: 640px !important;
+                      ">
+                      <div style="
+                          border-top: 0px solid transparent;
+                          border-left: 0px solid transparent;
+                          border-bottom: 0px solid transparent;
+                          border-right: 0px solid transparent;
+                          padding-top: 5px;
+                          padding-bottom: 5px;
+                          padding-right: 0px;
+                          padding-left: 0px;
+                        ">
+                        <div>
+                          <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="left" style="padding-bottom: 0; margin-bottom: 0" class="col-3">
+                            <tbody class="email-content">
+                              <!-- AQUI COMEÇA CONTEÚDO -->
+                              <tr>
+                                <td style="padding-top:10px;">
+                                  <div style="
+        border: 1px solid #e3e4e6;
+        border-radius: 8px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding-top: 3rem;
+        padding-right: 3rem;
+        padding-bottom: 3rem;
+        padding-left: 3rem;
+        max-width: 100%;
+      ">
+        <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+          <tr>
+            <td style="padding-left:10px;padding-right:10px;padding-top: 10px; padding-bottom: 10px;">
+
+                                    {{#eq aditionalData.locale "pt-BR"}}
+                                      <p style="font-size: 24px; color: #25354d; margin-bottom: 0px">
+                                        <strong>Seu código de acesso é:</strong>
+                                      </p>
+                                      <p style="
+          color: #1482D3;
+          font-size: 42px;
+          margin-top: 0px;
+          margin-bottom: 2rem;
+        ">
+                                        <strong>{{ aditionalData.accessKey }}</strong>
+                                      </p>
+                                      <p style="font-size: 16px; color: #494949">Olá, {{to.0.name}},</p>
+                                      <p style="font-size: 16px; color: #494949"> Por favor, retorne à página de login e insira o código acima para confirmar sua identidade. </p>
+                                      <p style="margin-bottom: 0px; font-size: 16px; color: #494949"> Boas Compras, </p>
+                                      <p style="margin-top: 0px; font-size: 16px; color: #494949"> Planeta do Bebê </p>
+                                      <br />
+                                      <div style="
+          color: #e3e4e6;
+          border-top: 1px solid #e3e4e6;
+          border-bottom: 0px solid #e3e4e6;
+          margin-bottom: 2rem;
+          margin-top: 1rem;
+        "></div>
+                                      <p style="
+          font-size: 12px;
+          color: #727273;
+          margin-top: 0.25rem;
+          margin-bottom: 0px;
+        "> Atualizamos nosso email do código de acesso. <a href="https://help.vtex.com/announcements/novo-layout-no-e-mail-de-codigo-de-acesso--5h0Q4Bwps65m7BI2tPocnO" alt="Leia mais" style="font-weight: 500; color: #494949">Leia mais</a>
+                                      </p>
+                                      <br />
+                                      <p style="font-size: 12px; color: #727273; margin-bottom: 0px"> Esse email é enviado automaticamente e não recebe respostas </p>
+                                      <p style="
+          font-size: 12px;
+          color: #727273;
+          margin-top: 0.25rem;
+          margin-bottom: 0px;
+        "> Precisa de ajuda? <a href="https://www.planetadobebe.com.br/institutional/fale-conosco" alt="VTEX Help" style="font-weight: 500; color: #494949">Fale Conosco</a>
+                                      </p>
+                                      <br />
+                                      <p style="font-size: 12px; color: #727273; margin-bottom: 0px"></p>
+                                      {{else eq aditionalData.locale "es-AR"}}
+                                        <p style="font-size: 24px; color: #25354d; margin-bottom: 0px">
+                                          <strong>Su clave de acceso es:</strong>
+                                        </p>
+                                        <p style="
+          color: #dd1659;
+          font-size: 42px;
+          margin-top: 0px;
+          margin-bottom: 2rem;
+        ">
+                                          <strong>{{ aditionalData.accessKey }}</strong>
+                                        </p>
+                                        <p style="font-size: 16px; color: #494949">Hola, {{to.0.name}},</p>
+                                        <p style="font-size: 16px; color: #494949"> Regrese a la página de login e ingrese el código de arriba para confirmar su identidad. </p>
+                                        <p style="margin-bottom: 0px; font-size: 16px; color: #494949"> Atentamente, </p>
+                                        <p style="margin-top: 0px; font-size: 16px; color: #494949"> Planeta do Bebê </p>
+                                        <br />
+                                        <div style="
+          color: #e3e4e6;
+          border-top: 1px solid #e3e4e6;
+          border-bottom: 0px solid #e3e4e6;
+          margin-bottom: 2rem;
+          margin-top: 1rem;
+        "></div>
+                                        <p style="
+          font-size: 12px;
+          color: #727273;
+          margin-top: 0.25rem;
+          margin-bottom: 0px;
+        "> Hemos actualizado nuestro correo de envío de clave de acesso. <a href="https://help.vtex.com/announcements/nuevo-layout-en-el-e-mail-de-codigo-de-acesso--5h0Q4Bwps65m7BI2tPocnO" alt="Lea más" style="font-weight: 500; color: #494949">Lea más</a>
+                                        </p>
+                                        <br />
+                                        <p style="font-size: 12px; color: #727273; margin-bottom: 0px"> Este correo electrónico se envía automáticamente y no recibe respuestas. </p>
+                                        <p style="
+          font-size: 12px;
+          color: #727273;
+          margin-top: 0.25rem;
+          margin-bottom: 0px;
+        "> ¿Necesitas ayuda? <a href="https://www.planetadobebe.com.br/institutional/fale-conosco" alt="VTEX Help" style="font-weight: 500; color: #494949">Contáctanos</a>
+                                        </p>
+                                        <br />
+                                        <p style="font-size: 12px; color: #727273; margin-bottom: 0px"></p>
+                                        {{else}}
+                                          <p style="font-size: 24px; color: #25354d; margin-bottom: 0px">
+                                            <strong>Your access code is:</strong>
+                                          </p>
+                                          <p style="
+          color: #dd1659;
+          font-size: 42px;
+          margin-top: 0px;
+          margin-bottom: 2rem;
+        ">
+                                            <strong>{{ aditionalData.accessKey }}</strong>
+                                          </p>
+                                          <p style="font-size: 16px; color: #494949">Hello, {{to.0.name}},</p>
+                                          <p style="font-size: 16px; color: #494949"> Please, return to the login page and insert the code above to verify your identity. </p>
+                                          <p style="margin-bottom: 0px; font-size: 16px; color: #494949"> Best regards, </p>
+                                          <p style="margin-top: 0px; font-size: 16px; color: #494949">VTEX Team</p>
+                                          <br />
+                                          <div style="
+          color: #e3e4e6;
+          border-top: 1px solid #e3e4e6;
+          border-bottom: 0px solid #e3e4e6;
+          margin-bottom: 2rem;
+          margin-top: 1rem;
+        "></div>
+                                          <p style="
+          font-size: 12px;
+          color: #727273;
+          margin-top: 0.25rem;
+          margin-bottom: 0px;
+        "> We've updated our access code email. <a href="https://help.vtex.com/announcements/new-access-code-email-template--5h0Q4Bwps65m7BI2tPocnO" alt="Read more" style="font-weight: 500; color: #494949">Read more</a>
+                                          </p>
+                                          <br />
+                                          <p style="font-size: 12px; color: #727273; margin-bottom: 0px"> This email is automatically sent and doesn't receive responses. </p>
+                                          <p style="
+          font-size: 12px;
+          color: #727273;
+          margin-top: 0.25rem;
+          margin-bottom: 0px;
+        "> Need help? <a href="https://www.planetadobebe.com.br/institutional/fale-conosco" alt="VTEX Help" style="font-weight: 500; color: #494949">Contact us</a>
+                                          </p>
+                                          <br />
+                                          <p style="font-size: 12px; color: #727273; margin-bottom: 0px"></p>
+                                    {{/eq}}
+                                  </div>
+                                </td>
+                              </tr>
+                            </table>
+                                </td>
+                              </tr>
+                              <!-- AQUI ACABA CONTEÚDO -->
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr class="email-footer" style="padding-left:10px; padding-right: 10px;height: 252px; width: 100%">
+          <td style="background: #f6f6f7">
+            <table cellpadding="0" cellspacing="0" border="0" style="margin:auto;">
+              <tr>
+                <td align="center" style="text-align:center;">
+                  <table cellpadding="0" cellspacing="0" border="0" style="
+                  max-width: 100%;
+                  width: 470px;
+                  margin: 0 auto;
+                  ">
+                    <tr style="width: 100%; margin: 0 auto; text-align: center">
+                      <td style="
+                  padding-top: 13px;
+                  padding-bottom: 12px;
+                  text-align: center;
+                  " class="footer-credits" align="center" valign="middle">
+                        <table align="center" style="max-width:120px;">
+                          <tr>
+                            <td style="width: 33%; vertical-align:middle !important;" align="center" valign="middle">
+                              <a target="_blank" href="https://www.facebook.com/planetadobebeonline/" style="
+                  text-decoration: none;line-height:25px;
+                  ">
+                                <img src="https://planetadobebe.vteximg.com.br/arquivos/facebook-email.png" alt="Facebook" />
+                              </a>
+                            </td>
+                            <td style="width: 33%; vertical-align:middle !important;" align="center" valign="middle">
+                              <a target="_blank" href="https://www.instagram.com/lojaplanetadobebe/" style="
+                  text-decoration: none;line-height:25px;
+                  ">
+                                <img src="https://planetadobebe.vteximg.com.br/arquivos/instagram-email.png" alt="Instagram" />
+                              </a>
+                            </td>
+                            <td style="width: 33%; vertical-align:middle !important;" align="center" valign="middle">
+                              <a target="_blank" href="https://www.youtube.com/channel/UC1h3dZa-kIr4KYoPp0Y_Ekw" style="
+                  text-decoration: none;line-height:25px;
+                  ">
+                                <img src="https://planetadobebe.vteximg.com.br/arquivos/youtube-email.png" alt="Youtube" />
+                              </a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #f6f6f7">
+              <tr>
+                <td>
+                  <table cellpadding="0" cellspacing="0" border="0" class="footer-politicas">
+                    <tr>
+                      <td class="footerItems left">
+                            <h3 class="footerTitle" style="font-size: 16px;
+                            font-weight: 500;
+                            display: block;
+                            height: 20px;
+                            margin: 0px;">Ajuda</h3><br />
+                            <a class="footerItem" href="https://planetadobebe.com.br/institutional/termos-de-uso-e-condicoes-de-navegacao">Termos de Uso e de Navegação</a><br />
+                            <a class="footerItem" href="https://planetadobebe.com.br/institutional/politica-de-frete">Política de Frete</a><br />
+                            <a class="footerItem" href="https://planetadobebe.com.br/institutional/regras-gerais-do-uso-de-cupom">Regras Gerais do Uso de Cupom</a><br />
+                            <a class="footerItem" href="https://planetadobebe.com.br/account">Minha Conta</a>
+                      </td>
+                      <td class="footerSpacing"></td>
+                      <td class="footerItems right">
+                        <h3 class="footerTitle" style="font-size: 16px;
+                            font-weight: 500;
+                            display: block;
+                            height: 20px;
+                            margin: 0px;">Atendimento</h3><br />
+                          <span class="footerItem"  style="list-style: none; margin: 0; padding: 0">+55 11 3895.1572</span><br />
+                          <p class="footerItem" style="list-style: none; margin: 0; padding: 0">Seg. à Sex. Das 08 às 18h</span><br />
+                            <a class="footerItem" href="mailto:sac@planetadobebe.com.br" style="text-decoration: none; color: inherit">sac@planetadobebe.com.br</a><br />
+                            <a class="footerItem" target="_blank" class="footerItem" style="text-decoration: underline" href="https://planetadobebe.com.br/institutional/fale-conosco">Fale Conosco</a><br />
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top: 16px; text-align: center" class="footer-credits" valign="middle">
+                  <div style="
+              display: inline-block;
+              width: 1px;
+              height: 11px;
+              margin: 0px 10px 0px 19px;
+              background: #c8d0d5;
+            "></div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

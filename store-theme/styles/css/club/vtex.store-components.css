@@ -1,0 +1,49 @@
+.imageElement--club-images--desktop {
+  display: none;
+}
+
+.imageElement--how-works-item-1 {
+  padding: 32px 29px;
+}
+
+.imageElement--how-works-item-2 {
+  padding: 24px 33px;
+}
+
+.imageElement--how-works-item-3 {
+  padding: 26px;
+}
+
+.imageElement--how-works-item-4 {
+  padding: 24px 30px;
+}
+
+.imageElement--how-works-item-1,
+.imageElement--how-works-item-2,
+.imageElement--how-works-item-3,
+.imageElement--how-works-item-4 {
+  background: #f6f6f7;
+  border: 2px solid #e5e5e5;
+  border-radius: 50px;
+  object-fit: contain;
+}
+
+.imageElement--club-benefits-item-1,
+.imageElement--club-benefits-item-2,
+.imageElement--club-benefits-item-3,
+.imageElement--club-benefits-item-4 {
+  border: 2px solid #e5e5e5;
+  border-radius: 50px;
+  object-fit: contain;
+  padding: 26px 29px;
+}
+
+@media (width >= 992px) {
+  .imageElement--club-images--mobile {
+    display: none;
+  }
+
+  .imageElement--club-images--desktop {
+    display: block;
+  }
+}

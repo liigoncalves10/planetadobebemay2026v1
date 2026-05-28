@@ -1,0 +1,108 @@
+.overlay {
+  background: #69696933;
+}
+
+.minicartQuantityBadgeDefault {
+  background-color: #c55fa0;
+}
+
+.openIconContainer {
+  padding-right: 0;
+}
+
+.openIconContainer :global(.vtex-button) {
+  background: transparent;
+}
+
+.minicartIconContainer .minicartQuantityBadge {
+  color: #fff;
+  font-size: 11px;
+  font-weight: 500;
+  height: 20px;
+  margin: 0;
+  padding: 1px 0 0;
+  width: 20px;
+}
+
+.opened {
+  z-index: 9999 !important;
+}
+
+.minicartTitle {
+  font-size: 0;
+}
+
+.minicartTitle::before {
+  color: #696969;
+  content: 'meu carrinho';
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.closeIcon {
+  color: #c55fa0;
+}
+
+.minicartCheckoutButton :global(.vtex-button) {
+  background: #2ab1b7;
+  border: 0;
+  border-radius: 25px;
+  box-shadow: none;
+  color: #fff;
+  font-size: 0;
+}
+
+.minicartCheckoutButton :global(.vtex-button)::before {
+  content: 'Finalizar Pedido';
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.minicartCheckoutButton :global(.vtex-button__label) {
+  display: none;
+}
+
+.minicartSummary
+  :global(.vtex-checkout-summary-0-x-summarySmallContent)
+  :nth-child(even)
+  :global(.vtex-checkout-summary-0-x-summaryItemLabel),
+.minicartSummary
+  :global(.vtex-checkout-summary-0-x-summarySmallContent)
+  :nth-child(even)
+  :global(.vtex-checkout-summary-0-x-summaryItemPrice)
+  :global(.vtex-checkout-summary-0-x-price) {
+  color: #c55fa0;
+}
+
+@media only screen and (width <= 1024px) {
+  .minicartWrapperContainer {
+    height: 24px;
+    width: 22px;
+  }
+
+  .minicartContainer {
+    height: 100%;
+    width: 100%;
+  }
+
+  .openIconContainer {
+    height: 100%;
+    padding: 0;
+    width: 100%;
+  }
+
+  .openIconContainer :global(.vtex-button) {
+    border: none;
+    display: block;
+    height: 100%;
+    max-height: unset;
+    max-width: unset;
+    min-height: unset;
+    width: 100%;
+  }
+
+  .openIconContainer :global(.vtex-button__label) {
+    padding: 0 !important;
+  }
+}

@@ -1,0 +1,19 @@
+<script>
+  $(document).ready(function () {
+    $(window).on('orderFormUpdated.vtex', function(evt, orderForm) {
+      $('.product-item').each(function (index, element) {
+        var _this = $(element);
+        var skuItem = _this.attr('data-sku');
+        $.ajax({
+          url: '/api/catalog_system/pub/products/search/?fq=productId:' + skuItem
+        }).then(function (data) {
+          var field = 'Produto Clube'
+          var fieldContent = data[0][field]
+          if(fieldContent == 'Sim') {
+            _this.find('.product-name').append('<div class="custom-discount">10% de Desconto no <strong>Club</strong></div>')
+          }
+        });
+      })
+    });
+  })
+</script>

@@ -1,0 +1,396 @@
+{
+  // general [desktop] - menu: institutional
+  "vtex.menu@2.x:menu#general-menu-institutional": {
+    "props": {
+      "blockClass": "generalMenu",
+      "orientation": "vertical"
+    },
+    "children": [
+      "rich-text#title-menu-institutional",
+      "link#sobre-a-gente",
+      "link#politica-de-compra-segura",
+      "link#politica-de-privacidade",
+      "link#politica-de-trocas-fisica",
+      "link#politica-de-trocas",
+      "link#termos-e-condicoes-gerais"
+    ]
+  },
+
+  "rich-text#title-menu-institutional":{
+      "title":"Título Sobre a Nuk",
+      "props":{
+        "text": "#### Institucional",
+        "blockClass": "generalMenuTitle"
+      }
+  },
+  "link#sobre-a-gente": {
+    "props": {
+      "blockClass": "generalMenuItem",
+      "href": "/institutional/sobre-a-gente"
+    },
+    "children": ["rich-text#sobre-a-gente"]
+  },
+  "rich-text#sobre-a-gente": {
+    "title": "Sobre a gente",
+    "props": {
+      "tagTitle": "Sobre a gente",
+      "text": "##### Sobre a gente",
+      "blockClass": "generalMenuLink"
+    }
+  },
+  "link#politica-de-compra-segura": {
+    "props": {
+      "blockClass": "generalMenuItem",
+      "href": "/institutional/politica-de-compra-segura"
+    },
+    "children": ["rich-text#politica-de-compra-segura"]
+  },
+  "rich-text#politica-de-compra-segura": {
+    "title": "Política de Compra Segura",
+    "props": {
+      "tagTitle": "Política de Compra Segura",
+      "text": "##### Política de Compra Segura",
+      "blockClass": "generalMenuLink"
+    }
+  },
+  "link#politica-de-privacidade": {
+    "props": {
+      "blockClass": "generalMenuItem",
+      "href": "/institutional/politica-de-privacidade"
+    },
+    "children": ["rich-text#politica-de-privacidade"]
+  },
+  "rich-text#politica-de-privacidade": {
+    "title": "Política de privacidade",
+    "props": {
+      "tagTitle": "Política de privacidade",
+      "text": "##### Política de privacidade",
+      "blockClass": "generalMenuLink"
+    }
+  },
+  "link#politica-de-trocas-fisica": {
+    "props": {
+      "blockClass": "generalMenuItem",
+      "href": "/institutional/politica-de-trocas-fisica"
+    },
+    "children": ["rich-text#politica-de-trocas-fisica"]
+  },
+  "rich-text#politica-de-trocas-fisica": {
+    "title": "Políticas de Trocas - Lojas Físicas",
+    "props": {
+      "tagTitle": "Políticas de Trocas - Lojas Físicas",
+      "text": "##### Políticas de Trocas - Lojas Físicas",
+      "blockClass": "generalMenuLink"
+    }
+  },
+  "link#politica-de-trocas": {
+    "props": {
+      "blockClass": "generalMenuItem",
+      "href": "/institutional/politica-de-trocas"
+    },
+    "children": ["rich-text#politica-de-trocas"]
+  },
+  "rich-text#politica-de-trocas": {
+    "title": "Política de Troca e Devolução",
+    "props": {
+      "tagTitle": "Política de Troca e Devolução",
+      "text": "##### Política de Troca e Devolução",
+      "blockClass": "generalMenuLink"
+    }
+  },
+  "link#termos-e-condicoes-gerais": {
+    "props": {
+      "blockClass": "generalMenuItem",
+      "href": "/institutional/termos-e-condicoes-gerais"
+    },
+    "children": ["rich-text#termos-e-condicoes-gerais-footer"] 
+  },
+  "rich-text#termos-e-condicoes-gerais-footer": {
+    "title": "Termos Gerais do Market Place",
+    "props": {
+      "tagTitle": "Termos Gerais do Market Place",
+      "text": "##### Termos Gerais do Market Place",
+      "blockClass": "generalMenuLink"
+    }
+  },
+
+  // general [desktop] - menu: help
+  "vtex.menu@2.x:menu#general-menu-help": {
+    "props": {
+      "blockClass": "generalMenu",
+      "orientation": "vertical"
+    },
+    "children": [
+      "rich-text#title-menu-help",
+      "link#duvidas-frequentes",
+      "link#politica-de-frete",
+      "link#regras-gerais-do-uso-de-cupom",
+      "link#minha-conta"
+    ]
+  },
+  "rich-text#title-menu-help":{
+    "title":"Título menu Ajuda",
+    "props":{
+      "text": "#### Ajuda",
+      "blockClass": "generalMenuTitle"
+    }
+  },
+  "link#duvidas-frequentes": {
+    "props": {
+      "blockClass": "generalMenuItem",
+      "href": "/institutional/termos-de-uso-e-condicoes-de-navegacao"
+    },
+    "children": ["rich-text#duvidas-frequentes-footer"]
+  },
+  "rich-text#duvidas-frequentes-footer": {
+    "title": "Termos de Uso e de Navegação",
+    "props": {
+      "tagTitle": "Termos de Uso e de Navegação",
+      "text": "##### Termos de Uso e de Navegação",
+      "blockClass": "generalMenuLink"
+    }
+  },
+  "link#politica-de-frete": {
+    "props": {
+      "blockClass": "generalMenuItem",
+      "href": "/institutional/politica-de-frete"
+    },
+    "children": ["rich-text#politica-de-frete-footer"]
+  },
+  "rich-text#politica-de-frete-footer": {
+    "title": "Política de Frete",
+    "props": {
+      "tagTitle": "Política de Frete",
+      "text": "##### Política de Frete",
+      "blockClass": "generalMenuLink"
+    }
+  },
+  "link#regras-gerais-do-uso-de-cupom": {
+    "props": {
+      "blockClass": "generalMenuItem",
+      "href": "/institutional/regras-gerais-do-uso-de-cupom"
+    },
+    "children": ["rich-text#regras-gerais-do-uso-de-cupom-footer"]
+  },
+  "rich-text#regras-gerais-do-uso-de-cupom-footer": {
+    "title": "Regras Gerais do Uso de Cupom",
+    "props": {
+      "tagTitle": "Regras Gerais do Uso de Cupom",
+      "text": "##### Regras Gerais do Uso de Cupom",
+      "blockClass": "generalMenuLink"
+    }
+  },
+  "link#minha-conta": {
+    "props": {
+      "blockClass": "generalMenuItem",
+      "href": "/account"
+    },
+    "children": ["rich-text#minha-conta-footer"]
+  },
+  "rich-text#minha-conta-footer": {
+    "title": "Minha conta",
+    "props": {
+      "tagTitle": "Minha conta",
+      "text": "Minha conta",
+      "blockClass": "generalMenuLink"
+    }
+  },
+
+  // general [desktop] - menu: contact
+  "vtex.menu@2.x:menu#general-menu-contact": {
+    "props": {
+      "blockClass": "generalMenu",
+      "orientation": "vertical"
+    },
+    "children": [
+      "rich-text#title-menu-atendimento",
+      "menu-item#contact-telephone",
+      "menu-item#contact-schedule",
+      "menu-item#contact-email",
+      "link#fale-conosco",
+      "flex-layout.row#social-container"
+    ]
+  },
+
+  "rich-text#title-menu-atendimento":{
+    "title":"Título menu Atendimento",
+    "props":{
+      "text": "#### Atendimento",
+      "blockClass": "generalMenuTitle"
+
+    }
+
+  },
+  "menu-item#contact-telephone": {
+    "props": {
+      "blockClass": "generalMenuItem",
+      "itemProps": {
+        "tagTitle": "+55 11 3895.1572",
+        "text": "+55 11 3895.1572"
+      }
+    }
+  },
+  "menu-item#contact-schedule": {
+    "props": {
+      "blockClass": ["generalMenuItem", "noLink"],
+      "itemProps": {
+        "href": "#",
+        "tagTitle": "Seg a Sex das 08 às 18h",
+        "text": "Seg a Sex das 08 às 18h"
+      }
+    }
+  },
+  "menu-item#contact-email": {
+    "props": {
+      "blockClass": "generalMenuItem",
+      "itemProps": {
+        "href": "mailto:sac@planetadobebe.com.br",
+        "tagTitle": "sac@planetadobebe.com.br",
+        "text": "sac@planetadobebe.com.br"
+      }
+    }
+  },
+  "link#fale-conosco": {
+    "props": {
+      "blockClass": ["generalMenuItem", "contactUs"],
+      "href": "/institutional/fale-conosco"
+    },
+    "children": ["rich-text#fale-conosco-footer"]
+  },
+  "rich-text#fale-conosco-footer": {
+    "title": "Fale Conosco",
+    "props": {
+      "tagTitle": "Fale Conosco",
+      "text": "##### Fale Conosco",
+      "blockClass": "generalMenuLink"
+    }
+  },
+  // icones sociais footer - desktop
+  "flex-layout.row#social-container": {
+      "children": [
+        "rich-text#social-links-facebook",
+        "rich-text#social-links-instagram",
+        "rich-text#social-links-youtube"
+      ],
+      "props": {
+        "blockClass": "social-icons-flexContainer"
+      }
+  },
+
+  "rich-text#social-links-facebook": {
+    "props": {
+      "text": "<a class='vtex-rich-text-0-x-link--social-networks' href='https://www.facebook.com/planeta.dobebe.79' target='_blank'><img class='vtex-rich-text-0-x-image--social-networks' src='/arquivos/facebook-icon-pl.png'></a>",
+      "blockClass": "social-networks--footer"
+    }
+  },
+
+  "rich-text#social-links-instagram": {
+    "props": {
+      "text": "<a class='vtex-rich-text-0-x-link--social-networks' href='https://www.instagram.com/lojaplanetadobebe/' target='_blank'><img class='vtex-rich-text-0-x-image--social-networks' src='/arquivos/instagram-icon-pl.png'></a>",
+      "blockClass": "social-networks--footer"
+    }
+  },
+
+  "rich-text#social-links-youtube": {
+    "props": {
+      "text": "<a class='vtex-rich-text-0-x-link--social-networks' href='https://www.youtube.com/channel/UC1h3dZa-kIr4KYoPp0Y_Ekw' target='_blank'><img class='vtex-rich-text-0-x-image--social-networks' src='/arquivos/youtube-icon-pl.png'></a>",
+      "blockClass": "social-networks--footer"
+    }
+  },
+
+  // general [mobile] - menu: institutional
+  "menu-item#general-menu-institutional-mobile": {
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#general-accordion-institutional"
+    ],
+    "props": {
+      "blockClass": "generalMenuTitleMobile",
+      "itemProps": {
+        "href": "#",
+        "tagTitle": "Institucional",
+        "text": "Institucional"
+      }
+    }
+  },
+  "vtex.menu@2.x:submenu.accordion#general-accordion-institutional": {
+    "children": ["vtex.menu@2.x:menu#general-menu-institutional-mobile"],
+    "props": {
+      "blockClass": ["accordion", "generalAccordion"]
+    }
+  },
+  "vtex.menu@2.x:menu#general-menu-institutional-mobile": {
+    "props": {
+      "blockClass": ["generalMenu", "generalMenuMobile"],
+      "orientation": "vertical"
+    },
+    "children": [
+      "link#sobre-a-gente",
+      "link#politica-de-compra-segura",
+      "link#politica-de-privacidade",
+      "link#politica-de-trocas-fisica",
+      "link#politica-de-trocas",
+      "link#termos-e-condicoes-gerais"
+    ]
+  },
+
+  // general [mobile] - menu: help
+  "menu-item#general-menu-help-mobile": {
+    "blocks": ["vtex.menu@2.x:submenu.accordion#general-accordion-help"],
+    "props": {
+      "blockClass": "generalMenuTitleMobile",
+      "itemProps": {
+        "href": "#",
+        "tagTitle": "Ajuda",
+        "text": "Ajuda"
+      }
+    }
+  },
+  "vtex.menu@2.x:submenu.accordion#general-accordion-help": {
+    "children": ["vtex.menu@2.x:menu#general-menu-help-mobile"],
+    "props": {
+      "blockClass": ["accordion", "generalAccordion"]
+    }
+  },
+  "vtex.menu@2.x:menu#general-menu-help-mobile": {
+    "props": {
+      "blockClass": ["generalMenu", "generalMenuMobile"],
+      "orientation": "vertical"
+    },
+    "children": [
+      "link#duvidas-frequentes",
+      "link#politica-de-frete",
+      "link#regras-gerais-do-uso-de-cupom",
+      "link#minha-conta"
+    ]
+  },
+  // general [mobile] - menu: contact
+  "menu-item#general-menu-contact-mobile": {
+    "blocks": ["vtex.menu@2.x:submenu.accordion#general-accordion-contact"],
+    "props": {
+      "blockClass": "generalMenuTitleMobile",
+      "itemProps": {
+        "href": "#",
+        "tagTitle": "Atendimento",
+        "text": "Atendimento"
+      }
+    }
+  },
+  "vtex.menu@2.x:submenu.accordion#general-accordion-contact": {
+    "children": ["vtex.menu@2.x:menu#general-menu-contact-mobile"],
+    "props": {
+      "blockClass": ["accordion", "generalAccordion"]
+    }
+  },
+  "vtex.menu@2.x:menu#general-menu-contact-mobile": {
+    "props": {
+      "blockClass": ["generalMenu", "generalMenuMobile"],
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#contact-telephone",
+      "menu-item#contact-schedule",
+      "menu-item#contact-email",
+      "link#fale-conosco"
+    ]
+  }
+}

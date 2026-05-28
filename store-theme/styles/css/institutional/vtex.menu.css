@@ -1,0 +1,133 @@
+/* Mobile nav */
+.menuItemInnerDiv--accordionTitleInstitutional {
+  background: #f7f7f7;
+  border-radius: 31px;
+  height: 48px;
+  transition: all 600ms ease-in-out;
+}
+
+.menuItem--accordionTitleInstitutional--isOpen
+  .menuItemInnerDiv--accordionTitleInstitutional {
+  border-radius: 12px 12px 0 0;
+}
+
+.styledLinkContainer--accordionTitleInstitutional {
+  height: 100%;
+  margin-left: 16px;
+  margin-right: 21px;
+}
+
+.styledLink--accordionTitleInstitutional {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.styledLinkContainer--sidebarMenu {
+  margin: 0;
+}
+
+.menuItemInnerDiv--accordionTitleDesktop {
+  display: none;
+}
+
+.submenuAccordion--sideBarAccordionMobile {
+  padding-left: 0;
+}
+
+.styledLinkContainer--sidebarMenu {
+  padding: 4px 0;
+}
+
+.styledLink--sidebarMenu,
+.styledLink--sidebarMenu:visited {
+  color: #25282a;
+  font-size: 14px;
+  line-height: 17px;
+  transition: 0.3s ease-in-out;
+}
+
+.styledLink--sidebarMenu:hover,
+.styledLink--sidebarMenu:active {
+  color: #c55fa0;
+}
+
+.styledLinkContent--accordionTitleInstitutional {
+  align-items: center;
+  color: #c55fa0;
+  display: flex;
+  font-size: 16px;
+  font-weight: 500;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media only screen and (width <= 1024px) {
+  .submenuAccordion--sideBarAccordionMobile {
+    background: #f7f7f7;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    height: 385px;
+    justify-content: space-between;
+    padding: 26px 0 44px 21px;
+  }
+
+  .menuContainerNav--sidebarMenu {
+    height: 145px;
+  }
+
+  .styledLink--sidebarMenu,
+  .styledLink--sidebarMenu:visited {
+    font-size: 16px;
+  }
+
+  .menuContainer--sidebarMenu {
+    align-items: baseline;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+  }
+}
+
+.accordionIcon--accordionTitleInstitutional {
+  align-items: center;
+  background-image: url('assets/icons/icon-down-arrow.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px 12px;
+  display: flex;
+  font-size: 0;
+  height: 20px;
+  justify-content: center;
+  opacity: 0.4;
+  transform: scale(0.8);
+  transition: transform 0.3s ease-in-out;
+  width: 20px;
+}
+
+.accordionIcon--accordionTitleInstitutional.accordionIcon--isOpen {
+  transform: rotate(180deg);
+}
+
+.styledLinkContainer--tel-contact-us {
+  margin: 0;
+}
+
+.styledLinkContent--tel-contact-us {
+  color: #c55fa0;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+
+@media (width <= 900px) {
+  .menuItemInnerDiv--accordionTitleDesktop {
+    display: block;
+  }
+}

@@ -1,0 +1,21 @@
+@import url('https://fonts.cdnfonts.com/css/neue-helvetica-bq');
+
+.link--generalMenuItem {
+  color: #696969;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  margin: 0;
+  padding: 6px 0;
+  width: max-content;
+  font-family: 'Helvetica Neue', sans-serif !important;
+}
+
+.link--generalMenuItem :hover {
+  color: #c55fa0;
+}
+
+.link--contactUs {
+  text-decoration: underline;
+}

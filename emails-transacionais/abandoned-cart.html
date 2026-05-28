@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desconto Exclusivo!</title>
+    <link rel="stylesheet" type="text/css" href="https://planetadobebe.vteximg.com.br/arquivos/Carrinho_Desconto.css">
+    <link rel="stylesheet" href="https://planetadobebe.vtexcss.com.br/arquivos/Carrinho_Desconto.css">
+  </head>
+  <body>
+    <table width="100%" class="upper_section">
+      <tr>
+        <td align="center" valign="middle">
+          <table width="650" style="boder:none;margin:0px;max-width:100%;">
+            <thead style="margin:0px;">
+              <tr style="margin:0px;">
+                <th align="center" style="padding-top: 10px;padding-bottom: 10px;">
+                  <center>
+                    <img class="header_logo" width="178" height="69" src="https://planetadobebe.vteximg.com.br/arquivos/Logo.png" style="display:inline-block;" />
+                  </center>
+                </th>
+              </tr>
+            </thead>
+            <tbody style="margin:0px;">
+              <tr class="texto_principal" style="margin:0px;">
+                <td align="center" class="texto_principal" style="padding-bottom: 15px;"> Reservamos para você! </td>
+              </tr>
+              <tr style="margin:0px;">
+                <td align="center">
+                  <img class="banner" src="https://planetadobebe.vteximg.com.br/arquivos/Banner_cart.png" />
+                </td>
+              </tr>
+              <tr style="margin:0px;">
+                <td class="texto_desconto" align="center" style="padding-bottom:10px;font-size:20px;color:#454545;text-align:center;">
+                  <b>Desconto exclusivo</b> de <b class="desconto" style="margin:0px;"><span style="font-family: 'Lato', sans-serif;font-weight: 500;font-size: 24px;color: #f18c10;">5%</b></span> em todos os itens do carrinho para você aproveitar. Não deixe passar essa oportunidade de economizar! <br />
+                  <br />
+                  <center style="margin:0px;">Utilize o Cupom:</center>
+                  <center class="texto_principal" style="margin:0px;"><span style="font-family: 'Lato', sans-serif;font-weight: 500;font-size: 24px;color: #f18c10;">PLANETA05</span></center>
+                </td>
+              </tr>
+            <tbody>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <table width="100%" class="cart_section">
+      <tr>
+        <td align="center" valign="middle">
+          <table width="650" style="border: solid 1px #c5c5c5;padding: 0px;margin: auto;max-width:100%;">
+            <tbody>
+              {{#each items}}
+                {{#eq @index "0"}}
+                  <tr style="margin:0px;padding:0px;">
+                    <td style="margin:0px;padding:5px;"></td>
+                    <td width="550" style="margin:0px;padding:5px;"></td>
+                  </tr>
+                {{/eq}}
+                <tr style="margin:0px;padding:5px 0px;max-width:100%">
+                  <td rowspan="2" valign="middle" align="center" width="100" height="100" style="margin:0px;padding:0px 10px;">
+                    <img style="width: 100px;height: 100px;object-fit:cover;" src="{{image}}" alt="" width="100" height="100" />
+                  </td>
+                  <td align="left" valign="bottom" height="70" style="text-decoration: none; text-align: left;margin:0px;padding:0px 10px;max-width: 550px;overflow:hidden;word-wrap:break-word;">
+                    {{productName}}
+                  </td>
+                </tr>
+                <tr style="margin:0px;padding:0px;">
+                  <td align="left" valign="top" width="50" height="50" style="text-decoration: none; text-align: left;margin:0px;padding:0px 10px;">
+                    {{quantity}} un. - R$ {{formatCurrency (multiply 100 sellingPrice)}}
+                  </td>
+                </tr>
+                <tr style="margin:0px;padding:0px;">
+                  <td style="margin:0px;padding:5px;"></td>
+                  <td style="margin:0px;padding:5px;"></td>
+                </tr>
+              {{/each}}
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle">
+          <table width="650" style="boder:none;margin:0px;max-width:100%;">
+            <thead style="margin:0px;">
+              <tr style="margin:0px;">
+                <th></th>
+              </tr>
+            </thead>
+            <tbody style="margin:0px;">
+              <tr style="margin:0px;">
+                <td align="center" style="padding-top: 10px;padding-bottom: 10px;">
+                  <a href="https://www.planetadobebe.com.br/checkout/cart/{{addToCartURL}}">
+                    <img class="botao" width="350" height="60" style="margin:0px;" src="https://planetadobebe.vteximg.com.br/arquivos/Button.png" />
+                  </a>
+                </td>
+              </tr>
+            <tbody>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <table width="100%" class="cart_section">
+      <tr>
+        <td align="center" valign="middle">
+          <hr class="divisor">
+          <table width="650" style="max-width:100%;" class="lower_section">
+            <tr>
+              <td>
+                <div class="icons_container">
+                  <i class="fa-brands fa-facebook-f fa-xl"></i>
+                  <i class="fa-brands fa-instagram fa-xl"></i>
+                  <i class="fa-brands fa-whatsapp fa-xl"></i>
+                  <i class="fa-brands fa-youtube fa-xl"></i>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table width="100%" style="boder:none;margin:0px;">
+                  <thead style="margin:0px;">
+                    <tr style="margin:0px;">
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody style="margin:0px;">
+                    <tr style="margin:0px;">
+                      <td align="center" valign="middle" class="endereço" style="padding-top: 10px;padding-bottom: 10px;"> RUA MARCELINO PINTO TEIXEIRA 1268 GALPAO II - Gramado, Embu das Artes - SP <br />06816-000 </td>
+                    </tr>
+                  <tbody>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

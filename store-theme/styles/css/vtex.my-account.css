@@ -1,0 +1,84 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+.dataEntryLabel,
+.newsletterContainerTitle {
+  color: #4d4d4d;
+  font-family: 'Helvetica Neue', sans-serif !important;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 900;
+}
+
+.dataEntryChildren,
+.newsletterContainerMessage,
+.boxContainerBody :global(.vtex-checkbox__label) {
+  color: #707070;
+  font-family: 'Helvetica Neue', sans-serif !important;
+}
+
+.menuLinks {
+  font-family: 'Helvetica Neue', sans-serif !important;
+}
+
+.userGreeting {
+  color: #707070;
+  font-family: 'Helvetica Neue', sans-serif !important;
+  font-size: 13px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 900;
+}
+
+.menuLinks :global(.vtex-account_menu-link):focus,
+.menuLinks :global(.vtex-account_menu-link):enabled {
+  border-color: #ffffff !important;
+  font-size: 13px;
+  font-family: 'Helvetica Neue', sans-serif !important;
+  font-weight: 900;
+}
+
+:global(.vtex-pageHeader__title) {
+  color: #4d4d4d;
+  font-family: 'Helvetica Neue', sans-serif !important;
+  font-size: 24px;
+  font-family: 'Helvetica Neue', sans-serif !important;
+  font-weight: 900;
+  text-transform: lowercase;
+}
+
+@media (width >= 992px) {
+  :global(.vtex-pageHeader__container) {
+    padding-top: 0;
+  }
+
+  :global(.mt7) {
+    margin-top: 0;
+  }
+}
+
+:global(.vtex-account__page) :global(.vtex-button) {
+  background-color: #c55fa0 ;
+  color: #a2daf8;
+  font-family: 'Helvetica Neue', sans-serif !important;
+  font-size: 11px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+:global(.b--action-primary) {
+  border-color: #494949;
+}
+
+:global(.b--muted-4) {
+  border-color: #e9e9e9;
+}
+
+:global(.vtex-account) {
+  font-family: 'Helvetica Neue', sans-serif !important;
+}
+
+.passwordBox :global(.vtex-checkbox__input),
+.passwordBox :global(.vtex-checkbox__inner-container) {
+  height: 21px;
+  margin-right: 3px;
+  width: 21px;
+}

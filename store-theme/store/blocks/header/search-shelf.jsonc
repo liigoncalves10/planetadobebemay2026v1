@@ -1,0 +1,19 @@
+{
+  "product-summary.shelf#search-shelf": {
+    "props": {
+      "blockClass": "product-summary-shelf"
+    },
+    "children": [
+      "product-summary-image#main-shelf-image-search",
+      "product-summary-name#main-shelf-name",
+      "flex-layout.row#price-row-shelf",
+      "add-to-cart-button#main-shelf-buy-button"
+    ]
+  },
+  "product-summary-image#main-shelf-image-search": {
+    "props": {
+      "blockClass": ["main-shelf-image"],
+      "badgeText": "OFF"
+    }
+  }
+}

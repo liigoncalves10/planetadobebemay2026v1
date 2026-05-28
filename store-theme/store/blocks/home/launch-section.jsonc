@@ -1,0 +1,48 @@
+{
+  "flex-layout.row#home-launch-section": {
+    "props": {
+      "blockClass": "home-launch-section",
+      "fullWidth": false
+    },
+    "children": [
+      "flex-layout.col#home-launch-section"
+    ]
+  },
+  "flex-layout.col#home-launch-section": {
+    "children": [
+      "rich-text#launch-title",
+      "flex-layout.row#launch-cards"
+    ]
+  },
+  "rich-text#launch-title": {
+    "props": {
+      "text": "lançamentos em destaque",
+      "textAlignment": "LEFT",
+      "blockClass": ["shelf-title", "launch-title"]
+    }
+  },
+  "flex-layout.row#launch-cards": {
+    "props": {
+      "blockClass": "launch-cards",
+      "colGap": 5
+    },
+    "children": [
+      "image#launch-card-1",
+      "image#launch-card-2"
+    ]
+  },
+  "image#launch-card-1": {
+    "props": {
+      "src": "https://via.placeholder.com/600x400?text=Lancamento+1",
+      "alt": "Card 1",
+      "blockClass": "launch-card-image"
+    }
+  },
+  "image#launch-card-2": {
+    "props": {
+      "src": "https://via.placeholder.com/600x400?text=Lancamento+2",
+      "alt": "Card 2",
+      "blockClass": "launch-card-image"
+    }
+  }
+}

@@ -1,0 +1,213 @@
+{
+  /* * Card 1 * */
+  "flex-layout.row#seo-cards-row-1-club": {
+    "props": {
+      "blockClass": "seo-cards-row-1"
+    },
+    "children": [
+      "flex-layout.row#seo-cards-row-1-col-1-club",
+      "flex-layout.row#seo-cards-row-1-col-2-club"
+    ]
+  },
+
+  "flex-layout.row#seo-cards-row-1-col-1-club": {
+    "props": {
+      "width": "28%",
+      "blockClass": "seo-cards-row-1-col-1"
+    },
+    "children": ["image#seo-cards-row-1-image-club"]
+  },
+
+  "image#seo-cards-row-1-image-club": {
+    "props": {
+      "blockClass": "seo-images",
+      "src": "/arquivos/banner-seo-home-one.png",
+      "height": "200px"
+    }
+  },
+
+  "flex-layout.row#seo-cards-row-1-col-2-club": {
+    "props": {
+      "blockClass": "seo-cards-row-1-col-2"
+    },
+    "children": [
+      "rich-text#seo-cards-row-1-title-club",
+      "rich-text#seo-cards-row-1-content-club"
+    ]
+  },
+
+  "rich-text#seo-cards-row-1-title-club": {
+    "props": {
+      "text": "### Título do tópico",
+      "tag": "h3",
+      "blockClass": "seo-cards-row-1-title"
+    }
+  },
+
+  "rich-text#seo-cards-row-1-content-club": {
+    "props": {
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+      "tag": "p",
+      "blockClass": "seo-cards-row-1-content"
+    }
+  },
+
+  /* * Card 2 * */
+  "flex-layout.row#seo-cards-row-2-club": {
+    "props": {
+      "blockClass": "seo-cards-row-2"
+    },
+    "children": [
+      "flex-layout.row#seo-cards-row-2-col-1-club",
+      "flex-layout.row#seo-cards-row-2-col-2-club"
+    ]
+  },
+
+  "flex-layout.row#seo-cards-row-2-col-2-club": {
+    "props": {
+      "width": "28%",
+      "blockClass": "seo-cards-row-2-col-2"
+    },
+    "children": ["image#seo-cards-row-2-image-club"]
+  },
+
+  "image#seo-cards-row-2-image-club": {
+    "props": {
+      "blockClass": "seo-images",
+      "src": "/arquivos/banner-seo-home-two.png",
+      "height": "200px"
+    }
+  },
+
+  "flex-layout.row#seo-cards-row-2-col-1-club": {
+    "props": {
+      "blockClass": "seo-cards-row-2-col-1"
+    },
+    "children": [
+      "rich-text#seo-cards-row-2-title-club",
+      "rich-text#seo-cards-row-2-content-club"
+    ]
+  },
+
+  "rich-text#seo-cards-row-2-title-club": {
+    "props": {
+      "text": "### Título do tópico",
+      "tag": "h3",
+      "blockClass": "seo-cards-row-2-title"
+    }
+  },
+
+  "rich-text#seo-cards-row-2-content-club": {
+    "props": {
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+      "tag": "p",
+      "blockClass": "seo-cards-row-2-content"
+    }
+  },
+
+  /* * Card 3 * */
+  "flex-layout.row#seo-cards-row-3-club": {
+    "props": {
+      "blockClass": "seo-cards-row-3"
+    },
+    "children": [
+      "flex-layout.row#seo-cards-row-3-col-1-club",
+      "flex-layout.row#seo-cards-row-3-col-2-club"
+    ]
+  },
+
+  "flex-layout.row#seo-cards-row-3-col-1-club": {
+    "props": {
+      "width": "28%",
+      "blockClass": "seo-cards-row-3-col-1"
+    },
+    "children": ["image#seo-cards-row-3-image-club"]
+  },
+
+  "image#seo-cards-row-3-image-club": {
+    "props": {
+      "blockClass": "seo-images",
+      "src": "/arquivos/banner-seo-home-one.png",
+      "height": "200px"
+    }
+  },
+
+  "flex-layout.row#seo-cards-row-3-col-2-club": {
+    "props": {
+      "blockClass": "seo-cards-row-3-col-2"
+    },
+    "children": [
+      "rich-text#seo-cards-row-3-title-club",
+      "rich-text#seo-cards-row-3-content-club"
+    ]
+  },
+
+  "rich-text#seo-cards-row-3-title-club": {
+    "props": {
+      "text": "### Título do tópico",
+      "tag": "h3",
+      "blockClass": "seo-cards-row-3-title"
+    }
+  },
+
+  "rich-text#seo-cards-row-3-content-club": {
+    "props": {
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+      "tag": "p",
+      "blockClass": "seo-cards-row-3-content"
+    }
+  },
+
+  /* * Card 4 * */
+  "flex-layout.row#seo-cards-row-4-club": {
+    "props": {
+      "blockClass": "seo-cards-row-4"
+    },
+    "children": [
+      "flex-layout.row#seo-cards-row-4-col-1-club",
+      "flex-layout.row#seo-cards-row-4-col-2-club"
+    ]
+  },
+
+  "flex-layout.row#seo-cards-row-4-col-2-club": {
+    "props": {
+      "width": "28%",
+      "blockClass": "seo-cards-row-4-col-2"
+    },
+    "children": ["image#seo-cards-row-4-image-club"]
+  },
+
+  "image#seo-cards-row-4-image-club": {
+    "props": {
+      "blockClass": "seo-images",
+      "src": "/arquivos/banner-seo-home-two.png",
+      "height": "200px"
+    }
+  },
+
+  "flex-layout.row#seo-cards-row-4-col-1-club": {
+    "props": {
+      "blockClass": "seo-cards-row-4-col-1"
+    },
+    "children": [
+      "rich-text#seo-cards-row-4-title-club",
+      "rich-text#seo-cards-row-4-content-club"
+    ]
+  },
+
+  "rich-text#seo-cards-row-4-title-club": {
+    "props": {
+      "text": "### Título do tópico",
+      "tag": "h3",
+      "blockClass": "seo-cards-row-4-title"
+    }
+  },
+
+  "rich-text#seo-cards-row-4-content-club": {
+    "props": {
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+      "tag": "p",
+      "blockClass": "seo-cards-row-4-content"
+    }
+  }
+}

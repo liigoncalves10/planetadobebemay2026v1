@@ -1,0 +1,28 @@
+.specificationName {
+  color: #696969;
+  font-weight: 500;
+}
+
+.specificationValue {
+  color: #696969;
+}
+
+.specificationValue::after {
+  content: ',\00a0';
+  display: inline-block;
+}
+
+.specificationValue--last::after {
+  content: '.';
+  display: inline-block;
+}
+
+@media screen and (width <= 380px) {
+  .specificationName {
+    font-size: 14px;
+  }
+
+  .specificationValue {
+    font-size: 14px;
+  }
+}

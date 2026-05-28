@@ -1,0 +1,68 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+.reviewsContainer,
+.questionsAndAnswersContainer {
+  margin: auto;
+  max-width: 1252px;
+  padding: 30px 0;
+}
+
+.emptyReviewButton :global(.vtex-button) {
+  border: none !important;
+}
+
+.emptyReviewButton :global(.vtex-button__label) {
+  font-weight: 800;
+}
+
+.testimonialPageTitle {
+  color: #696969;
+  font-family: 'Fredoka', sans-serif !important;
+  font-size: 40px;
+  font-weight: 900;
+  position: relative;
+  text-align: center;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--questions) {
+  margin: auto;
+  max-width: 1252px;
+}
+
+:global(.vtex-questions-and-answers-0-x-qna-header) {
+  font-size: 0 !important;
+  font-weight: 500;
+}
+
+:global(.vtex-questions-and-answers-0-x-qna-header)::before {
+  font-family: 'Fredoka', sans-serif;
+  content: 'Perguntas e Respostas';
+  display: block;
+  font-size: 40px;
+  font-weight: 500;
+  margin: auto;
+  text-align: center;
+  font-weight: 500;
+}
+
+:global(.vtex-questions-and-answers-0-x-create-question-container)
+  :global(.vtex-button) {
+  background-color: #c55fa0 !important;
+  border: none;
+  font-family: 'Helvetica Neue', sans-serif !important;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 500;
+  margin: auto;
+}
+
+:global(.vtex-questions-and-answers-0-x-create-question-container)
+  :global(.vtex-button):hover {
+  background-color: #2ab1b7;
+  font-weight: 500;
+}
+
+:global(.vtex-questions-and-answers-0-x-create-question-text) {
+  display: none;
+  font-weight: 500;
+}

@@ -1,0 +1,425 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+
+  /* ---------------------------------------------------------
+     DESKTOP
+     --------------------------------------------------------- */
+  "header-layout.desktop": {
+    "children": ["rich-text#whatts-icon", "sticky-layout#header-desktop-v12"]
+  },
+
+  "rich-text#whatts-icon": {
+    "title": "Icon whatsapp",
+    "props": {
+      "blockClass": "whatts-icon",
+      "text": "<a class='vtex-rich-text-0-x-link--whattsIcon' href='https://api.whatsapp.com/send?phone=5511966353092' target='_blank'><img class='vtex-rich-text-0-x-image--social-networks--whattsIcon' src='/arquivos/whatsapp.png'></a>"
+    }
+  },
+
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+
+  /* ID RENOMEADO: Reset do Header Desktop */
+  "sticky-layout#header-desktop-v12": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": [
+      "flex-layout.row#topbar-desktop-v12",
+      "flex-layout.row#main-header-desktop-v12",
+      "flex-layout.row#menu-desktop-v12"
+    ]
+  },
+
+  /* --- LINHA 1: TOPBAR --- */
+  "flex-layout.row#topbar-desktop-v12": {
+    "title": "[Abrir] TopBar Desktop e Redes Sociais",
+    "props": {
+      "blockClass": "main-header__topbar",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "maxHeight": 32,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#top-bar-v12",
+      "flex-layout.row#social-network-v12"
+    ]
+  },
+
+  "flex-layout.col#top-bar-v12": {
+    "title": "[Abrir] TopBar",
+    "children": ["slider-layout#slider-topbar-v12"],
+    "props": {
+      "blockClass": "col-top-bar"
+    }
+  },
+
+  "slider-layout#slider-topbar-v12": {
+    "title": "Config. Slider TopBar",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": true
+      },
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": "slider-top-bar"
+    },
+    "children": [
+      "flex-layout.row#top1",
+      "flex-layout.row#top2",
+      "flex-layout.row#top3"
+    ]
+  },
+
+  "flex-layout.row#top1": {
+    "title": "[Abrir] Frase e Imagem 01",
+    "children": ["image#top1", "rich-text#top1"],
+    "props": {
+      "blockClass": "row-top-bar",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    }
+  },
+  "image#top1": {
+    "title": "Imagem TopBar 01",
+    "props": {
+      "height": 14,
+      "width": 30,
+      "blockClass": "topbar-img-truck",
+      "src": "/arquivos/icon-delivery-truck.svg",
+      "alt": "Imagem Benefício 1"
+    }
+  },
+  "rich-text#top1": {
+    "title": "Texto TopBar 01",
+    "props": {
+      "text": "Frete grátis nas compras acima de R$ 250 para SP Capital e Grande SP. [Saiba Mais](/institutional/politica-de-frete)",
+      "blockClass": "txt-topbar"
+    }
+  },
+  "flex-layout.row#top2": {
+    "title": "[Abrir] Frase e Imagem 02",
+    "children": ["image#top2", "rich-text#top2"],
+    "props": {
+      "blockClass": "row-top-bar",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    }
+  },
+  "image#top2": {
+    "title": "Imagem TopBar 02",
+    "props": {
+      "height": 14,
+      "width": 30,
+      "blockClass": "topbar-img-truck",
+      "src": "/arquivos/icon-delivery-truck.svg",
+      "alt": "Imagem Benefício 2"
+    }
+  },
+  "rich-text#top2": {
+    "title": "Texto TopBar 02",
+    "props": {
+      "text": "Receba no mesmo dia ou no proximo dia útil para São Paulo e Regiões Metropolitanas de SP",
+      "blockClass": "txt-topbar"
+    }
+  },
+  "flex-layout.row#top3": {
+    "title": "[Abrir] Frase e Imagem 03",
+    "children": ["image#top3", "rich-text#top3"],
+    "props": {
+      "blockClass": "row-top-bar",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    }
+  },
+  "image#top3": {
+    "title": "Imagem TopBar 03",
+    "props": {
+      "height": 14,
+      "width": 30,
+      "blockClass": "topbar-img-truck",
+      "src": "/arquivos/icon-delivery-truck.svg",
+      "alt": "Imagem Benefício 3"
+    }
+  },
+  "rich-text#top3": {
+    "title": "Texto TopBar 03",
+    "props": {
+      "text": "Pague parcelado no pix em até 6x sem juros",
+      "blockClass": "txt-topbar"
+    }
+  },
+
+  "flex-layout.col#social-network-v12": {
+    "props": {
+      "blockClass": "container-social"
+    },
+    "children": ["flex-layout.row#social-network-v12"]
+  },
+  "flex-layout.row#social-network-v12": {
+    "props": {
+      "blockClass": "container-social",
+      "maxHeight": 32,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#social-networks-facebook",
+      "rich-text#social-networks-instagram",
+      "rich-text#social-networks-youtube"
+    ]
+  },
+
+  "rich-text#social-networks-facebook": {
+    "props": {
+      "text": "<a class='vtex-rich-text-0-x-link--social-networks' href='https://www.facebook.com/planeta.dobebe.79' target='_blank'><img class='vtex-rich-text-0-x-image--social-networks--instagram' src='/arquivos/facebook-icon-pl.png'></a>",
+      "blockClass": "social-networks--instagram"
+    }
+  },
+  "rich-text#social-networks-instagram": {
+    "props": {
+      "text": "<a class='vtex-rich-text-0-x-link--social-networks' href='https://www.instagram.com/lojaplanetadobebe/' target='_blank'><img class='vtex-rich-text-0-x-image--social-networks--instagram' src='/arquivos/instagram-icon-pl.png'></a>",
+      "blockClass": "social-networks--instagram"
+    }
+  },
+  "rich-text#social-networks-youtube": {
+    "props": {
+      "text": "<a class='vtex-rich-text-0-x-link--social-networks' href='https://www.youtube.com/channel/UC1h3dZa-kIr4KYoPp0Y_Ekw' target='_blank'><img class='vtex-rich-text-0-x-image--social-networks--youtube' src='/arquivos/youtube-icon-pl.png'></a>",
+      "blockClass": "social-networks--youtube"
+    }
+  },
+
+  /* --- LINHA 2: LOGO E BUSCA --- */
+  "flex-layout.row#main-header-desktop-v12": {
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "search-bar",
+      "login",
+      "minicart.v2"
+    ]
+  },
+
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo#desktop"]
+  },
+  /* Mantido, mas não parece estar sendo usado na Row principal. */
+  "flex-layout.col#category-menu": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["vtex.menu@2.x:menu#category-menu"]
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "/arquivos/logo-planetablack.png?v=123",
+      "width": "160",
+      "blockClass": "desktop"
+    }
+  },
+
+  /* --- LINHA 3: MENU DINÂMICO --- */
+  "flex-layout.row#menu-desktop-v12": {
+    "props": {
+      "blockClass": ["main-header", "menu"],
+      "horizontalAlign": "center",
+      "verticalAlign": "center"
+    },
+    "children": ["dynamic-menu"]
+  },
+
+  /* ---------------------------------------------------------
+     MOBILE
+     --------------------------------------------------------- */
+  "header-layout.mobile": {
+    "children": [
+      "set-structedData-info",
+      "rich-text#whatts-icon",
+      "sticky-layout#header-mobile-v12"
+    ]
+  },
+
+  "sticky-layout#header-mobile-v12": {
+    "props": {
+      "blockClass": ["main-header-mobile__wrapper", "search-header-mobile"]
+    },
+    "children": [
+      "flex-layout.row#top-mobile-v12",
+      "flex-layout.row#main-header-mobile-v12",
+      "search-bar"
+    ]
+  },
+
+  "flex-layout.row#top-mobile-v12": {
+    "title": "[Abrir] TopBar Mobile",
+    "children": ["slider-layout#slider-topbar-v12"], // Reusa o slider novo
+    "props": {
+      "blockClass": "topbar-text__wrapper"
+    }
+  },
+
+  "search-bar": {
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "placeholder": "O que você busca?",
+      "blockClass": "search-header-general"
+    }
+  },
+  "autocomplete-result-list.v2": {
+    "blocks": ["product-summary.shelf#search-shelf"],
+    "props": {
+      "productLayout": "VERTICAL",
+      "maxSuggestedProducts": 2
+    }
+  },
+
+  "flex-layout.row#main-header-mobile-v12": {
+    "children": ["dynamic-menu", "logo#mobile", "minicart.v2"],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+
+  "drawer": {
+    "children": ["menu#drawer"]
+  },
+  "menu#drawer": {
+    "children": [
+      "menu-item#category-apparel",
+      "menu-item#category-home",
+      "menu-item#more"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "logo#mobile": {
+    "props": {
+      "title": "Logo-mobile",
+      "href": "/",
+      "url": "/arquivos/logo-planetablack.png?v=123",
+      "width": "180",
+      "blockClass": "mobile"
+    }
+  },
+
+  /* ---------------------------------------------------------
+     MINICART (Mantive padrão, geralmente não causa conflito layout)
+     --------------------------------------------------------- */
+  "minicart.v2": {
+    "props": {
+      "MinicartIcon": "image#minicart-icon",
+      "itemCountMode": "totalAvailable",
+      "customPixelEventId": "add-to-cart-button",
+      "customPixelEventName": "addToCart"
+    },
+    "children": ["minicart-base-content"]
+  },
+  "image#minicart-icon": {
+    "props": {
+      "src": "/arquivos/cart2-new.svg",
+      "maxHeight": 40,
+      "blockClass": "image-empty-cart"
+    }
+  },
+  "minicart-base-content": {
+    "blocks": ["minicart-empty-state"],
+    "children": ["minicart-product-list", "flex-layout.row#minicart-footer"]
+  },
+  "flex-layout.row#minicart-footer": {
+    "props": {
+      "blockClass": "minicart-footer"
+    },
+    "children": ["flex-layout.col#minicart-footer"]
+  },
+  "flex-layout.col#minicart-footer": {
+    "children": ["minicart-summary", "minicart-checkout-button"]
+  },
+  "minicart-product-list": {
+    "blocks": ["product-list#minicart"],
+    "props": {}
+  },
+  "product-list#minicart": {
+    "blocks": ["product-list-content-mobile"]
+  },
+  "minicart-summary": {
+    "blocks": ["checkout-summary.compact#minicart"]
+  },
+  "checkout-summary.compact#minicart": {
+    "children": ["summary-totalizers#minicart"],
+    "props": {
+      "totalizersToShow": ["Items", "Discounts"]
+    }
+  },
+  "summary-totalizers#minicart": {
+    "props": {
+      "showTotal": true,
+      "showDeliveryTotal": false
+    }
+  },
+  "minicart-empty-state": {
+    "children": ["flex-layout.row#empty-state"]
+  },
+  "flex-layout.row#empty-state": {
+    "children": ["flex-layout.col#empty-state"],
+    "props": {
+      "blockClass": "minicart-empty"
+    }
+  },
+  "flex-layout.col#empty-state": {
+    "children": [
+      "image#minicart-empty",
+      "rich-text#minicart-default-empty-state"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "rowGap": 5
+    }
+  },
+  "image#minicart-empty": {
+    "props": {
+      "src": "/arquivos/shopping-bf-before.svg",
+      "maxHeight": 52,
+      "blockClass": "image-empty-cart"
+    }
+  },
+  "rich-text#minicart-default-empty-state": {
+    "props": {
+      "text": "Carrinho Vazio"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+.container--contactInfoCard {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 92px;
+}
+
+.wrapper--contactInfoCard {
+  background: #f7f7f7;
+  border-radius: 10px;
+  height: 224px;
+  width: 320px;
+}
+
+.paragraph--contactInfoCard {
+  align-items: center;
+  color: #4d4d4d;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  margin: 0;
+  padding-bottom: 18px;
+  padding-top: 20px;
+}
+
+.titleContainer {
+  color: #c55fa0;
+  line-height: 22px;
+  margin-bottom: 14px;
+}
+
+.telephoneContainer {
+  font-size: 15px;
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+
+.emailContainer {
+  margin-bottom: 7.7px;
+}
+
+.emailContainer .link--contactInfoCard {
+  color: #4d4d4d;
+  display: block;
+  font-size: 13px;
+  line-height: 16px;
+  text-decoration: none;
+}
+
+.atendimentoContainer {
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 13px;
+}
+
+.whatsContainer {
+  align-items: center;
+  border: 1px solid #dcdcdc;
+  border-radius: 50px;
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  text-decoration: none;
+  width: 241px;
+}
+
+.whatsImage {
+  background: url('assets/icons/icon-whatsapp.svg') no-repeat center;
+  background-size: contain;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+}
+
+.whatsText {
+  font-size: 13px;
+  margin-left: 8px;
+}
+
+.wrapper--faleConosco .headingLevel3--faleConosco {
+  margin-bottom: 8px;
+}
+
+@media only screen and (width <= 1024px) {
+  .container--contactInfoCard {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 58px;
+  }
+}

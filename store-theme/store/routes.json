@@ -1,0 +1,53 @@
+{
+  "store.custom#about": {
+    "path": "/institutional/sobre-a-gente"
+  },
+  "store.custom#purchasing-policy": {
+    "path": "/institutional/politica-de-compra-segura"
+  },
+  "store.custom#privacy-policy": {
+    "path": "/institutional/politica-de-privacidade"
+  },
+  "store.custom#exchange-policy": {
+    "path": "/institutional/politica-de-trocas"
+  },
+  "store.custom#exchange-policy-physical": {
+    "path": "/institutional/politica-de-trocas-fisica"
+  },
+  "store.custom#termos-de-uso": {
+    "path": "/institutional/termos-de-uso-e-condicoes-de-navegacao"
+  },
+  "store.custom#termos-e-condicoes-gerais": {
+    "path": "/institutional/termos-e-condicoes-gerais"
+  },
+  "store.custom#shipping": {
+    "path": "/institutional/politica-de-frete"
+  },
+  "store.custom#cupon-usage": {
+    "path": "/institutional/regras-gerais-do-uso-de-cupom"
+  },
+  "store.custom#club": {
+    "path": "/assinaturas"
+  },
+  "store.custom#contact-us": {
+    "path": "/institutional/fale-conosco"
+  },
+  "store.custom#structured-data": {
+    "path": "/structureddata"
+  },
+  "store.custom#landing_page-blackfriday": {
+    "path": "/ofertas"
+  },
+  "store.custom#na-midia": {
+    "path": "/na-midia"
+  },
+  "store.custom#artigo-carrinho-elysian": {
+    "path": "/artigo-carrinho-elysian"
+  },
+  "store.custom#artigo-lenco-umedecido": {
+    "path": "/artigo-lenco-umedecido"
+  },
+  "store.custom#artigo-natal": {
+    "path": "/artigo-natal"
+  }
+}

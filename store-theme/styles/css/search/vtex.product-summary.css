@@ -1,0 +1,31 @@
+.nameContainer--summaryListDesktop {
+  justify-content: start;
+  padding-bottom: 0.75rem;
+  padding-top: 0.25rem;
+}
+
+.nameContainer--summaryListMobile {
+  justify-content: start;
+  padding-bottom: 0.5rem;
+  padding-top: 0.25rem;
+}
+
+.brandName--summaryListMobile {
+  color: rgb(27, 27, 27);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.container--listLayout {
+  max-width: none !important;
+}
+
+.image--summaryListDesktop {
+  width: 180px !important;
+}
+
+.image--summaryListMobile {
+  height: inherit !important;
+  min-width: 140px;
+  width: 140px !important;
+}

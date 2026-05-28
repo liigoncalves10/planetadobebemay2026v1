@@ -1,0 +1,12 @@
+{
+  "vendor": "planetadobebe",
+  "name": "feedig",
+  "version": "2.0.5",
+  "title": "Feed Instagram",
+  "description": "Feed Instagram Home",
+  "builders": {
+    "react": "3.x",
+    "store": "0.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

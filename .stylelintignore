@@ -1,0 +1,5 @@
+node_modules
+dist
+build
+store-theme/styles/css/vendor/*
+store-theme/styles/css/generated/*

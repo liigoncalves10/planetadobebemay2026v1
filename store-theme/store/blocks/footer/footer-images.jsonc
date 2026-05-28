@@ -1,0 +1,53 @@
+{
+  // footer - payments
+  "image#payment-mastercard": {
+    "props": {
+      "src": "assets/icons/icon-mastercard.svg",
+      "alt": "Mastercard"
+    }
+  },
+  "image#payment-visa": {
+    "props": {
+      "src": "assets/icons/icon-visa.svg",
+      "alt": "Visa"
+    }
+  },
+  "image#payment-americanexpress": {
+    "props": {
+      "src": "assets/icons/icon-amex.svg",
+      "alt": "American Express"
+    }
+  },
+  "image#payment-dinersclub": {
+    "props": {
+      "src": "assets/icons/icon-dinners.svg",
+      "alt": "Diners"
+    }
+  },
+  "image#payment-elo": {
+    "props": {
+      "src": "assets/icons/icon-elo.svg",
+      "alt": "Elo"
+    }
+  },
+  "image#payment-boleto": {
+    "props": {
+      "src": "assets/icons/icon-boleto.svg",
+      "alt": "Boleto"
+    }
+  },
+  "image#payment-pix": {
+    "props": {
+      "src": "assets/icons/icon-pix.svg",
+      "alt": "Pix"
+    }
+  },
+
+  // footer - security
+  "image#security": {
+    "props": {
+      "src": "assets/icons/icon-security.svg",
+      "alt": "Security"
+    }
+  }
+}

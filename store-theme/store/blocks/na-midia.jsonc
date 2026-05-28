@@ -1,0 +1,166 @@
+{
+  "store.custom#na-midia": {
+    "blocks": [
+      "responsive-layout.desktop#na-midia",
+      "responsive-layout.tablet#na-midia",
+      "responsive-layout.phone#na-midia"
+    ]
+  },
+
+  "responsive-layout.desktop#na-midia": {
+    "children": ["flex-layout.row#lp-container-na-midia"]
+  },
+
+  "responsive-layout.tablet#na-midia": {
+    "children": ["flex-layout.row#lp-container-na-midia-mobile"]
+  },
+
+  "responsive-layout.phone#na-midia": {
+    "children": ["flex-layout.row#lp-container-na-midia-mobile"]
+  },
+
+  "flex-layout.row#lp-container-na-midia": {
+    "title": "LP - Container Principal",
+    "children": ["flex-layout.col#lp-container-na-midia"],
+    "props": {
+      "blockClass": "naMidia__container",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#lp-container-na-midia": {
+    "title": "LP - Coluna Principal",
+    "children": [
+      "flex-layout.row#lp-banner",
+      "flex-layout.row#lp-destaque",
+      "flex-layout.row#lp__naMidia__grid-cards-slider"
+    ]
+  },
+
+  "flex-layout.row#lp-container-na-midia-mobile": {
+    "title": "LP - Container Principal (Mobile)",
+    "children": ["flex-layout.col#lp-container-na-midia-mobile"],
+    "props": {
+      "blockClass": "naMidia__container",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#lp-container-na-midia-mobile": {
+    "title": "LP - Coluna Principal (Mobile)",
+    "children": [
+      "flex-layout.row#lp-banner",
+      "flex-layout.row#lp-destaque",
+      "flex-layout.row#lp__naMidia__grid-cards-slider"
+    ]
+  },
+
+  "flex-layout.row#lp-banner": {
+    "title": "LP - Banner Principal",
+    "children": ["flex-layout.col#lp-banner"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "naMidia__banner-row"
+    }
+  },
+
+  "flex-layout.col#lp-banner": {
+    "title": "LP - Coluna do Banner",
+    "children": ["list-context.image-list#lp-banners"]
+  },
+
+  "list-context.image-list#lp-banners": {
+    "title": "LP - Lista de Imagens do Banner",
+    "children": ["slider-layout#lp-banners"],
+    "props": {
+      "height": 600,
+      "images": [
+        {
+          "image": "https://via.placeholder.com/1920x600",
+          "mobileImage": "https://via.placeholder.com/600x400",
+          "description": "Banner Principal"
+        }
+      ]
+    }
+  },
+
+  "slider-layout#lp-banners": {
+    "title": "LP - Slider de Banners",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": false,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": "naMidia__banner-slider",
+      "autoplay": {
+        "timeout": 0,
+        "stopOnHover": true
+      }
+    }
+  },
+
+  "flex-layout.row#lp-destaque": {
+    "title": "LP - Seção Em Destaque",
+    "children": ["flex-layout.col#lp-destaque"],
+    "props": {
+      "blockClass": "naMidia__destaque-row",
+      "marginTop": 8,
+      "marginBottom": 8
+    }
+  },
+
+  "flex-layout.col#lp-destaque": {
+    "children": [
+      "rich-text#lp-destaque-title",
+      "list-context.image-list#lp-destaque-banners"
+    ]
+  },
+
+  "rich-text#lp-destaque-title": {
+    "title": "LP - Título Em Destaque",
+    "props": {
+      "text": "## Em destaque",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "naMidia__destaque-title"
+    }
+  },
+
+  "list-context.image-list#lp-destaque-banners": {
+    "title": "LP - Carrossel Em Destaque",
+    "children": ["slider-layout#lp-destaque-banners"],
+    "props": {
+      "images": [
+        {
+          "image": "https://via.placeholder.com/1000x500",
+          "mobileImage": "https://via.placeholder.com/500x250",
+          "description": "Destaque 1"
+        },
+        {
+          "image": "https://via.placeholder.com/1000x500",
+          "mobileImage": "https://via.placeholder.com/500x250",
+          "description": "Destaque 2"
+        }
+      ]
+    }
+  },
+
+  "slider-layout#lp-destaque-banners": {
+    "title": "LP - Slider Em Destaque",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "always",
+      "blockClass": "naMidia__destaque-slider"
+    }
+  }
+}

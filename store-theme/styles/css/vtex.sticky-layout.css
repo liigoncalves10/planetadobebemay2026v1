@@ -1,0 +1,250 @@
+@import url('https://fonts.cdnfonts.com/css/neue-helvetica-bq');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+/* Header */
+.wrapper--main-header-mobile__wrapper {
+  z-index: 9999;
+}
+.container--fixed-buy-infos-desktop {
+  bottom: 0px;
+  background: #f4f4f4;
+  z-index: 9999;
+  padding: 0 3%;
+}
+.container--fixed-buy-infos-desktop
+  :global(.vtex-product-quantity-1-x-quantitySelectorTitle) {
+  display: none;
+}
+.container--fixed-buy-infos-desktop
+  :global(.vtex-product-quantity-1-x-quantitySelectorStepper) {
+  margin-left: 0;
+}
+.container--fixed-buy-infos-desktop :global(.vtex-flex-layout-0-x-flexCol) {
+  display: flex;
+  justify-content: center;
+}
+.container--fixed-buy-infos-desktop
+  :global(.vtex-flex-layout-0-x-flexCol)
+  :global(.vtex-flex-layout-0-x-flexColChild) {
+  height: auto !important;
+}
+.container--fixed-buy-infos-desktop
+  :global(.vtex-add-to-cart-button-0-x-buttonText) {
+  font-size: 0px !important;
+}
+
+.container--fixed-buy-infos-desktop
+  :global(.vtex-add-to-cart-button-0-x-buttonText)::before {
+  content: 'ADICIONAR AO CARRINHO';
+  font-size: 14px;
+  font-family: 'Fredoka', sans-serif !important;
+}
+
+.container--fixed-buy-infos-desktop
+  :global(.vtex-flex-layout-0-x-flexRowContent) {
+  max-height: 99px;
+}
+
+.container--fixed-buy-infos-desktop :global(.vtex-button) {
+  max-height: 41px;
+  background-color: #2ab1b7;
+  border-radius: 30px;
+  font-family: Helvetica Neue Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  border: none;
+}
+
+.container--fixed-buy-infos-desktop
+  :global(.vtex-store-components-3-x-skuSelectorContainer) {
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  display: flex;
+}
+.container--fixed-buy-infos-desktop :global(.vtex-flex-layout-0-x-flexRow) {
+  display: flex;
+}
+.container--fixed-buy-infos-desktop
+  :global(.vtex-flex-layout-0-x-flexRow--selling-price-pdp)
+  :global(.vtex-product-price-1-x-currencyContainer) {
+  display: block;
+  line-height: 23px;
+}
+.container--fixed-buy-infos-desktop
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  display: flex;
+  align-items: center;
+}
+.container--fixed-buy-infos-desktop
+  :global(.vtex-store-components-3-x-productNameContainer--quickview) {
+  display: flex;
+  align-items: center;
+}
+.container--fixed-buy-infos-desktop
+  :global(.vtex-flex-layout-0-x-flexRowContent--selling-price),
+.container--fixed-buy-infos-desktop
+  :global(.vtex-store-components-3-x-skuSelectorOptionsList) {
+  margin: 0;
+}
+.container--fixed-buy-infos-desktop
+  :global(.vtex-store-components-3-x-skuSelectorNameContainer) {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.container--fixed-buy-infos-desktop
+  :global(.vtex-store-components-3-x-skuSelectorInternalBox) {
+  background: #fff;
+}
+.container--fixed-buy-infos-desktop :global(.vtex-numeric-stepper-container) {
+  background: #fff;
+  width: 100% !important;
+  max-width: 105px;
+}
+.container--fixed-buy-infos-desktop
+  :global(.vtex-numeric-stepper-container)
+  :global(.vtex-numeric-stepper__input) {
+  width: 40px;
+  margin-left: -7px;
+}
+.container--fixed-buy-infos-desktop
+  :global(
+    .vtex-store-components-3-x-skuSelectorItem--sku-selector-pdp--selected
+  )
+  :global(.vtex-store-components-3-x-skuSelectorInternalBox) {
+  background: #2ab1b7;
+}
+.container--fixed-buy-infos-desktop
+  :global(.vtex-store-components-3-x-skuSelectorSubcontainer) {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.container--fixed-buy-infos-desktop
+  :global(.vtex-store-components-3-x-productBrand--quickview) {
+  font-family: 'Helvetica Neue', sans-serif !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #494949;
+  text-align: center;
+}
+
+.container--fixed-buy-infos-mobile {
+  z-index: 99999999;
+}
+.container--fixed-buy-infos-mobile
+  :global(.vtex-flex-layout-0-x-flexRowContent) {
+  display: flex;
+  background: #f4f4f4;
+}
+.container--fixed-buy-infos-mobile :global(.vtex-button) {
+  width: 156px !important;
+  height: 47px;
+  background: #2ab1b7;
+  border-radius: 30px;
+  border: none;
+}
+.container--fixed-buy-infos-mobile
+  :global(.vtex-button)
+  :global(.vtex-add-to-cart-button-0-x-buttonText) {
+  font-family: 'Fredoka', sans-serif !important;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  font-size: 0;
+}
+.container--fixed-buy-infos-mobile
+  :global(.vtex-button)
+  :global(.vtex-add-to-cart-button-0-x-buttonText)::before {
+  content: 'ADICIONAR AO CARRINHO';
+  font-size: 14px;
+  font-family: 'Fredoka', sans-serif !important;
+}
+
+.container--fixed-buy-infos-mobile
+  :global(.vtex-flex-layout-0-x-flexRow--selling-price-pdp)
+  :global(.vtex-product-price-1-x-currencyContainer) {
+  display: block;
+  line-height: 23px;
+}
+
+.container--fixed-buy-infos-mobile :global(.vtex-flex-layout-0-x-flexRow) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container--fixed-buy-infos-mobile
+  :global(.vtex-flex-layout-0-x-flexRow--selling-price-pdp) {
+  padding-right: 11px;
+  padding-left: 0;
+}
+.container--fixed-buy-infos-mobile :global(.vtex-flex-layout-0-x-flexColChild) {
+  height: auto !important;
+}
+.container--fixed-buy-infos-mobile
+  :global(.vtex-flex-layout-0-x-flexRowContent--selling-price) {
+  margin: 0;
+  padding: 0;
+  justify-content: flex-start;
+}
+.container--fixed-buy-infos-mobile
+  :global(.vtex-product-price-1-x-installments) {
+  text-align: left;
+  padding: 0;
+}
+.container--fixed-buy-infos-mobile {
+  text-align: left;
+  padding: 0;
+}
+:global(.vtex-sticky-layout-0-x-container--fixed-buy-infos-mobile) {
+  padding: 0 24px;
+  background: #ffffff;
+  display: none !important;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .wrapper--fixed-buy-infos-desktop {
+    height: 0 !important;
+  }
+  .container--fixed-buy-infos-desktop
+    :global(.vtex-flex-layout-0-x-flexRowContent) {
+    max-height: none;
+  }
+  .container--fixed-buy-infos-desktop :global(.vtex-flex-layout-0-x-flexCol) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+  }
+  .container--fixed-buy-infos-desktop
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth)
+    :global(.vtex-product-quantity-1-x-quantitySelectorContainer) {
+    justify-content: center;
+  }
+}
+
+.wrapper--fixed-buy-infos-desktop
+  :global(.vtex-product-price-1-x-currencyContainer),
+.wrapper--fixed-buy-infos-desktop
+  :global(.vtex-product-price-1-x-installments) {
+  width: 240px;
+  display: inherit;
+  text-align: left;
+}
+
+/* Desktop Hide */
+@media (min-width: 1024px) {
+  .wrapper--fixed-buy-infos-mobile {
+    display: none;
+  }
+}
+
+:global(.vtex-sticky-layout-0-x-wrapper--fixed-buy-infos-mobile) {
+  height: 500px !important;
+}

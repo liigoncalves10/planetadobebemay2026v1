@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+:global(.vtex-button) {
+  transition: 0.2s ease-in-out;
+}
+
+.notificationBarContainer {
+  background-color: #e6f1e6;
+  color: #03034e;
+  font-weight: 500;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.infoCardContainer--info-card-home {
+  max-width: 1520px;
+  margin: 0 auto;
+  background-color: #e6f1e6;
+  padding: 0px;
+}
+
+.newsletter {
+  background-color: #c55fa0;
+  max-width: 1528px;
+  margin: 0 auto;
+}
+
+.newsletter .container {
+  padding: 60px 10px;
+}
+
+.label {
+  color: #fff;
+  font-size: 26px;
+}
+
+.inputGroup {
+  padding-bottom: 4px;
+  display: flex;
+  color: #fff;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
+  font-size: 16px;
+}
+
+.inputGroup :global(.vtex-button) {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  margin-right: -24px;
+}
+
+.buttonContainer {
+  padding-top: 0px;
+}
+
+.imageElement--storePrint {
+  max-height: 300px;
+  margin-bottom: 20px;
+}
+
+.skuSelectorContainer {
+  margin: 1rem 0;
+}
+
+@media only screen and (min-width: 640px) {
+  .label {
+    font-size: 40px;
+  }
+
+  .infoCardContainer--info-card-home .infoCardTextContainer {
+    width: 30%;
+  }
+
+  .infoCardContainer--info-card-home .infoCardImageContainer {
+    width: 70%;
+  }
+
+  .imageElement--storePrint {
+    margin-bottom: 0px;
+    max-height: 600px;
+  }
+}
+
+.productImagesContainer--quickview .carouselContainer {
+  justify-content: flex-start;
+  margin-right: 180px;
+}
+
+.productImagesContainer--quickview .productImageTag {
+  object-fit: cover !important;
+}
+
+.productImagesContainer--quickview .carouselGaleryThumbs {
+  display: none;
+}
+
+.productImagesContainer--quickview .carouselGaleryCursor {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.productNameContainer {
+  font-family: 'helvetica neue', sans-serif;
+  color: #494949;
+  font-size: 60px;
+  margin-bottom: 10px;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+@media screen and (max-width: 1024px) {
+  .productNameContainer {
+    font-size: 40px;
+    text-align: left;
+    margin-left: 9px;
+  }
+}
+
+.imageElement--categories-items-image {
+  background: transparent !important;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+}
+
+/* =========================
+FLAGS PROMO (NÃO ALTERADO)
+========================= */
+
+.discountInsideContainer {
+  font-size: 10px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 500;
+  border-radius: 7px;
+  padding: 0;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #ed6f66;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+:global(.vtex-search-result-3-x-gallery) .discountInsideContainer {
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  z-index: 2;
+  margin-right: 230px;
+  padding-left: 31px;
+  padding-right: 31px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 0 10px 10px 0;
+  background-color: #ed6f66;
+}
+
+:global(.vtex-slider-layout-0-x-sliderTrack) .discountInsideContainer {
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  z-index: 2;
+  margin-right: 200px;
+  padding-left: 31px;
+  padding-right: 30px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 0 10px 10px 0;
+  background-color: #ed6f66;
+}
+
+.discountContainer {
+  width: 100%;
+  padding: 0 14px;
+}
+
+/* =========================
+PDP THUMB FIX
+========================= */
+
+.productImagesContainer--pdp-images .productImagesThumbCaret {
+  background-color: white !important;
+  padding-top: 0;
+  padding-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  visibility: visible;
+}
+
+.productImagesContainer--pdp-images .productImagesThumbCaret .caretIcon {
+  fill-opacity: 1;
+  fill: #c55fa0;
+  transform: none !important;
+  display: block;
+}
+
+/* =========================
+THUMBNAILS
+========================= */
+
+.productImagesThumb {
+  max-width: 86px;
+  margin-top: 8px !important;
+  margin-bottom: 23px !important;
+}
+
+.carouselGaleryThumbs {
+  height: 500px;
+  overflow: hidden;
+}
+
+.thumbImg {
+  max-width: 86px;
+  max-height: 86px;
+}
+
+/* =========================
+SWIPER FIX (IMAGEM PDP)
+========================= */
+
+.productImagesContainer--pdp-images .productImageTag {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.productImagesContainer--pdp-images .productImagesGallerySlide {
+  margin-right: 0 !important;
+  padding: 0 !important;
+}
+
+.productImagesContainer--pdp-images .carouselContainer .carouselGaleryCursor {
+  margin-right: 0 !important;
+}
+
+/* =========================
+PRODUCT DESCRIPTION
+========================= */
+
+.productDescriptionContainer--product-description {
+  max-width: 1252px;
+}
+
+.productDescriptionTitle--product-description {
+  position: relative;
+  font-size: 40px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #696969;
+}
+
+.productDescriptionTitle--product-description::after {
+  content: '';
+  position: absolute;
+  top: 140%;
+  left: 50%;
+  transform: translate(-50%, -140%);
+  width: 40px;
+  height: 6px;
+  border-radius: 10px;
+  background: #c55fa0;
+}
+
+/* =========================
+SHIPPING
+========================= */
+
+.shippingTableLabel,
+.shippingTableCellDeliveryEstimate {
+  color: #696969;
+  font-size: 10px;
+}
+
+.shippingTableCellDeliveryPrice {
+  color: #2ab1b7;
+  font-weight: 500;
+  font-size: 10px;
+}
+
+/* =========================
+BRAND LINK
+========================= */
+
+.productBrandNameLink {
+  color: #2ab1b7;
+  font-weight: 500;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+/* =========================
+CARDS
+========================= */
+
+.imageElement--unified-card-image {
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .imageElement--unified-card-image {
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+}
