@@ -2,7 +2,7 @@ import React, { useState, useEffect, memo } from 'react'
 import { useCssHandles } from 'vtex.css-handles'
 import ModalCancelForm from './ModalCancelForm'
 
-// Definição dos handles para o CSS customizado
+// Definição dos handles para o CSS
 const CSS_HANDLES = [
   'cancelButtonContainer',
   'cancelButton',
@@ -13,6 +13,10 @@ const CSS_HANDLES = [
   'modalActions'
 ]
 
+/**
+ * Componente CustomCancelButton para VTEX My Account.
+ * Exibe um botão de cancelamento após 60 minutos e 2 segundos da criação do pedido.
+ */
 const CustomCancelButton = memo(({
   label = "Solicitar cancelamento",
   order
@@ -22,10 +26,8 @@ const CustomCancelButton = memo(({
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   useEffect(() => {
-    console.log('CustomCancelButton: Iniciando verificação do pedido', order?.orderId)
-
     if (!order || !order.creationDate) {
-      console.log('CustomCancelButton: Dados do pedido não encontrados ou incompletos')
+      console.log('CustomCancelButton: Dados do pedido indisponíveis.')
       return
     }
 
@@ -34,17 +36,13 @@ const CustomCancelButton = memo(({
       const now = Date.now()
       const diffInSeconds = (now - creationDate) / 1000
 
-      /**
-       * REGRA TÉCNICA:
-       * Se passou mais de 60 minutos e 2 segundos: exibir CustomCancelButton
-       * (60 * 60) + 2 = 3602 segundos
-       */
+      // REGRA: Mais de 60 minutos (3600s) e 2 segundos = 3602s
       const threshold = 3602
 
-      // O botão só deve aparecer para pedidos elegíveis para cancelamento (não cancelados)
+      // Verificar status elegível (não cancelado)
       const isEligibleStatus = !['canceled', 'cancel-requested'].includes(order.status)
 
-      console.log(`CustomCancelButton [${order.orderId}]: Segundos desde criação: ${Math.floor(diffInSeconds)}, Status: ${order.status}, Elegível: ${isEligibleStatus}`)
+      console.log(`CustomCancelButton: Order ${order.orderId} - Segundos: ${Math.floor(diffInSeconds)}, Elegível: ${isEligibleStatus}`)
 
       if (diffInSeconds >= threshold && isEligibleStatus) {
         setShouldShow(true)
@@ -53,12 +51,8 @@ const CustomCancelButton = memo(({
       }
     }
 
-    // Verificação inicial
     checkTime()
-
-    // Intervalo para atualizar o estado quando o tempo passar
-    const interval = setInterval(checkTime, 5000)
-
+    const interval = setInterval(checkTime, 10000) // Verificar a cada 10s
     return () => clearInterval(interval)
   }, [order])
 
@@ -68,16 +62,11 @@ const CustomCancelButton = memo(({
     setIsModalOpen(true)
   }
 
-  if (!shouldShow) {
-    return null
-  }
+  if (!shouldShow) return null
 
   return (
     <div className={handles.cancelButtonContainer}>
-      <button
-        className={handles.cancelButton}
-        onClick={handleButtonClick}
-      >
+      <button className={handles.cancelButton} onClick={handleButtonClick}>
         <span className={handles.cancelIcon}>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
