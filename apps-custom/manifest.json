@@ -1,15 +1,14 @@
 {
   "vendor": "planetadobebe",
   "name": "apps-custom",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "title": "app-custom",
   "description": "apps-customizados-planetadobebe",
   "defaultLocale": "pt-BR",
   "builders": {
     "messages": "1.x",
     "store": "0.x",
-    "react": "3.x",
-    "styles": "2.x"
+    "react": "3.x"
   },
   "dependencies": {
     "vtex.checkout-graphql": "0.x",
