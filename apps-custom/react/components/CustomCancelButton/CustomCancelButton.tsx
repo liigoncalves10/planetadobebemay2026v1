@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, memo } from 'react'
 import { Modal, Button } from 'vtex.styleguide'
 import { useCssHandles } from 'vtex.css-handles'
 import axios from 'axios'
-import './styles.css'
+import style from './CustomCancelButton.css'
 
 const CSS_HANDLES = [
   'cancelButtonContainer',
@@ -13,10 +13,10 @@ const CSS_HANDLES = [
   'modalMessage'
 ] as const
 
-const CustomCancelButton: React.FC<any> = ({
+const CustomCancelButton: any = memo(({
   label = "Solicitar cancelamento",
   order
-}) => {
+}: any) => {
   const handles = useCssHandles(CSS_HANDLES)
   const [shouldShow, setShouldShow] = useState(false)
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -74,9 +74,9 @@ const CustomCancelButton: React.FC<any> = ({
   if (!shouldShow) return null
 
   return (
-    <div className={handles.cancelButtonContainer}>
-      <button className={handles.cancelButton} onClick={handleButtonClick}>
-        <span className={handles.cancelIcon}>
+    <div className={`${handles.cancelButtonContainer} ${style.cancelButtonContainer}`}>
+      <button className={`${handles.cancelButton} ${style.cancelButton}`} onClick={handleButtonClick}>
+        <span className={`${handles.cancelIcon} ${style.cancelIcon}`}>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <circle cx="12" cy="12" r="10"></circle>
             <line x1="12" y1="8" x2="12" y2="12"></line>
@@ -87,10 +87,10 @@ const CustomCancelButton: React.FC<any> = ({
       </button>
 
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} centered>
-        <div className={handles.modalContent}>
-          <h2 className={handles.modalTitle}>Solicitar Cancelamento</h2>
+        <div className={`${handles.modalContent} ${style.modalContent}`}>
+          <h2 className={`${handles.modalTitle} ${style.modalTitle}`}>Solicitar Cancelamento</h2>
           {success ? (
-            <div className={handles.modalMessage}>
+            <div className={`${handles.modalMessage} ${style.modalMessage}`}>
               <p>Sua solicitação foi enviada ao SAC para análise.</p>
               <p>Você será redirecionado para a página de Fale Conosco em instantes...</p>
             </div>
@@ -113,9 +113,9 @@ const CustomCancelButton: React.FC<any> = ({
       </Modal>
     </div>
   )
-}
+})
 
-(CustomCancelButton as any).schema = {
+CustomCancelButton.schema = {
   title: "Botão Cancelar Customizado",
   type: "object",
   properties: {

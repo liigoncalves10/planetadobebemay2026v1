@@ -1,3 +1,3 @@
-import CustomCancelButton from "./components/CustomCancelButton";
+import CustomCancelButton from './components/CustomCancelButton/CustomCancelButton'
 
-export default CustomCancelButton;
+export default CustomCancelButton
