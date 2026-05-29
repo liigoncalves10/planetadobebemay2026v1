@@ -3,6 +3,8 @@ import { useCssHandles } from 'vtex.css-handles'
 import ModalCancelForm from './ModalCancelForm'
 import './styles.css'
 
+console.log('CustomCancelButton module loading...')
+
 // Definição dos handles CSS para customização
 const CSS_HANDLES = ['cancelButtonContainer', 'cancelButton', 'cancelIcon']
 
