@@ -1,0 +1,59 @@
+/* CSS Handles for the Custom Cancel Button component */
+.cancelButtonContainer {
+  display: flex;
+  justify-content: flex-start;
+  margin: 15px 0;
+}
+
+.cancelButton {
+  background-color: #fff !important;
+  border: 1px solid #ff0000 !important;
+  color: #ff0000 !important;
+  border-radius: 8px !important;
+  padding: 10px 20px !important;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-transform: none;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.cancelButton:hover {
+  background-color: #ed6f66 !important;
+  color: #fff !important;
+  border-color: #ed6f66 !important;
+}
+
+.cancelIcon {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  color: inherit;
+}
+
+.modalContent {
+  padding: 10px 0;
+}
+
+.modalTitle {
+  font-size: 1.5rem !important;
+  font-weight: bold !important;
+  margin-bottom: 1.5rem !important;
+  color: #3f3f40;
+}
+
+.modalMessage {
+  line-height: 1.5;
+  color: #3f3f40;
+  margin-bottom: 20px;
+}
+
+.modalActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: 24px;
+}
