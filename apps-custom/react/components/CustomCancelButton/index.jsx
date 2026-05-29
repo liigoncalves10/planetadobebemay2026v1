@@ -1,21 +1,16 @@
 import React, { useState, useEffect } from 'react'
 import { useCssHandles } from 'vtex.css-handles'
 import ModalCancelForm from './ModalCancelForm'
+import './styles.css'
 
 // Definição dos handles CSS para customização
-const CSS_HANDLES = ['cancelButtonContainer', 'cancelButton', 'cancelIcon'] as const
-
-interface CustomCancelButtonProps {
-  label?: string
-  // Props injetadas pelo My Account da VTEX se usado dentro de order-details ou listagem
-  order?: any
-}
+const CSS_HANDLES = ['cancelButtonContainer', 'cancelButton', 'cancelIcon']
 
 /**
  * Componente CustomCancelButton
  * Exibe um botão de cancelamento customizado após 60 minutos e 2 segundos da criação do pedido.
  */
-const CustomCancelButton: React.FC<CustomCancelButtonProps> = ({
+const CustomCancelButton = ({
   label = "Solicitar cancelamento",
   order
 }) => {

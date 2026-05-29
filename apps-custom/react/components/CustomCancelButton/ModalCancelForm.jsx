@@ -1,17 +1,11 @@
 import React, { useState } from 'react'
-import { Modal, Button, Spinner } from 'vtex.styleguide'
+import { Modal, Button } from 'vtex.styleguide'
 import { useCssHandles } from 'vtex.css-handles'
 import axios from 'axios'
 
-const CSS_HANDLES = ['modalContent', 'modalTitle', 'modalMessage'] as const
+const CSS_HANDLES = ['modalContent', 'modalTitle', 'modalMessage']
 
-interface ModalCancelFormProps {
-  isOpen: boolean
-  onClose: () => void
-  orderId: string
-}
-
-const ModalCancelForm: React.FC<ModalCancelFormProps> = ({
+const ModalCancelForm = ({
   isOpen,
   onClose,
   orderId,

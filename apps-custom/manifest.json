@@ -8,8 +8,7 @@
   "builders": {
     "messages": "1.x",
     "store": "0.x",
-    "react": "3.x",
-    "styles": "2.x"
+    "react": "3.x"
   },
   "dependencies": {
     "vtex.checkout-graphql": "0.x",
