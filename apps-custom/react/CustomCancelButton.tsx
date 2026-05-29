@@ -10,9 +10,9 @@ const CSS_HANDLES = [
   'modalContent',
   'modalTitle',
   'modalMessage'
-]
+] as const
 
-const CustomCancelButton = ({
+const CustomCancelButton: React.FC<any> = ({
   label = "Solicitar cancelamento",
   order
 }) => {
@@ -23,7 +23,10 @@ const CustomCancelButton = ({
   const [success, setSuccess] = useState(false)
 
   useEffect(() => {
-    if (!order || !order.creationDate) return
+    if (!order || !order.creationDate) {
+      console.log('[CustomCancelButton] No order data available yet')
+      return
+    }
 
     const checkTime = () => {
       const creationDate = new Date(order.creationDate).getTime()
@@ -32,6 +35,8 @@ const CustomCancelButton = ({
       const threshold = 3602 // 60 min e 2 seg
 
       const isEligibleStatus = !['canceled', 'cancel-requested'].includes(order.status)
+
+      console.log(`[CustomCancelButton] Order ${order.orderId}: ${diffInSeconds.toFixed(0)}s since creation. Eligible: ${isEligibleStatus}`)
 
       if (diffInSeconds >= threshold && isEligibleStatus) {
         setShouldShow(true)
@@ -45,7 +50,7 @@ const CustomCancelButton = ({
     return () => clearInterval(interval)
   }, [order])
 
-  const handleButtonClick = (e) => {
+  const handleButtonClick = (e: React.MouseEvent) => {
     e.preventDefault()
     e.stopPropagation()
     setIsModalOpen(true)
@@ -153,7 +158,7 @@ const CustomCancelButton = ({
   )
 }
 
-CustomCancelButton.schema = {
+(CustomCancelButton as any).schema = {
   title: "Botão Cancelar Customizado",
   type: "object",
   properties: {
